@@ -4,3 +4,4 @@ _site
 *.ec
 *.e
 *.bak
+.DS_Store
