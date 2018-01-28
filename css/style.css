@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-aside {
-  width: 38.2%;
+  width: 38%;/*38.2%*/
   top: 0;
   left: 0;
   bottom: 0;
@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .single #fh5co-aside {
   position: relative;
-  height: 700px;/*700px*/
+  height: 200px;/*700px*/
   width: 100%;
 }
 #fh5co-aside a {
@@ -374,10 +374,16 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   padding: 30px;
 }
-.single #fh5co-aside .featured, .single #fh5co-aside nav, .single #fh5co-aside .page-title {
+.single #fh5co-aside .featured, .single #fh5co-aside .page-title {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+.single #fh5co-aside nav {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 20;
 }
 #fh5co-aside .featured h2, #fh5co-aside nav h2, #fh5co-aside .page-title h2 {
   color: #fff;
