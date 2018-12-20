@@ -390,12 +390,16 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 300;
 }
 .single #fh5co-aside .featured h2, .single #fh5co-aside nav h2, .single #fh5co-aside .page-title h2 {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
   font-size: 36px;
+  margin: 0 0 10px 0;
 }
 #fh5co-aside .featured > span, #fh5co-aside nav > span, #fh5co-aside .page-title > span {
   display: block;
   color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 15px;
   letter-spacing: .05em;
   margin-bottom: 10px;
@@ -519,9 +523,9 @@ footer {
   }
 }
 .fh5co-post .fh5co-entry > div {
-  width: 77%;
+  width: 100%;/* 77% */
   float: left;
-  margin-right: 5%;
+  margin-right: 0px;/*5%*/
   margin-top: 0px;
 }
 .single .fh5co-post .fh5co-entry > div {
@@ -543,6 +547,9 @@ footer {
 .fh5co-post .fh5co-entry > div h2 {
   margin-bottom: 10px;
   font-weight: 100;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
   .fh5co-post .fh5co-entry > div h2 {
@@ -551,6 +558,9 @@ footer {
 }
 .fh5co-post .fh5co-entry > div p:last-child {
   margin-bottom: 0;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
 }
 
 .gototop {
