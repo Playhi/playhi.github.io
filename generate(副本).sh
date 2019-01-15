@@ -4,11 +4,9 @@
 
 
 cd $(cd `dirname $0`; pwd)
-@pause
+read -p "当前状态"
 git status
-@pause
 git add .
 git commit -m Update
-@pause
 git push
-@pause
+read -p "按任意键继续"
