@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PHPMailer 中文部分客户端乱码（编码错误）</title>
+	<title>Android Intent 传递 Class</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="一开始用了 <code>&dollar;mail->Charset = 'UTF-8';</code>，一直不成，debug 设到 2，输出里发现用的还是 iso-8859-1 ，没生效，再去官方的 GitHub 兜了一圈，发现 <code>&dollar;mail->CharSet = 'utf-" /><!--Free HTML5 Website Template by freehtml5.co-->
-	<meta name="keywords" content="PHPMailer 中文部分客户端乱码（编码错误）" />
+	<meta name="description" content="Android 的 Intent 可以利用 <code>putExtra()</code> 传递 <code>String</code> 、<code>boolean</code> 、 <code>int</code> 、 <code>byte</code> 等很多种数据类型，虽然没有找到直接可以传" /><!--Free HTML5 Website Template by freehtml5.co-->
+	<meta name="keywords" content="Android Intent 传递 Class" />
 	<meta name="author" content="Playhi" />
 
   	<!-- Facebook and Twitter integration -->
@@ -54,8 +54,8 @@
 			</nav>
 			<div class="page-title">
 				<img src="" alt="">
-				<span>20190121</span>
-				<h2>PHPMailer 中文部分客户端乱码（编码错误）</h2>
+				<span>20190130</span>
+				<h2>Android Intent 传递 Class</h2>
 				<span>Playhi</span>
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 			<div class="fh5co-post"> 
 				<div class="fh5co-entry padding">
 					<div>
-						一开始用了 <code>&dollar;mail->Charset = 'UTF-8';</code>，一直不成，debug 设到 2，输出里发现用的还是 iso-8859-1 ，没生效，再去官方的 GitHub 兜了一圈，发现 <code>&dollar;mail->CharSet = 'utf-8';</code> 就可以了~ 一起来找不同吧[躺倒]。 <br>邮件主题乱码的话，可以尝试下<code>&dollar;mail->Subject = "=?UTF-8?B?" . base64_encode(标题) . "?=";</code>，我这是有效的。
+						Android 的 Intent 可以利用 <code>putExtra()</code> 传递 <code>String</code> 、<code>boolean</code> 、 <code>int</code> 、 <code>byte</code> 等很多种数据类型，虽然没有找到直接可以传 Class ，但是仍然可以通过自行封装 <code>Serializable</code> 达到传递 Class 的目的。<br><br>一、封装：<br><code><pre>import java.io.Serializable;<br>class SerializableClass implements Serializable {<br><br>    private Class<?> c;<br><br>    Class<?> getStoredClass() {<br>        return c;<br>    }<br><br>    SerializableClass setStoredClass(Class<?> cls) {<br>        c = cls;<br>        return this;<br>    }<br><br>}</pre></code><br><br>二、传出：<br><code><pre>new Intent().putExtra("class", new SerializableClass().setStoredClass(Example.class));</pre></code><br><br>三、读取：<br><code><pre>((SerializableClass) getIntent().getSerializableExtra("class")).getStoredClass();</pre></code>
 					</div>
 				</div>
 			</div>
@@ -74,12 +74,12 @@
 		<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url()">
 			<div class="overlay"></div>
 
-			<a class="copy" href="5oCO5LmI5Yqe5ZGiMTU0NzUzMTY3NDMxOS5waGJh.html">
+			<a class="copy" href="UEhQTWFpbGVyIOS4reaWh-mDqOWIhuWuouaIt-err-S5seegge-8iOe8lueggemUmeivr--8iTE1NDgwNzQzMjkyNjgucGhiYQ==.html">
 				<div class="display-t">
 					<div class="display-tc">
 						<div>
 							<span>上一篇</span>
-							<h2>怎么办呢</h2>
+							<h2>PHPMailer 中文部分客户端乱码（编码错误）</h2>
 						</div>
 					</div>
 				</div>
@@ -88,12 +88,12 @@
 		</div>
 		<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url()">
 			<div class="overlay"></div>
-			<a class="copy" href="QW5kcm9pZCBJbnRlbnQg5Lyg6YCSIENsYXNzMTU0ODg1NzMwMTgxNS5waGJh.html">
+			<a class="copy" href="#">
 				<div class="display-t">
 					<div class="display-tc">
 						<div>
 							<span>下一篇</span>
-							<h2>Android Intent 传递 Class</h2>
+							<h2>没有了</h2>
 						</div>
 					</div>
 				</div>
