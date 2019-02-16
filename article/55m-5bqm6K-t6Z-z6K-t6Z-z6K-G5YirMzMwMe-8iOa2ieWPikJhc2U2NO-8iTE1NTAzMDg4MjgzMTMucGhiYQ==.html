@@ -3,10 +3,10 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>习惯了3K屏，不适应熟悉的1366*768了</title>
+	<title>百度语音语音识别3301（涉及Base64）</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="这次春节用了几天3K屏的笔记本，再用回原来的1366*768，感觉差距是真有点大。<br>再用回1366*768这个屏幕，第一反应，我镜片是不是糊了，再一看键盘，清晰得很，好吧，才几天就给惯坏了，嘿嘿嘿～然后可能因为屏幕厂家的原因，这个1366*768的色彩也要“单调”不少——不那么艳丽、不那么细腻" /><!--Free HTML5 Website Template by freehtml5.co-->
-	<meta name="keywords" content="习惯了3K屏，不适应熟悉的1366*768了" />
+	<meta name="description" content="最近在做客户端数据提交到服务器再请求百度服务器语音识别返回识别数据的处理，但是一直报 3301 错误（返回的json提示语音质量差），尝试解决一段时间后，终于找到缘由。<br>客户端数据是base64后上传到自有服务器的，而后再由自有服务器处理并提交数据给百度语音识别，问题就出在客户端上传数据后自有" /><!--Free HTML5 Website Template by freehtml5.co-->
+	<meta name="keywords" content="百度语音语音识别3301（涉及Base64）" />
 	<meta name="author" content="Playhi" />
 
   	<!-- Facebook and Twitter integration -->
@@ -54,8 +54,8 @@
 			</nav>
 			<div class="page-title">
 				<img src="" alt="">
-				<span>20190209</span>
-				<h2>习惯了3K屏，不适应熟悉的1366*768了</h2>
+				<span>20190216</span>
+				<h2>百度语音语音识别3301（涉及Base64）</h2>
 				<span>Playhi</span>
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 			<div class="fh5co-post"> 
 				<div class="fh5co-entry padding">
 					<div>
-						这次春节用了几天3K屏的笔记本，再用回原来的1366*768，感觉差距是真有点大。<br>再用回1366*768这个屏幕，第一反应，我镜片是不是糊了，再一看键盘，清晰得很，好吧，才几天就给惯坏了，嘿嘿嘿～然后可能因为屏幕厂家的原因，这个1366*768的色彩也要“单调”不少——不那么艳丽、不那么细腻、甚至还有点灰蒙蒙的。<br>不过这3K屏呢，也有暂时不太好的地方，比如有的软件界面大小会比较奇怪，还要等各厂商X速更新～
+						最近在做客户端数据提交到服务器再请求百度服务器语音识别返回识别数据的处理，但是一直报 3301 错误（返回的json提示语音质量差），尝试解决一段时间后，终于找到缘由。<br>客户端数据是base64后上传到自有服务器的，而后再由自有服务器处理并提交数据给百度语音识别，问题就出在客户端上传数据后自有服务端处理这块，客户端提交的base64中的<code>+</code>号，到了自有服务端处理时，成为了<code> </code>（一个空格），被转换了，而我忘了这茬事了（虽然以前遇到过，但是这回一开始并没有想到可能是这方面的问题）。<br>最后，PHP服务端使用<code>str_replace(" ", "+", &dollar;data)</code>处理后再进行后续处理，百度语音识别成功。<br>特此小记。
 					</div>
 				</div>
 			</div>
@@ -74,12 +74,12 @@
 		<div class="fh5co-cover prev fh5co-cover-sm" style="background-image: url()">
 			<div class="overlay"></div>
 
-			<a class="copy" href="QW5kcm9pZCBJbnRlbnQg5Lyg6YCSIENsYXNzMTU0ODg1NzMwMTgxNS5waGJh.html">
+			<a class="copy" href="5Lmg5oOv5LqGM0vlsY_vvIzkuI3pgILlupTnhp_mgonnmoQxMzY2Kjc2OOS6hjE1NDk3MDcwNzEyMjIucGhiYQ==.html">
 				<div class="display-t">
 					<div class="display-tc">
 						<div>
 							<span>上一篇</span>
-							<h2>Android Intent 传递 Class</h2>
+							<h2>习惯了3K屏，不适应熟悉的1366*768了</h2>
 						</div>
 					</div>
 				</div>
@@ -88,12 +88,12 @@
 		</div>
 		<div class="fh5co-cover next fh5co-cover-sm" style="background-image: url()">
 			<div class="overlay"></div>
-			<a class="copy" href="55m-5bqm6K-t6Z-z6K-t6Z-z6K-G5YirMzMwMe-8iOa2ieWPikJhc2U2NO-8iTE1NTAzMDg4MjgzMTMucGhiYQ==.html">
+			<a class="copy" href="#">
 				<div class="display-t">
 					<div class="display-tc">
 						<div>
 							<span>下一篇</span>
-							<h2>百度语音语音识别3301（涉及Base64）</h2>
+							<h2>没有了</h2>
 						</div>
 					</div>
 				</div>
