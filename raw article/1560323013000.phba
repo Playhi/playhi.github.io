@@ -1,0 +1,7 @@
+[Article]
+Article Icon = 
+Article date = 20190612
+Article title = 质量高得一塌糊涂的期末考试
+Page author = Playhi
+Article content = 我真是惊了，今天“程序设计基础”期末考试，我们课上学的是 <code>C++</code> ，然后呢，“看代码写结果”一共三道题，第一题<code>#include &lt;stdio.h&gt;</code>，第二题<code>#include &lt;string.h&gt;</code>（连<code>#include &lt;stdio.h&gt;</code>都没了），第三题<code>#include &lt;stdio.h&gt;</code>，头文件“抢” <code>C</code> 的用，一个<code>&lt;iostream&gt;</code>都没见到，然而，代码里输入输出，<code>cin>></code>、<code>cout<<</code>用的不要太开心哦。考场里，一堆用手机的，开心啊开心啊，一点事都没啊，监考看到都不管呢！这破学校想咋滴？！:)
+
