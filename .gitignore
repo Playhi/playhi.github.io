@@ -6,3 +6,4 @@ _site
 *.bak
 .DS_Store
 *.exe
+.vscode/
