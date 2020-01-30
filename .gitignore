@@ -4,6 +4,13 @@ _site
 *.ec
 *.e
 *.bak
-.DS_Store
 *.exe
 .vscode/
+
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/

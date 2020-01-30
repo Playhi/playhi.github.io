@@ -1,6 +1,0 @@
-[Article]
-Article Icon=
-Article date=20180610 06:50
-Article title=回来啦
-Article content=呼！昨天更新系统花了一堆时间，由于双系统+grub2引导，bug10 又更新失败了，那就索性把磁盘从MBR转到了GPT，还把BIOS改到了UEFI，MBR转GPT用Windows自带的mbr2gpt还失败了，结果突然发现以前用来分区的傲梅的分区助手居然也可以无损转换[惊]，花了一下午整linux的更新和腾空间更新Windows啦，还有转格式啊……晚上又在那等Windows10慢慢更新（1803），重启安装前还说不超过90分钟，结果花了4个小时[吐血]。<br>暑假大概是开始了吧，这个暑假，自己安排了一堆事情诶！！！
-#内容可以使用<br><a>等标签
