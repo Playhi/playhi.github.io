@@ -1,0 +1,6 @@
+---
+title: Android Intent 传递 Class
+date: 2019-01-30
+tags:
+---
+Android 的 Intent 可以利用 <code>putExtra()</code> 传递 <code>String</code> 、<code>boolean</code> 、 <code>int</code> 、 <code>byte</code> 等很多种数据类型，虽然没有找到直接可以传 Class ，但是仍然可以通过自行封装 <code>Serializable</code> 达到传递 Class 的目的。<br><br>一、封装：<br><code><pre>import java.io.Serializable;<br>class SerializableClass implements Serializable {<br><br>    private Class<?> c;<br><br>    Class<?> getStoredClass() {<br>        return c;<br>    }<br><br>    SerializableClass setStoredClass(Class<?> cls) {<br>        c = cls;<br>        return this;<br>    }<br><br>}</pre></code><br><br>二、传出：<br><code><pre>new Intent().putExtra("class", new SerializableClass().setStoredClass(Example.class));</pre></code><br><br>三、读取：<br><code><pre>((SerializableClass) getIntent().getSerializableExtra("class")).getStoredClass();</pre></code><br><br><b>20190201更正：突然想起其实可以直接丢 <code>Class</code> 的，他已经 <code>implements</code> 了 <code>java.io.Serializable</code>，我又兜圈子了[一丝难受]</b>
