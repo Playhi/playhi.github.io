@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-my.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-my.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-my.png">
+  <link rel="mask-icon" href="/images/myLogo.svg" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -282,25 +283,7 @@
 
       
         <p>最近在做客户端数据提交到服务器再请求百度服务器语音识别返回识别数据的处理，但是一直报 3301 错误（返回的json提示语音质量差），尝试解决一段时间后，终于找到缘由。<br>客户端数据是base64后上传到自有服务器的，而后再由自有服务器处理并提交数据给百度语音识别，问题就出在客户端上传数据后自有服务端处理这块，客户端提交的base64中的<code>+</code>号，到了自有服务端处理时，成为了<code> </code>（一个空格），被转换了，而我忘了这茬事了（虽然以前遇到过，但是这回一开始并没有想到可能是这方面的问题）。<br>最后，PHP服务端使用<code>str_replace(" ", "+", $data)</code>处理后再进行后续处理，百度语音识别成功。<br>特此小记。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
     </div>
 
     
@@ -449,7 +432,7 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2014 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>

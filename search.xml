@@ -4,25 +4,7 @@
     <title>这次的武汉肺炎疫情，会不会是霉国投毒？</title>
     <url>/2020/02/04/%E8%BF%99%E6%AC%A1%E7%9A%84%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%98%AF%E9%9C%89%E5%9B%BD%E6%8A%95%E6%AF%92%EF%BC%9F/</url>
     <content><![CDATA[<p>  这次的武汉肺炎，已经给国内各个方面带来了不小的影响，病毒来源这些天来是众说纷纭——蝙蝠、投毒、病毒泄露……有的人说，不信阴谋论；有的人说，为什么吃了这么久，偏偏这次出了事……我觉得吧～一口咬定霉国投毒，没有证据，完全否定霉国投毒的可能性，似乎也不可能……<a id="more"></a><br>  如果说是吃出来的，的确，蝙蝠是很多病毒的携带者，连荒野求生贝尔吃蝙蝠的时候，都要加热很久，生怕出问题，另外，武汉这片区域的确是有吃蝙蝠的情况的，并且，病毒分析后发现这次的新型冠状病毒与蝙蝠中发现的某些冠状病毒相似，这些都能用以辅佐推断得到，这次的病毒是源于吃野味导致的。<br>  那如果说霉国投毒，有什么可以拿来当材料用于辅佐推断得出这一结论呢？比如说，2月3日的外交部网上记者会上，就有记者提出：“美方表示，美方已为中方应对疫情提供了巨大帮助。”，但是发言人华春莹在回应中称：“疫情发生以来，一些国家通过不同方式向中方抗击疫情提供支持和援助，我们对此表示感谢。但据我所知，美国政府迄今未向中方提供任何实质性帮助。相反，美国第一个从武汉撤出领馆人员，第一个提出要撤出部分使馆人员，第一个在世卫组织明确表示不建议甚至反对对华采取旅行和贸易限制措施后，反其道而行之、宣布采取全面禁止中公民入境举措，制造和散播恐慌情绪。”（<a href="https://zx.sina.cn/n/2020-02-03/zx-iimxyqvy9973627.d.html" target="_blank" rel="noopener">参考链接</a>|<a href="https://3w.huanqiu.com/a/5e93e2/9CaKrnKpaLK" target="_blank" rel="noopener">参考链接</a>）；比如说，2月3日，数千名香港医护人员罢工——香港史上头一遭，那么，是什么组织，发起了这场罢工？是香港医管局员工阵线，这个组织是一个类似工会的组织，在今年元旦期间刚刚成立（注意成立时间），其“反修例”的背景十分浓厚，很明显，看起来，它就是为政治而生的（<a href="https://3w.huanqiu.com/a/fe5d4b/9CaKrnKpaYk" target="_blank" rel="noopener">参考链接</a>）；比如说，美国议员声称病毒是武汉泄漏的生化武器；比如说，02年贸易战，03年非典，18、19年贸易战，20年新型冠状病毒；比如说……通过这些情况，我们可以采用某新型美式思维推断认为，这次的疫情，这一切，不是巧合，而是预谋，是由美国主导的一次生化偷袭，是为了达到扼制中国发展、伤害中国经济的目的而执行的又一次精心布置的“恐怖袭击”——它能被完美的解释为是来自蝙蝠身上的冠状病毒变体，而且它的致死力、致残力，也不及传统的细菌战、生化战。<br>  再加之现在再去追溯病毒实际来源是一件十分困难甚至难以100%认定的事件，所以呢，我觉得，这次疫情的实际来源，可能在很长时间里，都是个“悬案”。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -34,25 +16,7 @@
     <title>透过教材推测国内计算机教育弱处</title>
     <url>/2020/02/01/%E9%80%8F%E8%BF%87%E6%95%99%E6%9D%90%E6%8E%A8%E6%B5%8B%E5%9B%BD%E5%86%85%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E5%BC%B1%E5%A4%84/</url>
     <content><![CDATA[<p>  寒假在家，抽了点时间看了看下学期的书，这几天粗略过了遍《操作系统教程（第二版）》（2019年9月第二版），可以说，书上内容还是不少的，写的也挺认真，Win10 都给写进去了，但是还是有些薄弱的地方。<a id="more"></a><br>  就比如说12章提到了很多操作系统，其中对 Win10 这个非开源的操作系统介绍的十分详尽，但其中也有提到“目前主流操作系统有…… Mandrake ……”，这句我看了两遍，也没在其中找到 Deepin Linux，而后我在 DistroWatch 查了下 Mandrake，发现 Mandrake 在 2005 年演变成了 Mandriva ，并且目前的状态两者也都已是“不再维护”了。在其中，还看到了其对 Android 及其文件系统的描述，很欣喜的看到能提到 Android API 29，又看一些文字，不过好景不长，突然看到说 Android 使用 yaffs2 作为文件系统，我一愣，实际上呢，早在 2010 年，Android 就已转向使用 Ext4 文件系统而非 yaffs2 了，并且在近几年，除了 Ext4，F2FS 也逐渐被使用于 Android 的文件系统。通过这一系列情况就能推断出这部教材的编写者在 Android 以及 Linux 领域的知识实际或许还停留在 2010 年以前甚至是 2005 年附近，在二版的时候没有发现这些内容其实已经发生了变化，没有能够顾及到。<br>  再来看看大概是第 11 章吧，期间提到了对称加密算法，提到了 DES 算法，并且提出它“至今仍被认为是安全的”，但实际上由于传统的 DES 算法的密钥位数过短，暴力破解其在现在的算力下已经不算困难了，大家大多已经转向使用 AES 而非 DES 了，不过呢，书中并没有提到 AES，在对称加密算法中只提到了 DES 算法，这也能体现出编写人员对这一块的知识储备更新速度过慢了。<br>  再提下整本书给我的感觉吧。过于强调理论以及部分内容过于陈旧（这也是国内很多教材以及不少院校课堂教学的通病），没有充分的与实际结合，有些内容写的有些枯燥了，如果将其的许多理论与现实生活中的个人计算机中的许多组成成分进行联系，而不是类似填鸭式的灌输，那么它对于普通的大学学生以及入门读者或许能有更好的实际教学效果。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -63,27 +27,9 @@
   <entry>
     <title>把数据都迁移到 Hexo 啦</title>
     <url>/2020/01/31/%E6%8A%8A%E6%95%B0%E6%8D%AE%E9%83%BD%E8%BF%81%E7%A7%BB%E5%88%B0-Hexo-%E5%95%A6/</url>
-    <content><![CDATA[<p>顺便把一篇之前写了但是我那生成器生成报错的也提交上来了 <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/263a.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/263a.png?v8">☺</span> <a id="more"></a><br>日期懒得改了，就全 更新于 2020-01-31 了 <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8">😁</span><br>迁移的时候，还犹豫了下，以前的那堆牢骚要不要过滤掉，后来想想，还是留着吧 <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8">😂</span> 嘿嘿嘿，毕竟也算是种别样的回忆～<br>这一迁 Hexo ，实际上也大致表明了，我之前糊的那生成器，emm，约等于弃坑啦～<br>以前还造着玩，就是不用现成的，现在真是没工夫造轮子了，既然有轮子，而且也挺好用，那这就用吧 <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f60f.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60f.png?v8">😏</span> </p>
-<p> <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/2600.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png?v8">☀</span> </p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+    <content><![CDATA[<p>顺便把一篇之前写了但是我那生成器生成报错的也提交上来了 ☺ <a id="more"></a><br>日期懒得改了，就全 更新于 2020-01-31 了 😁<br>迁移的时候，还犹豫了下，以前的那堆牢骚要不要过滤掉，后来想想，还是留着吧 😂 嘿嘿嘿，毕竟也算是种别样的回忆～<br>这一迁 Hexo ，实际上也大致表明了，我之前糊的那生成器，emm，约等于弃坑啦～<br>以前还造着玩，就是不用现成的，现在真是没工夫造轮子了，既然有轮子，而且也挺好用，那这就用吧 😏 </p>
+<p> ☀ </p>
+]]></content>
       <categories>
         <category>小记</category>
       </categories>
@@ -95,25 +41,7 @@
     <title>Hexo 旅程开始了</title>
     <url>/2020/01/30/Hexo-%E6%97%85%E7%A8%8B%E5%BC%80%E5%A7%8B%E4%BA%86/</url>
     <content><![CDATA[<p>有点晚了，明天再写着玩～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>小记</category>
       </categories>
@@ -125,25 +53,7 @@
     <title>欢送2019,迎接2020</title>
     <url>/2019/12/31/%E6%AC%A2%E9%80%812019-%E8%BF%8E%E6%8E%A52020/</url>
     <content><![CDATA[<p>2019即将过去，2020即将到来，时间过得真快，转眼间，大二都快过半了，时间真的是弹指间流逝啊～这一年，收获不多，但也不少，一张张证书奖状，还有许多礼品——手环、键鼠套装……总之，不能说十分充实，但是，也没怎么荒废～这其中一个个收获，自然也少不了2018年埋下的一个个伏笔、一个个铺垫，同样感谢2018，也感谢2019，也感谢我自己为我自己所做出的这一切～这一年，我，更能冲出去了，更能放得开了，更能交际了，更能处事了，也更能……了～主线不变，一切都在为未来，铺起一条足够广阔的路～<br><br>新年快樂！</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>新年</category>
       </categories>
@@ -161,25 +71,7 @@
 
 <p>最后 <code>outputCharacters</code> 就是转换后的结果了。<br>可以访问 <a href="https://cjgj.top/rmbdaxiaoxie.php" target="_blank" rel="noopener">https://cjgj.top/rmbdaxiaoxie.php</a> 查看演示。</p>
 <p>JS代码段由 <a href="https://blog.csdn.net/qq7342272/article/details/6658702" target="_blank" rel="noopener">https://blog.csdn.net/qq7342272/article/details/6658702</a> 经修改处理后而来。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
@@ -191,25 +83,7 @@
     <title>20191204</title>
     <url>/2019/12/04/20191204/</url>
     <content><![CDATA[<p>如果一个学校，教不好书，育不好人……</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -221,25 +95,7 @@
     <title>用上讯飞输入法 Linux 版了</title>
     <url>/2019/11/23/%E7%94%A8%E4%B8%8A%E8%AE%AF%E9%A3%9E%E8%BE%93%E5%85%A5%E6%B3%95-Linux-%E7%89%88%E4%BA%86/</url>
     <content><![CDATA[<p>今天讯飞输入法 Linux 版能公开下载到了，装到 Deepin，重启，我突然就呆了，自带的搜狗和讯飞都没法正常用，然后想是不是卸载搜狗就好了，果断行动，把两个包含 sogou 的 sogoupinyin 和 fcitx-sogoupinyin-uk 删了，再重启，就好了，兴奋，可算是和古老没气的 Linux 版搜狗输入法拜拜了。（本文使用 讯飞输入法 Linux 版书写[滑稽]）</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>小记</category>
       </categories>
@@ -252,25 +108,7 @@
     <title>20191113</title>
     <url>/2019/11/13/20191113/</url>
     <content><![CDATA[<p>一个连控烟都控不了废物学校……</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -282,25 +120,7 @@
     <title>20191023</title>
     <url>/2019/10/23/20191023/</url>
     <content><![CDATA[<p>微信是真的沙雕，好好一链接，给加一堆后缀，搞得好像别人站点需要他那些垃圾数据一样，弄得网站都不能正常访问。十足沙雕。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -312,25 +132,7 @@
     <title>20191017</title>
     <url>/2019/10/17/20191017/</url>
     <content><![CDATA[<p>FreezeYou 已经 6 个月没有收到过“赞助支持”了。[呆滞]</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -342,25 +144,7 @@
     <title>20191006</title>
     <url>/2019/10/06/20191006/</url>
     <content><![CDATA[<p>无趣、无用、琐碎、希望、黑暗、渺茫</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -372,25 +156,7 @@
     <title>20190929</title>
     <url>/2019/09/29/20190929/</url>
     <content><![CDATA[<p>之前有想到过，但是没料到，真有这样干的——研究生做，本科生拿去比赛。老哥稳，不愧是我真实渣渣学校，这占比居然还不低，大概也许可能估计也就60+%吧～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -402,25 +168,7 @@
     <title>20190927</title>
     <url>/2019/09/27/20190927/</url>
     <content><![CDATA[<p>mdzz, sb舍友（特指某一个）</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -432,25 +180,7 @@
     <title>20190925</title>
     <url>/2019/09/25/20190925/</url>
     <content><![CDATA[<p>今天在处理用户上传的 FreezeYou 的报错日志的时候，突然发现一个版本名称是 max ，版本号是 10000+ （我公版还没破200呢）的版本，不知道这版什么来头[毕加思索]。开源 or 不开源，真是头大。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>小记</category>
       </categories>
@@ -462,25 +192,7 @@
     <title>20190923</title>
     <url>/2019/09/23/20190923/</url>
     <content><![CDATA[<p>想着要写点啥，真的点开了，又在纠结到底写不写，我咋就这么麻烦呢～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -492,25 +204,7 @@
     <title>20190830</title>
     <url>/2019/08/30/20190830/</url>
     <content><![CDATA[<p>没有计划，没有规划，没有预案，没有远见，只有一个又一个的临时、突然，混乱不堪。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -522,25 +216,7 @@
     <title>20190828</title>
     <url>/2019/08/28/20190828/</url>
     <content><![CDATA[<p>唔～这可真是糟糕透了……</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -552,25 +228,7 @@
     <title>20190821</title>
     <url>/2019/08/21/20190821/</url>
     <content><![CDATA[<p>边上装修，好吵。。。早上7点不到就开始“噔噔噔噔噔噔噔噔”，烦死了，睡个觉都不给好好睡。。。绝了。。。心累。。。在学校、在家，都不给好好睡觉的吗？？？[心塞][心力憔悴]</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -582,25 +240,7 @@
     <title>20190808</title>
     <url>/2019/08/08/20190808/</url>
     <content><![CDATA[<p>不做实验的理科不是真的理科，不用动脑的实验不是真的实验。<br>砍掉探索之路的理科没有灵魂。<br>。<br>。<br>。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -612,25 +252,7 @@
     <title>严进严出，如何评判</title>
     <url>/2019/07/18/%E4%B8%A5%E8%BF%9B%E4%B8%A5%E5%87%BA%EF%BC%8C%E5%A6%82%E4%BD%95%E8%AF%84%E5%88%A4/</url>
     <content><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;最近这一年，时常听到说，大学、高等教育，要严进严出。<br>&nbsp;&nbsp;&nbsp;&nbsp;现在的很多本科毕业生，质量是真的不怎么地，这是大家有目共睹的，但是，如此这般推进“严出”，我觉得未必有什么用。<br>&nbsp;&nbsp;&nbsp;&nbsp;为什么呢？<br>&nbsp;&nbsp;&nbsp;&nbsp;先说评判标准。众所周知，大学里也是有期末考试的，有的科目可能还有期中考试之类的，在学期总评上，往往还会将平时成绩合入计算，然而这三个成绩，倘若学校没有明确的评判标准，或是教师们有不同的观念，最终结果往往就是不同的教师会有不同的打分，而这就直接导致了同一课程，不同教师带的班，班内学生的成绩，尤其是平时成绩，不同班的相类似学生可能会出现高达40分（满分100分）的分差，而原因，常常是由于部分教师并不对旷课情况按学校要求进行统计与扣分，而最终教师的风评，时常是不记旷课的教师高，而认真执行的教师由于部分学生拿到的分数低而饱受一些学生的批评。<br>&nbsp;&nbsp;&nbsp;&nbsp;再说教学质量。虽说是大学、高等学府，并且教师们的学历动辄研究生、博士，但是，高学历不等于会教育，就好比高学历不等于高素质。有些教师，在自己研究方面可能的确是个有头有脸的人物，但当讲课时，有时由于过于跳跃、有时由于结构过于松散、有时由于无法因材施教等等的各种原因，学生其实学不到什么内容。不会教可能还算好的，至少教师教学的态度是认真的，那么还有些，比个别还多点的那种，那这糟糕的情况，就不容乐观了。有的教师，上课照本宣读，亦或是“随意发挥”、“鸡汤”灌脑，这种课，就真的毫无营养可言了。<br>&nbsp;&nbsp;&nbsp;&nbsp;所以我说啊，现在这高等学府，要“严进严出”，首先应该要将教学质量、教学风气、学术氛围提升到一定境界，然后才有可能轮到谈“严出”这个事情。不然，对这一众学生而言，这“严出”就失去了它的核心意义——学到知识。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -642,25 +264,7 @@
     <title>跟风、爆吹、蹭热点！ </title>
     <url>/2019/07/13/%E8%B7%9F%E9%A3%8E%E3%80%81%E7%88%86%E5%90%B9%E3%80%81%E8%B9%AD%E7%83%AD%E7%82%B9%EF%BC%81/</url>
     <content><![CDATA[<p>这段时间，身边越来越多的听到5G、5G、5G，然而，仔细一听，大跌眼镜。<br>远程医疗4K图像传输-&gt;5G、银行自动化柜员机-&gt;5G、门禁人脸识别-&gt;5G、检测到无人时熄灯的路灯-&gt;5G等等等等，这些，和5G有多大关系？远程医疗4K图像传输，如果硬件OK，那么用合适的编解码方式，仅需10M带宽即可，完全可以由国内目前这速度不怎么样的4G承担，而且室内的话，有线宽带似乎在稳定性上更有优势吧；银行自动化柜员机，不就是那么点数据传输吗？我实在想不到怎么才能超出4G的承受能力，更何况银行还可以用有线宽带，1000M还不能胜任？门禁人脸识别，哪怕再附带个4K监控，要通过4G也不是不可能的事吧；检测到无人时熄灯的路灯，这个就更离谱了，无人检测要靠5G？靠传感硬件+算法不能推测出有没有人？如果要拍视频、图片到云端解析要5G速度和时延才够？如果要路灯间互相交流确定提早亮灯与延后熄灯，直接路灯间交流不是更好吗？<br>不知道那些吹这吹那的媒体，自己到底搞明白多少了，就跑出来到处发言了。<br>内存和内存的概念被自媒体混淆传播，至今令我十分头大（“我手机有256GB内存，我家电脑才4GB”）。<br>超恨那堆破（自）媒体的[嫌弃脸]。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -672,25 +276,7 @@
     <title>上大学究竟是为了享受还是学习？</title>
     <url>/2019/06/27/%E4%B8%8A%E5%A4%A7%E5%AD%A6%E7%A9%B6%E7%AB%9F%E6%98%AF%E4%B8%BA%E4%BA%86%E4%BA%AB%E5%8F%97%E8%BF%98%E6%98%AF%E5%AD%A6%E4%B9%A0%EF%BC%9F/</url>
     <content><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;又是一年高考毕业季，不少高校又开始磨刀霍霍向新生了。这不，不少学校都在宣传自家有多么多的食堂、有 24H 的无线网络、有空调、有独卫、有……然而，在众多高校的宣传中，对自身学术能力、教学质量、校风学风、藏书数量等的宣传却难觅其踪。<br>&nbsp;&nbsp;&nbsp;&nbsp;我可不觉得这是什么好兆头。我觉得，虽然一个好的生活条件好的生活环境是有必要的，但是，不管是哪几所大学之间进行比较，首先最重要的，一定是自身的学术能力、教学质量、校风学风，其次才有可能轮到食堂、网络、空调等。不管是美食还是网络或是空调，他们都应该是围绕辅助学生更好的学习而存在的，而不是上一所大学为了享受这一切吃喝玩乐然后顺便捎带学习（混过考试）的。<br>&nbsp;&nbsp;&nbsp;&nbsp;这样下去，在这种不太正常不太正确的背景下，不知道现在众多大学这副无能甚至误人子弟的样子，会不会，更加的无可救药。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -702,25 +288,7 @@
     <title>垃圾分类、控烟</title>
     <url>/2019/06/24/%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB%E3%80%81%E6%8E%A7%E7%83%9F/</url>
     <content><![CDATA[<p>最近这垃圾分类，搞得是真的起劲，又是立法又是垃圾禁（暂停）运又是……的，尽管有些东西，现在垃圾分类还没有明确究竟是属于什么分类，但这分类仍旧是通过各大媒体等宣传渠道尽最大力推进。再看看禁烟呢？弄了这么多年，这税收啊，怕是个难以快速放下的“毒品”，就没有怎么好好的组织过禁烟，鲜有的一点动作也远不如如垃圾分类如此大力的宣传和知识普及，站在禁止吸烟🚭下面吸烟的，也不在少数，按照这进度，吸烟什么时候能近乎完全的控制在各种“条例”的限制框架内呢？</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -732,25 +300,7 @@
     <title>Deepin深度 历史版本 ISO安装镜像 下载</title>
     <url>/2019/06/20/Deepin%E6%B7%B1%E5%BA%A6-%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC-ISO%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F-%E4%B8%8B%E8%BD%BD/</url>
     <content><![CDATA[<p>地址：<a href="http://packagess.deepin.com:8088/releases-archive/" target="_blank" rel="nofollow noreferrer noopener">http://packagess.deepin.com:8088/releases-archive/</a><br><br>里面还包含了15.4开始不提供32位版本的之前版本的32位的 Deepin 。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>小记</category>
       </categories>
@@ -763,25 +313,7 @@
     <title>手动更新 Deepin 下的 QQ、微信 等商店应用程序软件</title>
     <url>/2019/06/19/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0-Deepin-%E4%B8%8B%E7%9A%84-QQ%E3%80%81%E5%BE%AE%E4%BF%A1-%E7%AD%89%E5%95%86%E5%BA%97%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<p>Deepin 商店里的 QQ、TIM、微信 这些 wine 的软件，至今版本都有些古老了，不升级能用，但有些新功能就没得用了，今天受<a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=166448" rel="nofollow noreferrer noopener" target="_blank">论坛帖子</a>启发，成功手动更新了我这 Deepin 上的 QQ 和 微信。<br><br>1、在深度商店安装对应软件；<br>2、打开一次；<br>3、下载所需软件的更新版本 EXE 到 XX目录；<br>4、打开深度终端；<br>5、执行<code>export  WINEPREFIX=~/.deepinwine/Deepin-WeChat</code>（参照<code>/home/用户/.deepinwine/</code>下的各个文件夹） <small>//指定位置</small>；<br>6、执行<code>deepin-wine 文件路径（/XX目录/XX.EXE）</code> <small>//安装</small>；<br>7、按正常流程安装更新（按钮看不出字的话，鼠标移过去按下（按住并挪开避免执行）左键一般就显示出来了）；<br>8、安装完毕，检查是否能正常运行，有功能异常的话，接着自己魔改或者卸载重装商店版本。<br><br>操作起来吧！BOOM！</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>教程</category>
       </categories>
@@ -794,25 +326,7 @@
     <title>20190618</title>
     <url>/2019/06/18/20190618/</url>
     <content><![CDATA[<p>这学校真是要废掉了啊</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -824,25 +338,7 @@
     <title>20190614</title>
     <url>/2019/06/14/20190614/</url>
     <content><![CDATA[<p>这边建议退学呢亲。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -854,25 +350,7 @@
     <title>质量高得一塌糊涂的期末考试</title>
     <url>/2019/06/12/%E8%B4%A8%E9%87%8F%E9%AB%98%E5%BE%97%E4%B8%80%E5%A1%8C%E7%B3%8A%E6%B6%82%E7%9A%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95/</url>
     <content><![CDATA[<p>我真是惊了，今天“程序设计基础”期末考试，我们课上学的是 <code>C++</code> ，然后呢，“看代码写结果”一共三道题，第一题<code>#include &lt;stdio.h&gt;</code>，第二题<code>#include &lt;string.h&gt;</code>（连<code>#include &lt;stdio.h&gt;</code>都没了），第三题<code>#include &lt;stdio.h&gt;</code>，头文件“抢” <code>C</code> 的用，一个<code>&lt;iostream&gt;</code>都没见到，然而，代码里输入输出，<code>cin&gt;&gt;</code>、<code>cout&lt;&lt;</code>用的不要太开心哦。考场里，一堆用手机的，开心啊开心啊，一点事都没啊，监考看到都不管呢！这破学校想咋滴？！:)</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -884,25 +362,7 @@
     <title>又是一年高考时</title>
     <url>/2019/06/06/%E5%8F%88%E6%98%AF%E4%B8%80%E5%B9%B4%E9%AB%98%E8%80%83%E6%97%B6/</url>
     <content><![CDATA[<p>新闻听了看了这么多年，直到去年才以高考考生身份亲自参与了一次高考，一年前的这一切，似乎才刚刚发生，转眼间，我们的下一届，也即将踏上这高中阶段的收官之作。不必多说什么，简简单单，祝每个人都能发挥出自己正常的水平，而后跨入自己所理想并且能学到足够知识的学校，最终行走在一条适合自己未来发展、对社会无害的正确道路上。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -914,25 +374,7 @@
     <title>20190604</title>
     <url>/2019/06/04/20190604/</url>
     <content><![CDATA[<p>遮挡行车视线的横幅、停在上坡（桥）路中间开车门对调主副驾驶的车、在下坡处“屁股”戳在外面占据近乎半根车道停在路口处的车、停在人行道上的车……校内路况，还真是“别致”呢～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -944,25 +386,7 @@
     <title>20190522</title>
     <url>/2019/05/22/20190522/</url>
     <content><![CDATA[<p><span style="color:white;">研究表明，</span>这幅样子的大学，已经成为我学习的绊脚石了。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -974,25 +398,7 @@
     <title>20190517</title>
     <url>/2019/05/17/20190517/</url>
     <content><![CDATA[<p>回顾过去的那么多时间，总觉得做得太少，各个事情推进都过于缓慢，总是被别人（亦或是学校等）“牵着走”，效率低下，何时能做我自己呢。<br>这段时间，一个又一个一个又一个一个又一个一个又一个……的糟糕事情，火气有点溢出，各位，别怕。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1004,25 +410,7 @@
     <title>这群大学生们，究竟想干什么呢</title>
     <url>/2019/05/17/%E8%BF%99%E7%BE%A4%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BB%AC%EF%BC%8C%E7%A9%B6%E7%AB%9F%E6%83%B3%E5%B9%B2%E4%BB%80%E4%B9%88%E5%91%A2/</url>
     <content><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;今天上午的制图（CAD）考试，一进场，突然愣住，老师课上说过多次了，因为上课的地方就是考试的地方，并且这个考试不排座位，希望我们在平时上课时，逐渐固定下自己的座位，这样能尽可能确保考试时自己已经与自己坐的机位上的电脑磨合好了（也避免有的无法正常使用的机器在考试时被使用）。结果今天呢？一进场，上一节课没课的某班的一些人（不是一个两个）已经把之前我们好多人从头坐到尾（截至上一节课）没有变过的机位给“拿下”了，导致我们班一进场，场内就突然有点混乱了——许多人因此不得不变更座位。为何今天突然上火？上课不听玩手机，作业不会又不学，到最后关头还“强行”捅事情，群体性制造混乱，给别人搞出一堆麻烦，加之学校机房设备又各有特点（鼠标、键盘等），这样的莫名奇妙，谁会乐意？机位已被拿下，“夺取者”也在做准备工作了，此时如果再说“这是我的位置”又要消耗时间以及整出新麻烦，加之本身就早已看不顺眼，自然不屑再多说——自寻新座，开始考试。<br>&nbsp;&nbsp;&nbsp;&nbsp;上课看手机不听讲，下课打游戏不学习，临到考试通宵恶补。这种风格，在现在的大学校园里，绝非个例，甚至愈发放肆。请问，这群大学生们，究竟想干什么呢？</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -1034,25 +422,7 @@
     <title>20190514</title>
     <url>/2019/05/14/20190514/</url>
     <content><![CDATA[<p>这学上的是真的有趣，知识学不到啥，休息都没法好好休息，碰到习惯诡异的的舍友是真的烦人。哎～累～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1064,25 +434,7 @@
     <title>静悄悄静悄悄</title>
     <url>/2019/04/30/%E9%9D%99%E6%82%84%E6%82%84%E9%9D%99%E6%82%84%E6%82%84/</url>
     <content><![CDATA[<p>静悄悄静悄悄，一切静悄悄，真好。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -1094,25 +446,7 @@
     <title>无标题</title>
     <url>/2019/04/21/%E6%97%A0%E6%A0%87%E9%A2%98/</url>
     <content><![CDATA[<p>m<em>g</em>d，怎么会有这么<strong>的舍友，</strong>大喊大叫，吓死了要，***吵死了，滚啊！！！</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1124,25 +458,7 @@
     <title>20190418</title>
     <url>/2019/04/18/20190418/</url>
     <content><![CDATA[<p>怎么会有这样的舍友，好烦，别的舍友各方面都挺好的，就他一个，一天到晚打游戏，开语音，嘴上说个不停，耳机根本就盖不过他的声音，还会吼，一会儿 垃圾 一会儿 我操 一会儿 我去 一会儿 我靠 一会儿 无语了 一会儿 哎（负能量满满叹气） 一会儿 …… 操着一口奇怪的普通话到处骂街，打游戏动不动就自带“标点符号”，他<em>的这都是谁教的，*</em>一般，吵死了，宿舍里只要他在，几乎就根本没个安静的时候，也真是奇了怪了，他这考试倒是也都不挂科，不知是什么神奇的操作。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1154,25 +470,7 @@
     <title>上大学以后，在**这方面，我的认知，被一次次刷新</title>
     <url>/2019/04/17/%E4%B8%8A%E5%A4%A7%E5%AD%A6%E4%BB%A5%E5%90%8E%EF%BC%8C%E5%9C%A8-%E8%BF%99%E6%96%B9%E9%9D%A2%EF%BC%8C%E6%88%91%E7%9A%84%E8%AE%A4%E7%9F%A5%EF%BC%8C%E8%A2%AB%E4%B8%80%E6%AC%A1%E6%AC%A1%E5%88%B7%E6%96%B0/</url>
     <content><![CDATA[<p>容易被负能量传染或影响的，建议不要看下去了。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;学校也真是一次又一次刷新了我的认知。我一直认为，大多数996的根本原因，是企业管理体系的溃败，导致效率崩塌，单位产出难以上升甚至是发生下降，而这管理体系从何而来，带有什么色彩呢？这些996的企业的控制者、管理者，大量的来自各个国内的高等院校，而国内的不少高等院校，在效率等各方面，在我看来，似乎不少都做得不怎么样。<br>&nbsp;&nbsp;&nbsp;&nbsp;有着某年12月1日截止的提交，直到第二年的4月，才下发最后的审批结果的事情；<br>&nbsp;&nbsp;&nbsp;&nbsp;有着喊着学生们<b>晚上20:30</b>到某处集合，也不知要做啥，然后呢，排队形啊，花了<b>超过1小时</b>，排了<b>一个</b>队形，怎么排的呢？三个管理（含负责人），200不到的参与者，先塑个型，搞成个方形，然后呢，个子高高低低，这个抽到那里去，那个抽到这里来，换来换去换几次，有的人又被另一个管理抽回到老地方了，开心的不要不要的的事情；<br>&nbsp;&nbsp;&nbsp;&nbsp;有着要给学生们的表演手势更改一下，结果学生们都到了，他们却当场开始讨论了起来怎么改，时间一分一秒过去，不知过了多久，可算是给在边上晾到凉透的学生们一个最终结果的事情，宛如某些企业开一个毫无准备的讨论会；<br>&nbsp;&nbsp;&nbsp;&nbsp;有着“哪里集合？”“体育馆篮球场”“篮球场哪里？一楼二楼？”（“篮球场”：狭义的解释是一层的运动场地，但广义来说的话，二层的看台，也是篮球场的一部分，并且先前这个事项去过的都是二层）“你说呢？体育馆没来过是吧？”（这学校老师（负责人）脾气还真大哈，回答一句“一楼（最后找到在一楼）”会咋滴？）这样的事情，宛如企业中的有些毒瘤，架子真大，脾气真牛，就是办事，毫无效率，棒棒哒。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;真不知道说什么好，类似的事情岂止这些。顺便奉劝一句，如果会遇到某些课程已经会的，但却破不了翘课这个“处”的，作出上大学决定前请先三思。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1184,25 +482,7 @@
     <title>20190410小小记</title>
     <url>/2019/04/10/20190410%E5%B0%8F%E5%B0%8F%E8%AE%B0/</url>
     <content><![CDATA[<p>学校这课上的是真的牛皮。2小时+的课，总和下来，吹逼（此处意思约等于 闲谈）2小时，零头时间里和这课名字相关的稍微多那么一点一点一点点……吹逼吹的东西，还和日常实际有那么些不符～再掺杂些听上去听古老的数据～这大学上的是真的有趣的不要不要的……<br>啊！～我的**……</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1214,25 +494,7 @@
     <title>“神奇”的中英混合</title>
     <url>/2019/03/30/%E2%80%9C%E7%A5%9E%E5%A5%87%E2%80%9D%E7%9A%84%E4%B8%AD%E8%8B%B1%E6%B7%B7%E5%90%88/</url>
     <content><![CDATA[<p>国内有些人奇奇怪怪的语言表达时常被我吐槽。<br>这不，最近又碰到一个，张口闭口“演示Demo”，演示-&gt;Demo，Demo-&gt;演示，两个混着一起上，还真是有趣，搞不清楚，就别秀，说话前面多想一下能怎样，全用中文又能怎样？中文不学好，英文也没学好，就急着到处表现显得自己很厉害？真棒呢……</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -1244,25 +506,7 @@
     <title>20190324</title>
     <url>/2019/03/24/20190324/</url>
     <content><![CDATA[<p>怎么会有这么吵闹的室友、怎么会有这么糟糕的网络、怎么会有着这么嘈杂的氛围、怎么会有这么无用的学校、怎么会有这么无耻的浪费，为什么总是难以找到一个大致合适、一个相对理想的环境，来，认真的、专注的、沉入其中的，做，自己，所需要、所应该、所真正需要做的事。<br>总感觉，被一个无形的东西，所绑架。<br>欲挣脱而不能。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1274,25 +518,7 @@
     <title>记一次无线网络异常处理</title>
     <url>/2019/03/20/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<p>这学期开学没几天，突然就发现自己宿舍的无线网络特别不稳定，一直是十分拥挤的感觉，检查同网用户并没有发现问题，只看到了自己人，陷入沉思。尝试重启路由器，往往好不了几秒钟，又开始频繁掉包（4掉2这种），到路由端延迟200~1000ms左右，极其不寻常。查看tplink路由端管理页面的日志，没有发现什么异常（信息量好少），突然有点懵。突然，灵光一闪，是不是有人在暴力破解——跑PIN、跑字典之类的，于是赶紧停止广播SSID并且更换SSID，1秒2秒3秒，1分2分3分，至今已经大约一周了，网络十分稳定，看来之前是判断正确了，还真是有人在搞事。没想到啊没想到，我这学校居然还有搞这种东西的人，工具泛滥成灾了呵～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>小记</category>
       </categories>
@@ -1304,25 +530,7 @@
     <title>还有没有安全的饮用水</title>
     <url>/2019/03/16/%E8%BF%98%E6%9C%89%E6%B2%A1%E6%9C%89%E5%AE%89%E5%85%A8%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4/</url>
     <content><![CDATA[<p>喝水，看似很简单的事，现在觉得，似乎也并不容易、并不简单，这段时间，几乎天天1+瓶瓶装水的我，总是在想一个曾经被我回避过很多次的问题——我喝的水，对于我有什么可能的风险。<br><br>水里有什么？<br>&nbsp;&nbsp;在垃圾桶中、在草丛中、在海滩边、在河堤边、在极地冰川和浮冰上、在窒息而亡的动物尸体中、甚至在海洋最后的净土海沟上，似乎都有着一类物品的身影——塑料制品。塑料制品，俨然已经成为了世界各地的一道“亮丽的风景线”，五彩斑斓、绚丽夺目。<br>水从哪里来？<br>&nbsp;&nbsp;不管是我们平时常见的自来水、桶装水还是瓶装水，基本上，就是某山泉、某山、某河流、某口井或是某个水龙头、某个水厂等这类的来源。<br>水质如何？<br>&nbsp;&nbsp;既然有大气环流等各种气象因素的存在，这些水体，自然也难以脱离自然而存在着，当在实验室中，发现解剖的鱼的体内有塑料颗粒的存在、发现来自海水中的样品有着不少的塑料颗粒的存在，即使我们喝的水，有着层层工艺处理，我想，也难以有人有底气站出来表示这水是完完全全没有受塑料制品污染的。<br>污染从何而来？<br>&nbsp;&nbsp;源头的水，很可能或多或少有被污染；通过设备运输，到达加工工厂，这期间，受到外部环境的二次污染怕是也是避不开的；接着开始加工，层层工艺处理，但是，这些设备一定不会有来自这些设备的物质析出吗？似乎多少也会有些的；然后，灌装到容器内，譬如塑料瓶，看了看手边一圈塑料瓶，都是PET的，那它除了可能存在的加工残留以及塑料颗粒析出，还可能含有锑，这些仍然是一道难以避开的但可能发生的污染点；最后，当我们喝完瓶中的水，瓶子大多遭到丢弃，或是被掩埋、或是被冲入水体、或是被焚烧而浮于大气之中，最终，进一步加深对水源的污染。<br><br>虽说这一切，目前都是“微量”，但是，日积月累，最后会发生什么，也着实有点难以预料了。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -1334,25 +542,7 @@
     <title>20190305</title>
     <url>/2019/03/05/20190305/</url>
     <content><![CDATA[<p>似乎最近几年一到两会的时候，上 github 、 gitlab 之类的就会慢好多，最近几天 push 的过程真是艰辛，直连网络炸，挂代理的话这版的 deepin 在我这要炸，得，索性休息几天得了。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -1364,25 +554,7 @@
     <title>20190303</title>
     <url>/2019/03/03/20190303/</url>
     <content><![CDATA[<p>又开学了，一周过去了，一切似有好转，却又仍差强人意。上课学不到啥，时间倒是吞掉不少。突然好奇，如果当初填报志愿的时候，长辈们如果知道我对当时我所窥探到大学的现状的不满、我对我身体情况等多方面的评估、我对几乎所有大学氛围的不满（或许其实不满的是整体的一个某个方面的政策导向吧），最终对于上大学的根本不情愿的情况，现在的我，又会是什么样子——或许比现在更迷茫、或许比现在更后悔、或许在准备第二次高考、亦或许在认认真真的有目标有计划不受无端打扰的进行着自己所喜欢所热爱并且能有不错的前景的事情。说实话，当时填志愿的时候，我根本就没有看中的专业——计算机？嗯哼，不过是别人想当然的一厢情愿罢了，我当时特别担心的就是，上大学以后，被特定的专业磨灭我的“一切”，现在看来，我似乎是已经在危险的边缘了。总觉得，从上哪一所高中的这件令我总觉得或许有些走错了的这步棋来看，在这之后的许多步，我似乎离着我的最终目标，渐行渐远了。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1394,25 +566,7 @@
     <title>20190221</title>
     <url>/2019/02/21/20190221/</url>
     <content><![CDATA[<p>虽然一直不怎么喜欢下雨天心情不好这类的言辞，不过，这一个寒假的雨，现在看来，是真的应景的不行。<br>整个寒假，计划完成的，似乎是全都没有完成。期末考又捅出了个不及格，又得补考～家里又不知道附近那个邻居，几乎天天都会有发出总计大约一小时左右的类似于“呜～”或者说是“嗡～”这类声音，传遍家中各个角落，头都要给搞大了～360这奇葩系统，用他的Package Installer安装应用的时候，不仅有广告（自称“推荐”，“关闭推荐”以后过段时间又会出来，躲猫猫啊？），而且很多时候还会把被安装的安装包复制一份丢在Download文件夹里，注意是丢，不管的那种，活活把存储空间塞满[吐血]～<del>台电的磁吸键盘才差不多一个月，就出故障了，寄过去修我这边寄过去的快递费还得我自己自掏腰包，客服说应该三天左右能处理完，结果要不是主动打电话去，不知道等到猴年马月他们才会主动打来电话呢，真是够了……</del>（时间在元宵节前后，或许都在休息吧，这件事就暂且忽略不计了～）</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -1424,25 +578,7 @@
     <title>百度语音语音识别3301（涉及Base64）</title>
     <url>/2019/02/16/%E7%99%BE%E5%BA%A6%E8%AF%AD%E9%9F%B3%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB3301%EF%BC%88%E6%B6%89%E5%8F%8ABase64%EF%BC%89/</url>
     <content><![CDATA[<p>最近在做客户端数据提交到服务器再请求百度服务器语音识别返回识别数据的处理，但是一直报 3301 错误（返回的json提示语音质量差），尝试解决一段时间后，终于找到缘由。<br>客户端数据是base64后上传到自有服务器的，而后再由自有服务器处理并提交数据给百度语音识别，问题就出在客户端上传数据后自有服务端处理这块，客户端提交的base64中的<code>+</code>号，到了自有服务端处理时，成为了<code> </code>（一个空格），被转换了，而我忘了这茬事了（虽然以前遇到过，但是这回一开始并没有想到可能是这方面的问题）。<br>最后，PHP服务端使用<code>str_replace(" ", "+", $data)</code>处理后再进行后续处理，百度语音识别成功。<br>特此小记。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
@@ -1454,25 +590,7 @@
     <title>习惯了3K屏，不适应熟悉的1366*768了</title>
     <url>/2019/02/09/%E4%B9%A0%E6%83%AF%E4%BA%863K%E5%B1%8F%EF%BC%8C%E4%B8%8D%E9%80%82%E5%BA%94%E7%86%9F%E6%82%89%E7%9A%841366-768%E4%BA%86/</url>
     <content><![CDATA[<p>这次春节用了几天3K屏的笔记本，再用回原来的1366<em>768，感觉差距是真有点大。<br>再用回1366</em>768这个屏幕，第一反应，我镜片是不是糊了，再一看键盘，清晰得很，好吧，才几天就给惯坏了，嘿嘿嘿～然后可能因为屏幕厂家的原因，这个1366*768的色彩也要“单调”不少——不那么艳丽、不那么细腻、甚至还有点灰蒙蒙的。<br>不过这3K屏呢，也有暂时不太好的地方，比如有的软件界面大小会比较奇怪，还要等各厂商X速更新～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -1484,25 +602,7 @@
     <title>Android Intent 传递 Class</title>
     <url>/2019/01/30/Android-Intent-%E4%BC%A0%E9%80%92-Class/</url>
     <content><![CDATA[<p>Android 的 Intent 可以利用 <code>putExtra()</code> 传递 <code>String</code> 、<code>boolean</code> 、 <code>int</code> 、 <code>byte</code> 等很多种数据类型，虽然没有找到直接可以传 Class ，但是仍然可以通过自行封装 <code>Serializable</code> 达到传递 Class 的目的。<br><br>一、封装：<br><code></code></p><pre><code>import java.io.Serializable;<br>class SerializableClass implements Serializable {<br><br>    private Class<!--?--> c;<br><br>    Class<!--?--> getStoredClass() {<br>        return c;<br>    }<br><br>    SerializableClass setStoredClass(Class<!--?--> cls) {<br>        c = cls;<br>        return this;<br>    }<br><br>}</code></pre><br><br>二、传出：<br><code><pre>new Intent().putExtra("class", new SerializableClass().setStoredClass(Example.class));</pre></code><br><br>三、读取：<br><code><pre>((SerializableClass) getIntent().getSerializableExtra("class")).getStoredClass();</pre></code><br><br><b>20190201更正：突然想起其实可以直接丢 <code>Class</code> 的，他已经 <code>implements</code> 了 <code>java.io.Serializable</code>，我又兜圈子了[一丝难受]</b><p></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
@@ -1514,25 +614,7 @@
     <title>PHPMailer 中文部分客户端乱码（编码错误）</title>
     <url>/2019/01/21/PHPMailer-%E4%B8%AD%E6%96%87%E9%83%A8%E5%88%86%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B9%B1%E7%A0%81%EF%BC%88%E7%BC%96%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%89/</url>
     <content><![CDATA[<p>一开始用了 <code>$mail-&gt;Charset = 'UTF-8';</code>，一直不成，debug 设到 2，输出里发现用的还是 iso-8859-1 ，没生效，再去官方的 GitHub 兜了一圈，发现 <code>$mail-&gt;CharSet = 'utf-8';</code> 就可以了~ 一起来找不同吧[躺倒]。 <br>邮件主题乱码的话，可以尝试下<code>$mail-&gt;Subject = "=?UTF-8?B?" . base64_encode(标题) . "?=";</code>，我这是有效的。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
@@ -1544,25 +626,7 @@
     <title>怎么办呢</title>
     <url>/2019/01/15/%E6%80%8E%E4%B9%88%E5%8A%9E%E5%91%A2/</url>
     <content><![CDATA[<p>日子一天天过下去，转眼间，从 2014 抵达 2019 ，可是能力似乎仍然常常出现有些力不从心的样子，是步子迈太大了吗？似乎也没有，甚至觉得行动过于迟缓，各方面进展缓慢。用易语言的那段时间似乎是学的有些少了，过度依赖模块了，产品数量对于个人来说又有点大，额外的学习内容没有跟进，现在似乎有要步后尘了的趋势。有的地方要踩刹车了，还有更多的地方，得“轰”一下了。可是学校那堆大麻烦怎么办，课表几乎是全满的，待下学期开学，我该如何是好。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>思索</category>
       </categories>
@@ -1574,25 +638,7 @@
     <title>20190113随意吐槽</title>
     <url>/2019/01/13/20190113%E9%9A%8F%E6%84%8F%E5%90%90%E6%A7%BD/</url>
     <content><![CDATA[<p>随意吐槽几句，吐了也没用，吐吐更健康。高数平时分，有时不去上课+作业几乎不交的 和 一节课都不落+作业经常交（漏交的后面也补上了）的 同学 的平时分，居然是一样的，真是滑稽。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -1604,25 +650,7 @@
     <title>大一上小结</title>
     <url>/2019/01/09/%E5%A4%A7%E4%B8%80%E4%B8%8A%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<p>既然是大一上小结，那学校之外的就少提提了。<br>虽说开学前已经无数次下调了对于大学的期望，但是至今我还是感到有些失落、失望～<br>排课不少，但教学总觉得缺了点火候，怎么说好呢～ 教师们大多（对，排除了一部分）挺认真的（至少看上去），不过呢，授课这种事，各有各的风格，各有各的适用人群，总之，这一个学期下来，再回头看——似乎不太适合我。<br>有些东西，随便看看还凑合，真用起来就爆炸了——信息管理平台抢课503、超时啥的～ 嘿嘿嘿～ 再一查，用的 Resin 和 Apache 都是至今（2019年）快十年（2010年）的老古董了，后续的更新、补丁之类的似乎也都没跟进，哦对，这套东西，还是跑在 Windows 上的，按时间推算的话，server 2008 ？没去核查过，不过，用 Windows 作服务器，而且不是 IIS ，不是很理解～<br>说到抢课（选课），再吐槽一下可选课～看上去课好像挺多的，按我现在的回忆大概 50 上下吧（应该不太精确），但是呢，就看个课程名字，实在是难以捉摸到底上啥（细分），课程名称大多挺笼统的，看上去感觉也学不到啥的样子，没有什么详细点的介绍，如果不熟悉对应的任课教师的话，可能有点～ 静待下学期的开课吧～<br>随意写写，大概需要换个标题～ 离“小结”似乎少许偏了点～ 逃（</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -1634,25 +662,7 @@
     <title>离期末考越来越近了</title>
     <url>/2018/12/22/%E7%A6%BB%E6%9C%9F%E6%9C%AB%E8%80%83%E8%B6%8A%E6%9D%A5%E8%B6%8A%E8%BF%91%E4%BA%86/</url>
     <content><![CDATA[<p>离期末考越来越近了，然而我的高数还是有不小的缺口～接下来到期末考完成前，要给高数划更多地时间了，尽量把这窟窿补上，唔～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -1664,25 +674,7 @@
     <title>Visual Code 中文</title>
     <url>/2018/12/20/Visual-Code-%E4%B8%AD%E6%96%87/</url>
     <content><![CDATA[<p>前阵子有个室友在他的 deepin 里装了 Visual Code，打开是英文界面。<br>去 扩展（Extensions） 里搜索 Chinese，有中文语言包可以安装。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>教程</category>
       </categories>
@@ -1694,25 +686,7 @@
     <title>Android 多进程读写同一 SharedPreferences 数据不同步</title>
     <url>/2018/12/19/Android-%E5%A4%9A%E8%BF%9B%E7%A8%8B%E8%AF%BB%E5%86%99%E5%90%8C%E4%B8%80-SharedPreferences-%E6%95%B0%E6%8D%AE%E4%B8%8D%E5%90%8C%E6%AD%A5/</url>
     <content><![CDATA[<p><i>（慢慢整理下这么长时间的一些收获吧～）</i><br>自我感觉，在 Android 中， SharedPreferences 是个很简单粗暴好用的东西～不过不是100%好用。<br>之前写早期的 FreezeYou 的时候，后台服务和主程序（处于两个进程内）数据直接用了 SharedPreferences ，然后这边改了，那边经常会不变，很是难受，最后发现，模式那边传了 MODE_PRIVATE（也就是0），如果用 MODE_MULTI_PROCESS 就没问题了，但是呢，<i><a href="https://developer.android.google.cn/reference/android/content/Context.html#MODE_MULTI_PROCESS" target="_blank" rel="noopener">“This constant was deprecated in API level 23.”</a></i>又让我放弃了这个做法，Google 那边似乎是推荐了  ContentProvider ，不过最终我没有用 ContentProvider ，而用了 Tray （<a href="https://github.com/grandcentrix/tray）来保存多进程使用的内容，直到现在为止，也没有发生什么奇怪的事情。" target="_blank" rel="noopener">https://github.com/grandcentrix/tray）来保存多进程使用的内容，直到现在为止，也没有发生什么奇怪的事情。</a></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
@@ -1724,25 +698,7 @@
     <title>发点更有营养的东西吧</title>
     <url>/2018/12/19/%E5%8F%91%E7%82%B9%E6%9B%B4%E6%9C%89%E8%90%A5%E5%85%BB%E7%9A%84%E4%B8%9C%E8%A5%BF%E5%90%A7/</url>
     <content><![CDATA[<p>发点更有营养的东西吧</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -1754,25 +710,7 @@
     <title>似乎状态不太对劲</title>
     <url>/2018/12/17/%E4%BC%BC%E4%B9%8E%E7%8A%B6%E6%80%81%E4%B8%8D%E5%A4%AA%E5%AF%B9%E5%8A%B2/</url>
     <content><![CDATA[<p>头顶上的高数搞得压力有点大，得想办法搞掉它。<br>FreezeYou 的新计划功能在实现时碰到的情况有点多，好几个都出现了意料外的情况，这脚步走的有点艰难，免ROOT模式目前实现方式前景感觉不太明朗，觉着Google有作出改动的倾向，略有担心，权限又高，大概是不能出大纰漏的，用户群体又比较小……<br>这学又上的出奇的累，莫名其妙的累……<br>该做什么好呢……</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>思索</category>
       </categories>
@@ -1784,25 +722,7 @@
     <title>校企合作</title>
     <url>/2018/12/15/%E6%A0%A1%E4%BC%81%E5%90%88%E4%BD%9C/</url>
     <content><![CDATA[<p>差不多一个白天的时间，也就上午做了点正事，下午又开始吹啊吹了。结束前还不忘黑一下某些先前可能破坏了他们“收获”的同学，有趣。总之，现在许多的培训机构，给我感觉，一句话吧：销售套路哪家强，中国XX找XX。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -1814,25 +734,7 @@
     <title>生成器更新一点内容</title>
     <url>/2018/12/14/%E7%94%9F%E6%88%90%E5%99%A8%E6%9B%B4%E6%96%B0%E4%B8%80%E7%82%B9%E5%86%85%E5%AE%B9/</url>
     <content><![CDATA[<p>加了个生成一个新的空源文章的能力，嘿嘿嘿～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -1844,25 +746,7 @@
     <title>20181212</title>
     <url>/2018/12/12/20181212/</url>
     <content><![CDATA[<p>写FreezeYou的备份恢复，结果，好像要换思路了，呜[心情复杂][思考]</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
@@ -1874,25 +758,7 @@
     <title>20181210</title>
     <url>/2018/12/10/20181210/</url>
     <content><![CDATA[<p>突然发现博客的生成器，单页的上一篇下一篇的链接不对了，赶紧修好了，又重新生成了一遍。FreezeYou的自检诊断，怎么更好的呈现出来呢～解决某检测到的问题以后，是不是应该表示一下。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -1904,25 +770,7 @@
     <title>20181209</title>
     <url>/2018/12/09/20181209/</url>
     <content><![CDATA[<p>用户量一点点上来了，慢慢的，我想做的各种aabb，都被用户们提及了，嘿嘿嘿～时间真是个紧俏又买不到的东西。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>感慨</category>
       </categories>
@@ -1934,25 +782,7 @@
     <title>下雪了</title>
     <url>/2018/12/08/%E4%B8%8B%E9%9B%AA%E4%BA%86/</url>
     <content><![CDATA[<p>凉飕飕～凉飕飕～</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -1964,25 +794,7 @@
     <title>大概是在迷茫中吧</title>
     <url>/2018/12/04/%E5%A4%A7%E6%A6%82%E6%98%AF%E5%9C%A8%E8%BF%B7%E8%8C%AB%E4%B8%AD%E5%90%A7/</url>
     <content><![CDATA[<p>开学四个多月了，感觉实质性的，并没有学到什么，传说中的因材施教呢，材料都快四不像了，咳咳咳咳～另外，控烟工作，呼哈哈，这可真是令人啼笑皆非。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -1994,25 +806,7 @@
     <title>这可真的是太巧了</title>
     <url>/2018/12/04/%E8%BF%99%E5%8F%AF%E7%9C%9F%E7%9A%84%E6%98%AF%E5%A4%AA%E5%B7%A7%E4%BA%86/</url>
     <content><![CDATA[<p>一个舍友，表现出了非常多的我所不喜欢的特征，头一次发生这种情况，真是头大，不知该做什么。比如说，我对那种“哼哼哼”、“哒哒哒”的那种别人哼唱出的小曲并不能够接受，但是他，似乎很喜欢，经常会来两句；比如说，我很反感那种“洗脑神曲”或者说是“烂大街用坏了的”类的曲子，除非在一段时间（时间不定）里，我没有被动的“遇到”过他们，但是，他似乎又喜欢，时而外放，时而哼两句；比如说，总是会在很多时候发出一些消极（至少给我的感觉是）的声音，难受不？一会儿“艹”，一会儿“[请自己想吧]”之类的，能解决问题吗？能有什么效果？似乎不能吧；比如说，摘下眼镜（似乎是吧），然后吧嗒两声（和那个弹簧笔声音有点像），这不多出来的吗，噗，总给我一种噪音制造者的感觉；比如说，超高的亮度，我是觉得真的亮，晚上熄灯了，在床上或床下或床上加床下，看手机啊啥的，从墙那折过来的光线，我仍然受不了，啊哈，目瞪口呆；再比如说……似乎现在我还对他出现了一些特别的反应，比如不太乐意面对他，甚至是逃离他所在的地方。总之，非常（超过有点了）不舒服吧，但他人呢，其实也还是蛮可以的，至少我觉得。唔，人可真是个复杂的动物，我在面对面表达方面又总是不太擅长，嗯，有好几个点的累。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>牢骚</category>
       </categories>
@@ -2024,25 +818,7 @@
     <title>没啥可失望的，一切尽在预料之中</title>
     <url>/2018/12/03/%E6%B2%A1%E5%95%A5%E5%8F%AF%E5%A4%B1%E6%9C%9B%E7%9A%84%EF%BC%8C%E4%B8%80%E5%88%87%E5%B0%BD%E5%9C%A8%E9%A2%84%E6%96%99%E4%B9%8B%E4%B8%AD/</url>
     <content><![CDATA[<p>今天那啥计算机导论课，之前说是这周开始学校老师上了，结果又变成教育机构那边来上了，上课也是真的令人无话可说，现场发挥，即兴表演，加个页眉找遍天，这么划水的嘛？大学生太闲了要增负？开您的玩笑去吧，这种这样的课，有几节有营养的？总有种奇怪感觉，我的大学会被学校搞得越来越由于各种累赘而不轻松。[微笑]<br>虽然对这一堆破事早有听闻、早有预料、早有准备，不过，终究还是令我大开眼界了。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -2054,25 +830,7 @@
     <title>十二月第一天</title>
     <url>/2018/12/01/%E5%8D%81%E4%BA%8C%E6%9C%88%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
     <content><![CDATA[<p>今天参与了学校里的娱乐性竞赛，啊哈，第一次参加这种类型的活动呢～FreezeYou也丢新版本出去了，更新内容看上去有点少，最近各种各样的事情，嗯，有点忙了。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -2084,25 +842,7 @@
     <title>校企合作，笑其合作</title>
     <url>/2018/11/28/%E6%A0%A1%E4%BC%81%E5%90%88%E4%BD%9C%EF%BC%8C%E7%AC%91%E5%85%B6%E5%90%88%E4%BD%9C/</url>
     <content><![CDATA[<p>学校的计算机导论课，和腾科教育集团扯上关系了，连大概一半的课都变成培训机构来上了，这可是件好事？上课教的似乎算是网工方向的内容吧，什么路由器、防火墙的命令行配置，讲真，我觉得这种东西，看他们教育机构在上面敲半天，还不如直接给写清楚的文本教案来的效率高，慢吞吞慢吞吞，一会儿敲错一会儿漏啥的，真是不敢恭维。还会在某些时刻，不经意似的说些东西，总之，和他们的收费教育培训课程脱不了干系，这校企合作，我也只能笑其合作了，也不知这合作，是有多少幕后受益者还是真的只是简简单单的一个校企合作。[摊手]</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -2114,25 +854,7 @@
     <title>突然更新博客！</title>
     <url>/2018/11/26/%E7%AA%81%E7%84%B6%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%EF%BC%81/</url>
     <content><![CDATA[<p>可算是分配时间到用 Java 写了边这个蜜汁生成器了～感觉好粗糙啊～不过头算是起出来了。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -2144,25 +866,7 @@
     <title>回来啦</title>
     <url>/2018/06/10/%E5%9B%9E%E6%9D%A5%E5%95%A6/</url>
     <content><![CDATA[<p>呼！昨天更新系统花了一堆时间，由于双系统+grub2引导，bug10 又更新失败了，那就索性把磁盘从MBR转到了GPT，还把BIOS改到了UEFI，MBR转GPT用Windows自带的mbr2gpt还失败了，结果突然发现以前用来分区的傲梅的分区助手居然也可以无损转换[惊]，花了一下午整linux的更新和腾空间更新Windows啦，还有转格式啊……晚上又在那等Windows10慢慢更新（1803），重启安装前还说不超过90分钟，结果花了4个小时[吐血]。<br>暑假大概是开始了吧，这个暑假，自己安排了一堆事情诶！！！</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -2174,25 +878,7 @@
     <title>待我六月满血归来！</title>
     <url>/2018/02/22/%E5%BE%85%E6%88%91%E5%85%AD%E6%9C%88%E6%BB%A1%E8%A1%80%E5%BD%92%E6%9D%A5%EF%BC%81/</url>
     <content><![CDATA[<p>高考的日子一天天逼近了，转眼间，距离今年高考只剩下不到四个月的时间了，初三前夕突然写主题，高三前夕突然写FreezeYou，想想我也是蛮神奇的[皮]，不过，面对日益临近的高考，要想再继续投身于自己的有些事情中呢，怕是会分身乏术、身心俱疲，最终还未必能得到什么好结果哩（毕竟准备这类大型考试是真不太轻松，来自自己以及外界的压力，是绝对不会小于鸭梨的），那么，在这种时候，自然事事都得给高考让道啦！加油加油！努力努力！认真备战高考去咯！</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -2204,25 +890,7 @@
     <title>android studio aapt2 报错</title>
     <url>/2018/01/25/android-studio-aapt2-%E6%8A%A5%E9%94%99/</url>
     <content><![CDATA[<p>最近新开了好几个坑，自从升到AS3.0，每个项目都是一开始就aapt2报错，迷，记录下临时解决方法。<br>在 gradle.properties 里加入一行 android.enableAapt2=false 即可。<br>看网上的内容，似乎这个问题在3.0测试版就有了，不知道我这是个例还是WIN10 x64都这样。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
@@ -2235,25 +903,7 @@
     <title>对android webview shouldoverrideurlloading的使用的不同想法</title>
     <url>/2017/08/28/%E5%AF%B9android-webview-shouldoverrideurlloading%E7%9A%84%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%8D%E5%90%8C%E6%83%B3%E6%B3%95/</url>
     <content><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;年初的时候，身边一个个浏览器都开始做起了新闻，而我很不喜欢这种一打开就冒出来一堆或真或假的新闻的东西，一是容易不小心，就忘了自己本来要做什么，二呢，这么多年新闻看下来，觉得有时候啊，有些事情知道太多了，还真未必是好事，因此呢，突然就想做个浏览器。<br>&nbsp;&nbsp;&nbsp;&nbsp;然而，以前并没有这样做过，于是呢，向网络发起了提问。初期，我采用了网上那千篇一律的文章的说法，在shouldoverrideurlloading这里进行了webview.loadurl的操作，不过，在之后的使用中，当遇到某些分享页面的时候，会出现一个返回、两个返回，都不能达到预期的返回效果的事情，只得短时间连续执行N次返回，才能回到预期中的上一页面，这一定是个BUG啊，可是全是照网上的，为什么还会有这么神奇的事情呢？然后一个一个排查下来，发现只要删去shouldoverrideurlloading的这一串代码就没事了，也没发生网上所说的会调起别的浏览器的事情。后来，逐渐发现，网上各类博文抄袭现象非常严重（此处抄袭不包含注明了原文链接的博文），所以我那时看到的许多博文，实际内容也就是只字之差，不少博主也并未真正实际操作过。</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>吐槽</category>
       </categories>
@@ -2265,25 +915,7 @@
     <title>开始写博客啦</title>
     <url>/2017/08/28/%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2%E5%95%A6/</url>
     <content><![CDATA[<p>emmmmmm，不知道会发生什么呢[期待]</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -2295,25 +927,7 @@
     <title>Jekyll没用成，没想到突然心血来潮，自己给瞎整了一个小家伙</title>
     <url>/2017/08/28/Jekyll%E6%B2%A1%E7%94%A8%E6%88%90%EF%BC%8C%E6%B2%A1%E6%83%B3%E5%88%B0%E7%AA%81%E7%84%B6%E5%BF%83%E8%A1%80%E6%9D%A5%E6%BD%AE%EF%BC%8C%E8%87%AA%E5%B7%B1%E7%BB%99%E7%9E%8E%E6%95%B4%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%AE%B6%E4%BC%99/</url>
     <content><![CDATA[<p>也真是没想到，那个Jekyll我居然不会用[心情复杂]，更没想到，我就这样写了个“文本替换器”来做起了自己的blog。没有markdown，也没有任何插件，就这样用着外面下载的模板，在Github给建了起来。<br>其实自己也不知道怎的，可能是太多话想说了吧，突然想建立博客，又突然不想将博客建在各种免费空间上，而且还没有用现成的轮子来生成自己的blog，真是神奇。<br>成功又给自己挖下一个巨坑，说不定，又是一个无底的神坑。[满分]</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
+]]></content>
       <categories>
         <category>未分类</category>
       </categories>

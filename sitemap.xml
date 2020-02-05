@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.playhi.net/images/manifest.json</loc>
+    
+    <lastmod>2020-02-04T14:01:53.203Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.playhi.net/categories/index.html</loc>
     
     <lastmod>2020-02-04T08:41:57.768Z</lastmod>
