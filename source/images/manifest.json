@@ -1,0 +1,37 @@
+{
+  "name": "Playhi's Blog - 生活|开发|经验|杂谈|分享",
+  "short_name": "Playhi's Blog",
+  "start_url": "https://blog.playhi.net/?utm_source=web_app_manifest",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Playhi's Blog - 生活|开发|经验|杂谈|分享",
+  "icons": [{
+    "src": "images/touch/homescreen48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen168.png",
+    "sizes": "168x168",
+    "type": "image/png"
+  }, {
+    "src": "images/touch/homescreen192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "related_applications": [{
+    "platform": "web",
+    "url": "https://blog.playhi.net/?utm_source=web_app_manifest"
+  }]
+}

@@ -136,7 +136,7 @@ feed:
 
 githubEmojis:
   enable: true
-  className: github-emoji
-  inject: true
+  className: github-emojis
+  inject: false
   styles:
   customEmojis:
