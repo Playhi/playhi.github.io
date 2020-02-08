@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.playhi.net/"/>
-  <updated>2020-02-04T08:39:13.856Z</updated>
+  <updated>2020-02-08T09:57:28.727Z</updated>
   <id>http://blog.playhi.net/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>疯狂填坑</title>
+    <link href="http://blog.playhi.net/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/"/>
+    <id>http://blog.playhi.net/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/</id>
+    <published>2020-02-08T09:46:08.000Z</published>
+    <updated>2020-02-08T09:57:28.727Z</updated>
+    
+    <content type="html"><![CDATA[<p>假期里疯狂填坑（以前挖的坑有点多，并且还有新坑）<br>话不多说，代码提交记录图片奉上（手动狗头）<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="私有服务平台"><a id="more"></a><br>有点刺激 :😉:</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;假期里疯狂填坑（以前挖的坑有点多，并且还有新坑）&lt;br&gt;话不多说，代码提交记录图片奉上（手动狗头）&lt;br&gt;&lt;img src=&quot;/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png&quot; alt=&quot;GitHub&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png&quot; alt=&quot;私有服务平台&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="未分类" scheme="http://blog.playhi.net/categories/category-uncategorized/"/>
+    
+    
+      <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>这次的武汉肺炎疫情，会不会是霉国投毒？</title>
@@ -507,33 +530,6 @@
     
     
       <category term="牢骚" scheme="http://blog.playhi.net/categories/category-grumble/"/>
-    
-    
-      <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20190808</title>
-    <link href="http://blog.playhi.net/2019/08/08/20190808/"/>
-    <id>http://blog.playhi.net/2019/08/08/20190808/</id>
-    <published>2019-08-07T16:00:00.000Z</published>
-    <updated>2020-01-31T10:19:03.193Z</updated>
-    
-    <content type="html"><![CDATA[<p>不做实验的理科不是真的理科，不用动脑的实验不是真的实验。<br>砍掉探索之路的理科没有灵魂。<br>。<br>。<br>。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;不做实验的理科不是真的理科，不用动脑的实验不是真的实验。&lt;br&gt;砍掉探索之路的理科没有灵魂。&lt;br&gt;。&lt;br&gt;。&lt;br&gt;。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="吐槽" scheme="http://blog.playhi.net/categories/category-tc/"/>
     
     
       <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
