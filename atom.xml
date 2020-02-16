@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.playhi.net/"/>
-  <updated>2020-02-08T09:57:28.727Z</updated>
+  <updated>2020-02-16T08:07:28.808Z</updated>
   <id>http://blog.playhi.net/</id>
   
   <author>
@@ -17,13 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>检测 Android 暗色模式是否开启</title>
+    <link href="http://blog.playhi.net/2020/02/16/%E6%A3%80%E6%B5%8B-Android-%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F%E6%98%AF%E5%90%A6%E5%BC%80%E5%90%AF/"/>
+    <id>http://blog.playhi.net/2020/02/16/%E6%A3%80%E6%B5%8B-Android-%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F%E6%98%AF%E5%90%A6%E5%BC%80%E5%90%AF/</id>
+    <published>2020-02-16T07:45:16.000Z</published>
+    <updated>2020-02-16T08:07:28.808Z</updated>
+    
+    <content type="html"><![CDATA[<p>检测 Android 暗色模式是否开启：</p><a id="more"></a><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isSystemDarkModeEnabled</span><span class="params">(Context context)</span> </span>{</span><br><span class="line">    <span class="keyword">return</span> (context.getResources().getConfiguration().uiMode &amp;</span><br><span class="line">            Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;检测 Android 暗色模式是否开启：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://blog.playhi.net/categories/category-development/"/>
+    
+    
+      <category term="Android" scheme="http://blog.playhi.net/tags/tags-android/"/>
+    
+      <category term="Java" scheme="http://blog.playhi.net/tags/tags-java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>疯狂填坑</title>
     <link href="http://blog.playhi.net/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/"/>
     <id>http://blog.playhi.net/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/</id>
     <published>2020-02-08T09:46:08.000Z</published>
-    <updated>2020-02-08T09:57:28.727Z</updated>
+    <updated>2020-02-08T10:04:49.975Z</updated>
     
-    <content type="html"><![CDATA[<p>假期里疯狂填坑（以前挖的坑有点多，并且还有新坑）<br>话不多说，代码提交记录图片奉上（手动狗头）<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="私有服务平台"><a id="more"></a><br>有点刺激 :😉:</p>]]></content>
+    <content type="html"><![CDATA[<p>假期里疯狂填坑（以前挖的坑有点多，并且还有新坑）<br>话不多说，代码提交记录图片奉上（手动狗头）<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="私有服务平台"><a id="more"></a><br>有点刺激 😉</p>]]></content>
     
     <summary type="html">
     
@@ -503,33 +528,6 @@
     
     
       <category term="吐槽" scheme="http://blog.playhi.net/categories/category-tc/"/>
-    
-    
-      <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20190821</title>
-    <link href="http://blog.playhi.net/2019/08/21/20190821/"/>
-    <id>http://blog.playhi.net/2019/08/21/20190821/</id>
-    <published>2019-08-20T16:00:00.000Z</published>
-    <updated>2020-01-31T10:18:54.094Z</updated>
-    
-    <content type="html"><![CDATA[<p>边上装修，好吵。。。早上7点不到就开始“噔噔噔噔噔噔噔噔”，烦死了，睡个觉都不给好好睡。。。绝了。。。心累。。。在学校、在家，都不给好好睡觉的吗？？？[心塞][心力憔悴]</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;边上装修，好吵。。。早上7点不到就开始“噔噔噔噔噔噔噔噔”，烦死了，睡个觉都不给好好睡。。。绝了。。。心累。。。在学校、在家，都不给好好睡觉的吗？？？[心塞][心力憔悴]&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="牢骚" scheme="http://blog.playhi.net/categories/category-grumble/"/>
     
     
       <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
