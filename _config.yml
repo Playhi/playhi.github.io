@@ -80,6 +80,7 @@ tag_map:
   Linux: tags-linux
   Deepin: tags-deepin
   Android: tags-android
+  Java: tags-java
   JavaScript: tags-javascript
   PHP: tags-php
   FreezeYou: tags-freezeyou
