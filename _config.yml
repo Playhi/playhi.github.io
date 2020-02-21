@@ -82,6 +82,9 @@ tag_map:
   Android: tags-android
   Java: tags-java
   JavaScript: tags-javascript
+  Flutter: tags-flutter
+  Dart: tags-dart
+  Base64: tags-base64
   PHP: tags-php
   FreezeYou: tags-freezeyou
   vscode: tags-vscode
