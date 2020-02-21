@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Flutter(Dart) Base64编解码</title>
+    <url>/2020/02/21/Flutter-Dart-Base64%E7%BC%96%E8%A7%A3%E7%A0%81/</url>
+    <content><![CDATA[<p>Flutter(Dart) Base64编解码转换(UTF8)：</p>
+<a id="more"></a>
+<p>首先需要：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'dart:convert'</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Base64编码：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">String</span> encoded = base64.encode(utf8.encode(<span class="string">"input"</span>));</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Base64解码：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">String</span> decoded = utf8.decode(base64.decode(<span class="string">"aW5wdXQ="</span>));</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Base64Url编码：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">String</span> encoded = base64Url.encode(utf8.encode(<span class="string">"input"</span>));</span><br></pre></td></tr></tbody></table></figure>
+
+<p>Base64Url解码：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">String</span> decoded = utf8.decode(base64Url.decode(<span class="string">"aW5wdXQ="</span>));</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>Dart</tag>
+        <tag>Flutter</tag>
+        <tag>Base64</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>检测 Android 暗色模式是否开启</title>
     <url>/2020/02/16/%E6%A3%80%E6%B5%8B-Android-%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F%E6%98%AF%E5%90%A6%E5%BC%80%E5%90%AF/</url>
     <content><![CDATA[<p>检测 Android 暗色模式是否开启：</p>

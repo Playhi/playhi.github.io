@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.playhi.net/"/>
-  <updated>2020-02-16T08:07:28.808Z</updated>
+  <updated>2020-02-21T06:31:55.726Z</updated>
   <id>http://blog.playhi.net/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flutter(Dart) Base64编解码</title>
+    <link href="http://blog.playhi.net/2020/02/21/Flutter-Dart-Base64%E7%BC%96%E8%A7%A3%E7%A0%81/"/>
+    <id>http://blog.playhi.net/2020/02/21/Flutter-Dart-Base64%E7%BC%96%E8%A7%A3%E7%A0%81/</id>
+    <published>2020-02-21T06:19:19.000Z</published>
+    <updated>2020-02-21T06:31:55.726Z</updated>
+    
+    <content type="html"><![CDATA[<p>Flutter(Dart) Base64编解码转换(UTF8)：</p><a id="more"></a><p>首先需要：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'dart:convert'</span>;</span><br></pre></td></tr></tbody></table></figure><p>Base64编码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> encoded = base64.encode(utf8.encode(<span class="string">"input"</span>));</span><br></pre></td></tr></tbody></table></figure><p>Base64解码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> decoded = utf8.decode(base64.decode(<span class="string">"aW5wdXQ="</span>));</span><br></pre></td></tr></tbody></table></figure><p>Base64Url编码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> encoded = base64Url.encode(utf8.encode(<span class="string">"input"</span>));</span><br></pre></td></tr></tbody></table></figure><p>Base64Url解码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> decoded = utf8.decode(base64Url.decode(<span class="string">"aW5wdXQ="</span>));</span><br></pre></td></tr></tbody></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Flutter(Dart) Base64编解码转换(UTF8)：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://blog.playhi.net/categories/category-development/"/>
+    
+    
+      <category term="Dart" scheme="http://blog.playhi.net/tags/tags-dart/"/>
+    
+      <category term="Flutter" scheme="http://blog.playhi.net/tags/tags-flutter/"/>
+    
+      <category term="Base64" scheme="http://blog.playhi.net/tags/tags-base64/"/>
+    
+  </entry>
   
   <entry>
     <title>检测 Android 暗色模式是否开启</title>
@@ -494,33 +521,6 @@
       
       
         &lt;p&gt;没有计划，没有规划，没有预案，没有远见，只有一个又一个的临时、突然，混乱不堪。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="吐槽" scheme="http://blog.playhi.net/categories/category-tc/"/>
-    
-    
-      <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20190828</title>
-    <link href="http://blog.playhi.net/2019/08/28/20190828/"/>
-    <id>http://blog.playhi.net/2019/08/28/20190828/</id>
-    <published>2019-08-27T16:00:00.000Z</published>
-    <updated>2020-01-31T10:18:44.203Z</updated>
-    
-    <content type="html"><![CDATA[<p>唔～这可真是糟糕透了……</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;唔～这可真是糟糕透了……&lt;/p&gt;
 
       
     
