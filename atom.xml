@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.playhi.net/"/>
-  <updated>2020-03-15T11:43:07.624Z</updated>
+  <updated>2020-03-15T11:58:56.425Z</updated>
   <id>http://blog.playhi.net/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flutter ListTile 自定义垂直边距、标题与两边的水平间距</title>
+    <link href="http://blog.playhi.net/2020/03/15/Flutter-ListTile-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9E%82%E7%9B%B4%E8%BE%B9%E8%B7%9D%E3%80%81%E6%A0%87%E9%A2%98%E4%B8%8E%E4%B8%A4%E8%BE%B9%E7%9A%84%E6%B0%B4%E5%B9%B3%E9%97%B4%E8%B7%9D/"/>
+    <id>http://blog.playhi.net/2020/03/15/Flutter-ListTile-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9E%82%E7%9B%B4%E8%BE%B9%E8%B7%9D%E3%80%81%E6%A0%87%E9%A2%98%E4%B8%8E%E4%B8%A4%E8%BE%B9%E7%9A%84%E6%B0%B4%E5%B9%B3%E9%97%B4%E8%B7%9D/</id>
+    <published>2020-03-15T11:54:24.000Z</published>
+    <updated>2020-03-15T11:58:56.425Z</updated>
+    
+    <content type="html"><![CDATA[<p>自定义 Flutter ListTile <code>minVerticalPadding</code> 最小垂直边距、<code>horizontalTitleGap</code> 标题与两边的水平间距。</p><a id="more"></a><ol><li>引入依赖 <a href="https://pub.dev/packages/list_tile_more_customizable" target="_blank" rel="noopener">pub.dev:list_tile_more_customizable</a>：<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="attr">list_tile_more_customizable:</span> <span class="string">^1.2.1</span></span><br></pre></td></tr></tbody></table></figure></li><li>将需要处的 <code>ListTile</code> 替换成 <code>ListTileMoreCustomizable</code>，即可直接修改 <code>minVerticalPadding</code>、<code>horizontalTitleGap</code> 以修改相应的值：<figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类似于</span></span><br><span class="line">ListTileMoreCustomizable(</span><br><span class="line">    title: Text(<span class="string">"标题"</span>),</span><br><span class="line">    horizontalTitleGap: <span class="number">0.0</span>, <span class="comment">// 标题与两边的水平间距</span></span><br><span class="line">    minVerticalPadding: <span class="number">0.0</span>, <span class="comment">// 最小垂直边距</span></span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure></li></ol><p><a href="https://pub.dev/packages/list_tile_more_customizable" target="_blank" rel="noopener">pub.dev 地址</a><br><a href="https://github.com/Playhi/list_tile_more_customizable" target="_blank" rel="noopener">源码 GitHub 地址</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自定义 Flutter ListTile &lt;code&gt;minVerticalPadding&lt;/code&gt; 最小垂直边距、&lt;code&gt;horizontalTitleGap&lt;/code&gt; 标题与两边的水平间距。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://blog.playhi.net/categories/category-development/"/>
+    
+    
+      <category term="Flutter" scheme="http://blog.playhi.net/tags/tags-flutter/"/>
+    
+  </entry>
   
   <entry>
     <title>Flutter ListTile 获得点击详情</title>
@@ -496,33 +519,6 @@
     
     
       <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20190925</title>
-    <link href="http://blog.playhi.net/2019/09/25/20190925/"/>
-    <id>http://blog.playhi.net/2019/09/25/20190925/</id>
-    <published>2019-09-24T16:00:00.000Z</published>
-    <updated>2020-01-31T10:12:32.513Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天在处理用户上传的 FreezeYou 的报错日志的时候，突然发现一个版本名称是 max ，版本号是 10000+ （我公版还没破200呢）的版本，不知道这版什么来头[毕加思索]。开源 or 不开源，真是头大。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天在处理用户上传的 FreezeYou 的报错日志的时候，突然发现一个版本名称是 max ，版本号是 10000+ （我公版还没破200呢）的版本，不知道这版什么来头[毕加思索]。开源 or 不开源，真是头大。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="小记" scheme="http://blog.playhi.net/categories/category-notes/"/>
-    
-    
-      <category term="FreezeYou" scheme="http://blog.playhi.net/tags/tags-freezeyou/"/>
     
   </entry>
   

@@ -47,20 +47,20 @@
   };
 </script>
 
-  <meta name="description" content="这学校真是要废掉了啊">
+  <meta name="description" content="自定义 Flutter ListTile minVerticalPadding 最小垂直边距、horizontalTitleGap 标题与两边的水平间距。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20190618">
-<meta property="og:url" content="http://blog.playhi.net/2019/06/18/20190618/index.html">
+<meta property="og:title" content="Flutter ListTile 自定义垂直边距、标题与两边的水平间距">
+<meta property="og:url" content="http://blog.playhi.net/2020/03/15/Flutter-ListTile-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9E%82%E7%9B%B4%E8%BE%B9%E8%B7%9D%E3%80%81%E6%A0%87%E9%A2%98%E4%B8%8E%E4%B8%A4%E8%BE%B9%E7%9A%84%E6%B0%B4%E5%B9%B3%E9%97%B4%E8%B7%9D/index.html">
 <meta property="og:site_name" content="Playhi&#39;s Blog">
-<meta property="og:description" content="这学校真是要废掉了啊">
+<meta property="og:description" content="自定义 Flutter ListTile minVerticalPadding 最小垂直边距、horizontalTitleGap 标题与两边的水平间距。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-06-17T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-01-31T10:23:24.283Z">
+<meta property="article:published_time" content="2020-03-15T11:54:24.000Z">
+<meta property="article:modified_time" content="2020-03-15T11:58:56.425Z">
 <meta property="article:author" content="Playhi">
-<meta property="article:tag" content="无标签">
+<meta property="article:tag" content="Flutter">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://blog.playhi.net/2019/06/18/20190618/">
+<link rel="canonical" href="http://blog.playhi.net/2020/03/15/Flutter-ListTile-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9E%82%E7%9B%B4%E8%BE%B9%E8%B7%9D%E3%80%81%E6%A0%87%E9%A2%98%E4%B8%8E%E4%B8%A4%E8%BE%B9%E7%9A%84%E6%B0%B4%E5%B9%B3%E9%97%B4%E8%B7%9D/">
 
 
 <script id="page-configurations">
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title>20190618 | Playhi's Blog</title>
+  <title>Flutter ListTile 自定义垂直边距、标题与两边的水平间距 | Playhi's Blog</title>
   
 
 
@@ -227,7 +227,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.playhi.net/2019/06/18/20190618/">
+    <link itemprop="mainEntityOfPage" href="http://blog.playhi.net/2020/03/15/Flutter-ListTile-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9E%82%E7%9B%B4%E8%BE%B9%E8%B7%9D%E3%80%81%E6%A0%87%E9%A2%98%E4%B8%8E%E4%B8%A4%E8%BE%B9%E7%9A%84%E6%B0%B4%E5%B9%B3%E9%97%B4%E8%B7%9D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -240,7 +240,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          20190618
+          Flutter ListTile 自定义垂直边距、标题与两边的水平间距
         </h1>
 
         <div class="post-meta">
@@ -249,24 +249,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-06-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-18T00:00:00+08:00">2019-06-18</time>
+              <time title="创建时间：2020-03-15 19:54:24 / 修改时间：19:58:56" itemprop="dateCreated datePublished" datetime="2020-03-15T19:54:24+08:00">2020-03-15</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-01-31 18:23:24" itemprop="dateModified" datetime="2020-01-31T18:23:24+08:00">2020-01-31</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-tc/" itemprop="url" rel="index">
-                    <span itemprop="name">吐槽</span>
+                  <a href="/categories/category-development/" itemprop="url" rel="index">
+                    <span itemprop="name">开发</span>
                   </a>
                 </span>
             </span>
@@ -282,7 +276,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>这学校真是要废掉了啊</p>
+        <p>自定义 Flutter ListTile <code>minVerticalPadding</code> 最小垂直边距、<code>horizontalTitleGap</code> 标题与两边的水平间距。</p>
+<a id="more"></a>
+<ol>
+<li>引入依赖 <a href="https://pub.dev/packages/list_tile_more_customizable" target="_blank" rel="noopener">pub.dev:list_tile_more_customizable</a>：<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="attr">list_tile_more_customizable:</span> <span class="string">^1.2.1</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li>将需要处的 <code>ListTile</code> 替换成 <code>ListTileMoreCustomizable</code>，即可直接修改 <code>minVerticalPadding</code>、<code>horizontalTitleGap</code> 以修改相应的值：<figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类似于</span></span><br><span class="line">ListTileMoreCustomizable(</span><br><span class="line">    title: Text(<span class="string">"标题"</span>),</span><br><span class="line">    horizontalTitleGap: <span class="number">0.0</span>, <span class="comment">// 标题与两边的水平间距</span></span><br><span class="line">    minVerticalPadding: <span class="number">0.0</span>, <span class="comment">// 最小垂直边距</span></span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<p><a href="https://pub.dev/packages/list_tile_more_customizable" target="_blank" rel="noopener">pub.dev 地址</a><br><a href="https://github.com/Playhi/list_tile_more_customizable" target="_blank" rel="noopener">源码 GitHub 地址</a></p>
 
     </div>
 
@@ -293,7 +295,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/tags-untagged/" rel="tag"><i class="fa fa-tag"></i> 无标签</a>
+              <a href="/tags/tags-flutter/" rel="tag"><i class="fa fa-tag"></i> Flutter</a>
           </div>
 
         
@@ -302,13 +304,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/06/14/20190614/" rel="prev" title="20190614">
-      <i class="fa fa-chevron-left"></i> 20190614
+    <a href="/2020/03/15/Flutter-ListTile-%E8%8E%B7%E5%BE%97%E7%82%B9%E5%87%BB%E8%AF%A6%E6%83%85/" rel="prev" title="Flutter ListTile 获得点击详情">
+      <i class="fa fa-chevron-left"></i> Flutter ListTile 获得点击详情
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/06/19/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0-Deepin-%E4%B8%8B%E7%9A%84-QQ%E3%80%81%E5%BE%AE%E4%BF%A1-%E7%AD%89%E5%95%86%E5%BA%97%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BD%AF%E4%BB%B6/" rel="next" title="手动更新 Deepin 下的 QQ、微信 等商店应用程序软件">
-      手动更新 Deepin 下的 QQ、微信 等商店应用程序软件 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
