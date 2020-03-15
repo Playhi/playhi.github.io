@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.playhi.net/"/>
-  <updated>2020-02-22T12:56:26.849Z</updated>
+  <updated>2020-03-15T11:43:07.624Z</updated>
   <id>http://blog.playhi.net/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flutter ListTile 获得点击详情</title>
+    <link href="http://blog.playhi.net/2020/03/15/Flutter-ListTile-%E8%8E%B7%E5%BE%97%E7%82%B9%E5%87%BB%E8%AF%A6%E6%83%85/"/>
+    <id>http://blog.playhi.net/2020/03/15/Flutter-ListTile-%E8%8E%B7%E5%BE%97%E7%82%B9%E5%87%BB%E8%AF%A6%E6%83%85/</id>
+    <published>2020-03-15T11:32:39.000Z</published>
+    <updated>2020-03-15T11:43:07.624Z</updated>
+    
+    <content type="html"><![CDATA[<p>Flutter ListTile <code>onTap</code>、<code>onLongPress</code> 事件获得详细信息（如点击位置等）</p><a id="more"></a><ol><li>引入依赖 <a href="https://pub.dev/packages/list_tile_more_customizable" target="_blank" rel="noopener">pub.dev:list_tile_more_customizable</a>：<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="attr">list_tile_more_customizable:</span> <span class="string">^1.2.1</span></span><br></pre></td></tr></tbody></table></figure></li><li>将需要处的 <code>ListTile</code> 替换成 <code>ListTileMoreCustomizable</code>，然后 <code>onTap</code>、<code>onLongPress</code> 事件就包含了 <code>TapDownDetails</code>，直接使用即可。<figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类似于</span></span><br><span class="line">ListTileMoreCustomizable(</span><br><span class="line">    title: Text(<span class="string">"标题"</span>),</span><br><span class="line">    onTap: (details){},</span><br><span class="line">    onLongPress: (details){},</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure></li></ol><p><a href="https://pub.dev/packages/list_tile_more_customizable" target="_blank" rel="noopener">pub.dev 地址</a><br><a href="https://github.com/Playhi/list_tile_more_customizable" target="_blank" rel="noopener">源码 GitHub 地址</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Flutter ListTile &lt;code&gt;onTap&lt;/code&gt;、&lt;code&gt;onLongPress&lt;/code&gt; 事件获得详细信息（如点击位置等）&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://blog.playhi.net/categories/category-development/"/>
+    
+    
+      <category term="Flutter" scheme="http://blog.playhi.net/tags/tags-flutter/"/>
+    
+  </entry>
   
   <entry>
     <title>Flutter 实现点击控件后在对应位置弹出 Menu 菜单</title>
@@ -58,9 +81,9 @@
       <category term="开发" scheme="http://blog.playhi.net/categories/category-development/"/>
     
     
-      <category term="Flutter" scheme="http://blog.playhi.net/tags/tags-flutter/"/>
-    
       <category term="Dart" scheme="http://blog.playhi.net/tags/tags-dart/"/>
+    
+      <category term="Flutter" scheme="http://blog.playhi.net/tags/tags-flutter/"/>
     
       <category term="Base64" scheme="http://blog.playhi.net/tags/tags-base64/"/>
     
@@ -500,33 +523,6 @@
     
     
       <category term="FreezeYou" scheme="http://blog.playhi.net/tags/tags-freezeyou/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20190923</title>
-    <link href="http://blog.playhi.net/2019/09/23/20190923/"/>
-    <id>http://blog.playhi.net/2019/09/23/20190923/</id>
-    <published>2019-09-22T16:00:00.000Z</published>
-    <updated>2020-01-31T10:18:11.868Z</updated>
-    
-    <content type="html"><![CDATA[<p>想着要写点啥，真的点开了，又在纠结到底写不写，我咋就这么麻烦呢～</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;想着要写点啥，真的点开了，又在纠结到底写不写，我咋就这么麻烦呢～&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="未分类" scheme="http://blog.playhi.net/categories/category-uncategorized/"/>
-    
-    
-      <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
