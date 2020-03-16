@@ -89,6 +89,7 @@ tag_map:
   FreezeYou: tags-freezeyou
   vscode: tags-vscode
   网络: tags-network
+  易语言: tags-elang
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
