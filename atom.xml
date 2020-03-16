@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.playhi.net/"/>
-  <updated>2020-03-16T09:11:47.090Z</updated>
+  <updated>2020-03-16T09:16:39.746Z</updated>
   <id>http://blog.playhi.net/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.playhi.net/2020/03/16/%E6%98%93%E8%AF%AD%E8%A8%80-Sqlite3-%E6%94%AF%E6%8C%81%E5%BA%93%E6%8A%A5-syntax-error/"/>
     <id>http://blog.playhi.net/2020/03/16/%E6%98%93%E8%AF%AD%E8%A8%80-Sqlite3-%E6%94%AF%E6%8C%81%E5%BA%93%E6%8A%A5-syntax-error/</id>
     <published>2020-03-16T08:43:46.000Z</published>
-    <updated>2020-03-16T09:11:47.090Z</updated>
+    <updated>2020-03-16T09:16:39.746Z</updated>
     
-    <content type="html"><![CDATA[<p>难得又摸了下几年前的易语言代码，现在要把一些数据放数据库里保存一份，结果居然卡在了新建表，一直报 <code>syntax error</code>，<a id="more"></a>找了半天原因，最后突然发现表名是纯数字的，然后加对<code>'</code>就好了 😅 </p>]]></content>
+    <content type="html"><![CDATA[<p>难得又摸了下几年前的易语言代码，现在要把一些数据放数据库里保存一份，结果居然卡在了新建表，一直报 <code>syntax error</code>，<a id="more"></a>找了半天原因，最后突然发现处理后生成的表名是纯数字的，然后加对<code>'</code>就好了 😅 </p>]]></content>
     
     <summary type="html">
     
