@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.playhi.net/"/>
-  <updated>2020-03-27T12:08:41.431Z</updated>
+  <updated>2020-04-03T10:04:34.961Z</updated>
   <id>http://blog.playhi.net/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 Pandoc 将 mediawiki 格式转换为 markdown</title>
+    <link href="http://blog.playhi.net/2020/04/03/%E4%BD%BF%E7%94%A8-Pandoc-%E5%B0%86-mediawiki-%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA-markdown/"/>
+    <id>http://blog.playhi.net/2020/04/03/%E4%BD%BF%E7%94%A8-Pandoc-%E5%B0%86-mediawiki-%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA-markdown/</id>
+    <published>2020-04-03T09:57:54.000Z</published>
+    <updated>2020-04-03T10:04:34.961Z</updated>
+    
+    <content type="html"><![CDATA[<p>下载安装 <a href="https://pandoc.org/installing.html" target="_blank" rel="noopener">Pandoc</a>，打开终端，使用<a id="more"></a><code>pandoc [源文件] -f mediawiki -t markdown -s -o [生成后的地址]</code>即可。<br>其他类型转换，包括<code>epub</code>、<code>dokuwiki</code>、<code>docbook</code>、<code>docx</code>、<code>html</code>等也类似。<br>帮助信息键入<code>pandoc --help</code>即可查看。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下载安装 &lt;a href=&quot;https://pandoc.org/installing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Pandoc&lt;/a&gt;，打开终端，使用&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="http://blog.playhi.net/categories/category-tutorial/"/>
+    
+    
+      <category term="MediaWiki" scheme="http://blog.playhi.net/tags/tags-mediawiki/"/>
+    
+      <category term="Markdown" scheme="http://blog.playhi.net/tags/tags-markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>深度的 jingle 回来了[兴奋]</title>
@@ -484,33 +509,6 @@
     
     
       <category term="FreezeYou" scheme="http://blog.playhi.net/tags/tags-freezeyou/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20191006</title>
-    <link href="http://blog.playhi.net/2019/10/06/20191006/"/>
-    <id>http://blog.playhi.net/2019/10/06/20191006/</id>
-    <published>2019-10-05T16:00:00.000Z</published>
-    <updated>2020-01-31T10:17:36.938Z</updated>
-    
-    <content type="html"><![CDATA[<p>无趣、无用、琐碎、希望、黑暗、渺茫</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;无趣、无用、琐碎、希望、黑暗、渺茫&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="牢骚" scheme="http://blog.playhi.net/categories/category-grumble/"/>
-    
-    
-      <category term="无标签" scheme="http://blog.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   

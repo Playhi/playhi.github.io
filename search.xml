@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>使用 Pandoc 将 mediawiki 格式转换为 markdown</title>
+    <url>/2020/04/03/%E4%BD%BF%E7%94%A8-Pandoc-%E5%B0%86-mediawiki-%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA-markdown/</url>
+    <content><![CDATA[<p>下载安装 <a href="https://pandoc.org/installing.html" target="_blank" rel="noopener">Pandoc</a>，打开终端，使用<a id="more"></a><code>pandoc [源文件] -f mediawiki -t markdown -s -o [生成后的地址]</code>即可。<br>其他类型转换，包括<code>epub</code>、<code>dokuwiki</code>、<code>docbook</code>、<code>docx</code>、<code>html</code>等也类似。<br>帮助信息键入<code>pandoc --help</code>即可查看。</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>MediaWiki</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深度的 jingle 回来了[兴奋]</title>
     <url>/2020/03/27/%E6%B7%B1%E5%BA%A6%E7%9A%84-jingle-%E5%9B%9E%E6%9D%A5%E4%BA%86-%E5%85%B4%E5%A5%8B/</url>
     <content><![CDATA[<p>今天难得逛逛Deepin论坛，突然发现jingle发新帖了！宣布回归呢！好兴奋～<a id="more"></a>本来这段时间疫情原因，V20拖了好久，大家都有点迫不及待的小失落，加之论坛最近几个月冷冷清清凄凄惨惨戚戚，不少人有了暂时不用Deepin的想法了，包括我也有一点，这会好了，jingle回来了！Deepin又能回到曾经的那个Deepin了吗？！让我们拭目以待～ 😃</p>
