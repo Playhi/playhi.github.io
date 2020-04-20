@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>解决 Flutter showModalBottomSheet 被键盘遮挡</title>
+    <url>/2020/04/20/%E8%A7%A3%E5%86%B3-Flutter-showModalBottomSheet-%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/</url>
+    <content><![CDATA[<p>在使用 showModalBottomSheet 底部弹出内容时，如果唤起了键盘、输入法，showModalBottomSheet 中的内容往往会被挡住，<a id="more"></a>给 showModalBottomSheet 设置 isScrollControlled，再套一个 SingleChildScrollView 以及 设定一个 padding 一般就能解决问题了。  </p>
+<p>示例：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line">showModalBottomSheet(</span><br><span class="line">  isScrollControlled: <span class="keyword">true</span>,</span><br><span class="line">  builder: (BuildContext context) {</span><br><span class="line">    <span class="keyword">return</span> SingleChildScrollView(</span><br><span class="line">      child: Container(</span><br><span class="line">        padding: EdgeInsets.only(</span><br><span class="line">            bottom: MediaQuery.of(context).viewInsets.bottom),</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          mainAxisSize: MainAxisSize.min,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            TextField(</span><br><span class="line">              keyboardType: TextInputType.text,</span><br><span class="line">              autofocus: <span class="keyword">true</span>,</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  },</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
+
+]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>Flutter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用 Pandoc 将 mediawiki 格式转换为 markdown</title>
     <url>/2020/04/03/%E4%BD%BF%E7%94%A8-Pandoc-%E5%B0%86-mediawiki-%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA-markdown/</url>
     <content><![CDATA[<p>下载安装 <a href="https://pandoc.org/installing.html" target="_blank" rel="noopener">Pandoc</a>，打开终端，使用<a id="more"></a><code>pandoc [源文件] -f mediawiki -t markdown -s -o [生成后的地址]</code>即可。<br>其他类型转换，包括<code>epub</code>、<code>dokuwiki</code>、<code>docbook</code>、<code>docx</code>、<code>html</code>等也类似。<br>帮助信息键入<code>pandoc --help</code>即可查看。</p>
