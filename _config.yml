@@ -90,6 +90,8 @@ tag_map:
   vscode: tags-vscode
   网络: tags-network
   易语言: tags-elang
+  Markdown: tags-markdown
+  MediaWiki: tags-mediawiki
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
