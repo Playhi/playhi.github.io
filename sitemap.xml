@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.playhi.net/404.html</loc>
+    
+    <lastmod>2020-07-18T11:59:32.031Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.playhi.net/2020/04/20/%E8%A7%A3%E5%86%B3-Flutter-showModalBottomSheet-%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/</loc>
     
     <lastmod>2020-04-20T14:16:39.189Z</lastmod>
