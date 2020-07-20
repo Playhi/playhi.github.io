@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.playhi.net/2020/07/20/%E6%8A%8A%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86/</loc>
+    
+    <lastmod>2020-07-20T06:32:51.935Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.playhi.net/images/manifest.json</loc>
+    
+    <lastmod>2020-07-20T06:22:57.110Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.playhi.net/2020/04/20/%E8%A7%A3%E5%86%B3-Flutter-showModalBottomSheet-%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/</loc>
     
     <lastmod>2020-04-20T14:16:39.189Z</lastmod>
@@ -628,13 +642,6 @@
     <loc>http://www.playhi.net/tags/index.html</loc>
     
     <lastmod>2020-03-23T10:26:33.607Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.playhi.net/images/manifest.json</loc>
-    
-    <lastmod>2020-03-23T10:26:33.503Z</lastmod>
     
   </url>
   

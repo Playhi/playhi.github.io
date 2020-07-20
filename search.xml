@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>把文章评论也打开了</title>
+    <url>/2020/07/20/%E6%8A%8A%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86/</url>
+    <content><![CDATA[<p>这两天终于抽空把Blog整了下，今天把文章评论也打开了，慢点把自己CSDN上那些再在这也同步一下就完事了。之前把魔改的主题搞丢了，然后自己这个Blog就停滞到现在 😃 这次趁此机会，正好再整理整理 😉 </p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>无标签</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>解决 Flutter showModalBottomSheet 被键盘遮挡</title>
     <url>/2020/04/20/%E8%A7%A3%E5%86%B3-Flutter-showModalBottomSheet-%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/</url>
     <content><![CDATA[<p>在使用 showModalBottomSheet 底部弹出内容时，如果唤起了键盘、输入法，showModalBottomSheet 中的内容往往会被挡住，<a id="more"></a>给 showModalBottomSheet 设置 isScrollControlled，再套一个 SingleChildScrollView 以及 设定一个 padding 一般就能解决问题了。  </p>

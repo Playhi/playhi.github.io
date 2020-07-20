@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2020-04-20T14:16:39.189Z</updated>
+  <updated>2020-07-20T06:32:51.935Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>把文章评论也打开了</title>
+    <link href="http://www.playhi.net/2020/07/20/%E6%8A%8A%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86/"/>
+    <id>http://www.playhi.net/2020/07/20/%E6%8A%8A%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86/</id>
+    <published>2020-07-20T06:26:20.000Z</published>
+    <updated>2020-07-20T06:32:51.935Z</updated>
+    
+    <content type="html"><![CDATA[<p>这两天终于抽空把Blog整了下，今天把文章评论也打开了，慢点把自己CSDN上那些再在这也同步一下就完事了。之前把魔改的主题搞丢了，然后自己这个Blog就停滞到现在 😃 这次趁此机会，正好再整理整理 😉 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这两天终于抽空把Blog整了下，今天把文章评论也打开了，慢点把自己CSDN上那些再在这也同步一下就完事了。之前把魔改的主题搞丢了，然后自己这个Blog就停滞到现在 😃 这次趁此机会，正好再整理整理 😉 &lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    
+    
+      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>解决 Flutter showModalBottomSheet 被键盘遮挡</title>
@@ -475,33 +502,6 @@
     
     
       <category term="牢骚" scheme="http://www.playhi.net/categories/category-grumble/"/>
-    
-    
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20191023</title>
-    <link href="http://www.playhi.net/2019/10/23/20191023/"/>
-    <id>http://www.playhi.net/2019/10/23/20191023/</id>
-    <published>2019-10-22T16:00:00.000Z</published>
-    <updated>2020-03-23T10:26:33.791Z</updated>
-    
-    <content type="html"><![CDATA[<p>微信是真的沙雕，好好一链接，给加一堆后缀，搞得好像别人站点需要他那些垃圾数据一样，弄得网站都不能正常访问。十足沙雕。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;微信是真的沙雕，好好一链接，给加一堆后缀，搞得好像别人站点需要他那些垃圾数据一样，弄得网站都不能正常访问。十足沙雕。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="吐槽" scheme="http://www.playhi.net/categories/category-tc/"/>
     
     
       <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
