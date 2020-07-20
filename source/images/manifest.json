@@ -1,7 +1,7 @@
 {
   "name": "Playhi's Blog - 生活|开发|经验|杂谈|分享",
   "short_name": "Playhi's Blog",
-  "start_url": "https://blog.playhi.net/?utm_source=web_app_manifest",
+  "start_url": "https://www.playhi.net/?utm_source=web_app_manifest",
   "display": "standalone",
   "background_color": "#fff",
   "description": "Playhi's Blog - 生活|开发|经验|杂谈|分享",
@@ -32,6 +32,6 @@
   }],
   "related_applications": [{
     "platform": "web",
-    "url": "https://blog.playhi.net/?utm_source=web_app_manifest"
+    "url": "https://www.playhi.net/?utm_source=web_app_manifest"
   }]
 }
