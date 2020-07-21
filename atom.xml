@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2020-07-20T06:32:51.935Z</updated>
+  <updated>2020-07-21T08:49:51.935Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP 301 重定向跳转</title>
+    <link href="http://www.playhi.net/2020/07/21/PHP-301-%E9%87%8D%E5%AE%9A%E5%90%91%E8%B7%B3%E8%BD%AC/"/>
+    <id>http://www.playhi.net/2020/07/21/PHP-301-%E9%87%8D%E5%AE%9A%E5%90%91%E8%B7%B3%E8%BD%AC/</id>
+    <published>2020-07-21T08:40:56.000Z</published>
+    <updated>2020-07-21T08:49:51.935Z</updated>
+    
+    <content type="html"><![CDATA[<p>好久没碰 PHP 了 😂 </p><a id="more"></a><p>网上搜了一圈，PHP 301 重定向都是用 <code>header('HTTP/1.1 301 Moved Permanently');</code> 再配合 <code>header('Location: https://www.example.com');</code> 完成的。</p><p>总感觉一句话干不完，再加上<code>HTTP/2</code>啥的都出来许久了还写了个<code>HTTP/1.1</code>看着不太爽，当然写成<code>HTTP/2</code>或是<code>HTTP/1.0</code>也没事，但是不管写什么总之有种表述不清的感觉（比如写的<code>HTTP/1.1</code>实际访问时是<code>HTTP/2</code>——访问的时候该<code>HTTP/2</code>的时候还是<code>HTTP/2</code>也没问题不会乱变<code>HTTP/1.1</code> 😂）</p><p>又去 <a href="https://php.net" target="_blank" rel="noopener">php.net</a> 寻觅一番，发现 <a href="https://www.php.net/manual/en/function.header.php" target="_blank" rel="noopener">Header</a> 可以这样用<br><code>header ( string $header [, bool $replace = TRUE [, int $http_response_code ]] )</code><br>这就好办了，一句话<br><code>header('Location: https://www.example.com', true, 301);</code><br>完事，哈哈哈哈哈哈 😁</p><p>额外再提一句，如果要自适应<code>HTTPS/HTTP</code>的话，这样就可以了：<br><code>header('Location: //www.example.com', true, 301);</code></p><p>同步自<a href="https://blog.csdn.net/u014799995/article/details/106492555" target="_blank" rel="noopener">我的CSDN</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;好久没碰 PHP 了 😂 &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    
+      <category term="PHP" scheme="http://www.playhi.net/tags/tags-php/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Virtualbox虚拟机中安装MSDOS（简易教程）</title>
+    <link href="http://www.playhi.net/2020/07/21/%E5%9C%A8Virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E5%AE%89%E8%A3%85MSDOS%EF%BC%88%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%EF%BC%89/"/>
+    <id>http://www.playhi.net/2020/07/21/%E5%9C%A8Virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E5%AE%89%E8%A3%85MSDOS%EF%BC%88%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%EF%BC%89/</id>
+    <published>2020-07-21T08:21:55.000Z</published>
+    <updated>2020-07-21T08:49:35.566Z</updated>
+    
+    <content type="html"><![CDATA[<p>写这个的事件缘由：有人问我Virtualbox怎么装MSDOS。<br>题外话：其实吧，DOSBOX可以胜任不少情况下的需要了（也可以尝试一下的）。</p><a id="more"></a><p>进入正题：</p><ol><li>到 <a href="https://virtualbox.org/" target="_blank" rel="noopener">https://virtualbox.org/</a> 下载安装好 Virtualbox；</li><li>下载三个DOS安装镜像：百度网盘链接: <a href="https://pan.baidu.com/s/1XLdx0sBFgb18WDL1bun09g" target="_blank" rel="noopener">https://pan.baidu.com/s/1XLdx0sBFgb18WDL1bun09g</a> 提取码:83ts ；</li><li>打开 Virtualbox，新建，名称直接输DOS（会自动选好下面的类型、版本），或者在下面选类型 Other ，版本DOS，然后下一步一直到完成按需设定（直接疯狂下一步也不是不可以）；</li><li>插入第一个安装镜像开始安装，出现提示换盘的时候换第二个，之后提示换盘换第三个，最后把盘弹出，安装完成。</li></ol><p>再来个<a href="https://www.bilibili.com/video/BV1JT4y1g7NN" target="_blank" rel="noopener">视频</a>：</p><iframe src="//player.bilibili.com/player.html?aid=925832168&amp;bvid=BV1JT4y1g7NN&amp;cid=195777749&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>同步<a href="https://blog.csdn.net/u014799995/article/details/106462457" target="_blank" rel="noopener">我的CSDN</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;写这个的事件缘由：有人问我Virtualbox怎么装MSDOS。&lt;br&gt;题外话：其实吧，DOSBOX可以胜任不少情况下的需要了（也可以尝试一下的）。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="http://www.playhi.net/categories/category-tutorial/"/>
+    
+    
+      <category term="VirtualBox" scheme="http://www.playhi.net/tags/tags-virtualbox/"/>
+    
+  </entry>
   
   <entry>
     <title>把文章评论也打开了</title>
@@ -440,61 +486,6 @@
       
       
         &lt;p&gt;如果一个学校，教不好书，育不好人……&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="牢骚" scheme="http://www.playhi.net/categories/category-grumble/"/>
-    
-    
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用上讯飞输入法 Linux 版了</title>
-    <link href="http://www.playhi.net/2019/11/23/%E7%94%A8%E4%B8%8A%E8%AE%AF%E9%A3%9E%E8%BE%93%E5%85%A5%E6%B3%95-Linux-%E7%89%88%E4%BA%86/"/>
-    <id>http://www.playhi.net/2019/11/23/%E7%94%A8%E4%B8%8A%E8%AE%AF%E9%A3%9E%E8%BE%93%E5%85%A5%E6%B3%95-Linux-%E7%89%88%E4%BA%86/</id>
-    <published>2019-11-22T16:00:00.000Z</published>
-    <updated>2020-03-23T10:26:33.783Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天讯飞输入法 Linux 版能公开下载到了，装到 Deepin，重启，我突然就呆了，自带的搜狗和讯飞都没法正常用，然后想是不是卸载搜狗就好了，果断行动，把两个包含 sogou 的 sogoupinyin 和 fcitx-sogoupinyin-uk 删了，再重启，就好了，兴奋，可算是和古老没气的 Linux 版搜狗输入法拜拜了。（本文使用 讯飞输入法 Linux 版书写[滑稽]）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天讯飞输入法 Linux 版能公开下载到了，装到 Deepin，重启，我突然就呆了，自带的搜狗和讯飞都没法正常用，然后想是不是卸载搜狗就好了，果断行动，把两个包含 sogou 的 sogoupinyin 和 fcitx-sogoupinyin-uk 删了，再重启，就好了，
-      
-    
-    </summary>
-    
-    
-      <category term="小记" scheme="http://www.playhi.net/categories/category-notes/"/>
-    
-    
-      <category term="Deepin" scheme="http://www.playhi.net/tags/tags-deepin/"/>
-    
-      <category term="Linux" scheme="http://www.playhi.net/tags/tags-linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20191113</title>
-    <link href="http://www.playhi.net/2019/11/13/20191113/"/>
-    <id>http://www.playhi.net/2019/11/13/20191113/</id>
-    <published>2019-11-12T16:00:00.000Z</published>
-    <updated>2020-03-23T10:26:33.807Z</updated>
-    
-    <content type="html"><![CDATA[<p>一个连控烟都控不了废物学校……</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;一个连控烟都控不了废物学校……&lt;/p&gt;
 
       
     
