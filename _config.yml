@@ -92,6 +92,7 @@ tag_map:
   易语言: tags-elang
   Markdown: tags-markdown
   MediaWiki: tags-mediawiki
+  VirtualBox: tags-virtualbox
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
