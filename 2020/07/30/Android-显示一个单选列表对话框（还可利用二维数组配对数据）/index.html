@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-my.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-my.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-my.png">
+  <link rel="mask-icon" href="/images/myLogo.svg" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.playhi.net","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="显示一个单选列表对话框">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android 显示一个单选列表对话框（还可利用二维数组配对数据）">
+<meta property="og:url" content="http://www.playhi.net/2020/07/30/Android-%E6%98%BE%E7%A4%BA%E4%B8%80%E4%B8%AA%E5%8D%95%E9%80%89%E5%88%97%E8%A1%A8%E5%AF%B9%E8%AF%9D%E6%A1%86%EF%BC%88%E8%BF%98%E5%8F%AF%E5%88%A9%E7%94%A8%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E9%85%8D%E5%AF%B9%E6%95%B0%E6%8D%AE%EF%BC%89/index.html">
+<meta property="og:site_name" content="Playhi&#39;s Blog">
+<meta property="og:description" content="显示一个单选列表对话框">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-30T03:06:59.000Z">
+<meta property="article:modified_time" content="2020-07-31T03:24:25.959Z">
+<meta property="article:author" content="Playhi">
+<meta property="article:tag" content="Android">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://www.playhi.net/2020/07/30/Android-%E6%98%BE%E7%A4%BA%E4%B8%80%E4%B8%AA%E5%8D%95%E9%80%89%E5%88%97%E8%A1%A8%E5%AF%B9%E8%AF%9D%E6%A1%86%EF%BC%88%E8%BF%98%E5%8F%AF%E5%88%A9%E7%94%A8%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E9%85%8D%E5%AF%B9%E6%95%B0%E6%8D%AE%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Android 显示一个单选列表对话框（还可利用二维数组配对数据） | Playhi's Blog</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?7f4fb7e133232860308182105557a2cf";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Playhi's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Playhi's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">生活|开发|经验|杂谈|分享</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">18</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">91</span></a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2020/07/30/Android-%E6%98%BE%E7%A4%BA%E4%B8%80%E4%B8%AA%E5%8D%95%E9%80%89%E5%88%97%E8%A1%A8%E5%AF%B9%E8%AF%9D%E6%A1%86%EF%BC%88%E8%BF%98%E5%8F%AF%E5%88%A9%E7%94%A8%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E9%85%8D%E5%AF%B9%E6%95%B0%E6%8D%AE%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Playhi">
+      <meta itemprop="description" content="Playhi's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Playhi's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Android 显示一个单选列表对话框（还可利用二维数组配对数据）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-30 11:06:59" itemprop="dateCreated datePublished" datetime="2020-07-30T11:06:59+08:00">2020-07-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-31 11:24:25" itemprop="dateModified" datetime="2020-07-31T11:24:25+08:00">2020-07-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/category-development/" itemprop="url" rel="index"><span itemprop="name">开发</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/07/30/Android-%E6%98%BE%E7%A4%BA%E4%B8%80%E4%B8%AA%E5%8D%95%E9%80%89%E5%88%97%E8%A1%A8%E5%AF%B9%E8%AF%9D%E6%A1%86%EF%BC%88%E8%BF%98%E5%8F%AF%E5%88%A9%E7%94%A8%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E9%85%8D%E5%AF%B9%E6%95%B0%E6%8D%AE%EF%BC%89/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/30/Android-%E6%98%BE%E7%A4%BA%E4%B8%80%E4%B8%AA%E5%8D%95%E9%80%89%E5%88%97%E8%A1%A8%E5%AF%B9%E8%AF%9D%E6%A1%86%EF%BC%88%E8%BF%98%E5%8F%AF%E5%88%A9%E7%94%A8%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E9%85%8D%E5%AF%B9%E6%95%B0%E6%8D%AE%EF%BC%89/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>显示一个单选列表对话框</p>
+<a id="more"></a>
+<h4 id="一、先丢代码，方便“面向搜索引擎编程”的同志们"><a href="#一、先丢代码，方便“面向搜索引擎编程”的同志们" class="headerlink" title="一、先丢代码，方便“面向搜索引擎编程”的同志们"></a>一、先丢代码，<del>方便“面向搜索引擎编程”的同志们</del></h4><ol>
+<li>不考虑 <code>item</code> 和 <code>value</code> 的配对的情况下（很简单的啦）： <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> AlertDialog.Builder(context)</span><br><span class="line">  .setTitle(R.string.title)</span><br><span class="line">  .setSingleChoiceItems(</span><br><span class="line">      R.array.items,    <span class="comment">// 显示的每行的内容</span></span><br><span class="line">      checkedItem,      <span class="comment">// 已选中的项（ -1 均不选中）</span></span><br><span class="line">      (dialog, which) -&gt; {</span><br><span class="line">          checkedItem = which;  <span class="comment">// 保存选中的项的在 R.array.items 中所处的位置（从 0 开始）</span></span><br><span class="line">          dialog.dismiss();</span><br><span class="line">      }</span><br><span class="line">  )</span><br><span class="line">  .setNegativeButton(android.R.string.cancel, <span class="keyword">null</span>)  <span class="comment">// “取消”按钮</span></span><br><span class="line">  .show();</span><br></pre></td></tr></tbody></table></figure></li>
+<li><code>item</code> 和 <code>value</code> 配对的情况下（实现中利用了一个二维数组，或许还有更好的方案）： <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 此例中 Items 和 Values 的内容是按顺序一一对应的</span></span><br><span class="line">String[][] keyValuePair = {</span><br><span class="line">    getResources().getStringArray(R.array.items),  <span class="comment">// Items</span></span><br><span class="line">    getResources().getStringArray(R.array.values)  <span class="comment">// Values</span></span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> AlertDialog.Builder(context)</span><br><span class="line">    .setTitle(R.string.title)</span><br><span class="line">    .setSingleChoiceItems(</span><br><span class="line">        keyValuePair[<span class="number">0</span>],              <span class="comment">// 显示的每行的内容</span></span><br><span class="line">        checkedKeyValuePairPosition,  <span class="comment">// 已选中的项的位置（ -1 均不选中）</span></span><br><span class="line">        (dialog, which) -&gt; {</span><br><span class="line">            checkedKeyValuePairPosition = which;  <span class="comment">// 保存选中的项所处的位置（从 0 开始）</span></span><br><span class="line">            checkedKeyValuePairValue =</span><br><span class="line">                keyValuePair[<span class="number">1</span>][which];           <span class="comment">// 保存选中的项对应的 Value</span></span><br><span class="line">            dialog.dismiss();</span><br><span class="line">        }</span><br><span class="line">    )</span><br><span class="line">    .setNegativeButton(R.string.cancel, <span class="keyword">null</span>)     <span class="comment">// “取消”按钮</span></span><br><span class="line">    .show();</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<h4 id="二、builder-里提供的-setSingleChoiceItems-目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段："><a href="#二、builder-里提供的-setSingleChoiceItems-目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段：" class="headerlink" title="二、builder 里提供的 setSingleChoiceItems 目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段："></a>二、<code>builder</code> 里提供的 <code>setSingleChoiceItems</code> 目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段：</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Set a list of items to be displayed in the dialog as the content, you will be notified of</span></span><br><span class="line"><span class="comment"> * the selected item via the supplied listener. This should be an array type i.e.</span></span><br><span class="line"><span class="comment"> * R.array.foo The list will have a check mark displayed to the right of the text for the</span></span><br><span class="line"><span class="comment"> * checked item. Clicking on an item in the list will not dismiss the dialog. Clicking on a</span></span><br><span class="line"><span class="comment"> * button will dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> itemsId the resource id of an array i.e. R.array.foo</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> checkedItem specifies which item is checked. If -1 no items are checked.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listener notified when an item on the list is clicked. The dialog will not be</span></span><br><span class="line"><span class="comment"> *        dismissed when an item is clicked. It will only be dismissed if clicked on a</span></span><br><span class="line"><span class="comment"> *        button, if no buttons are supplied it's up to the user to dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> This Builder object to allow for chaining of calls to set methods</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Builder <span class="title">setSingleChoiceItems</span><span class="params">(@ArrayRes <span class="keyword">int</span> itemsId, <span class="keyword">int</span> checkedItem,</span></span></span><br><span class="line"><span class="function"><span class="params">        <span class="keyword">final</span> OnClickListener listener)</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Set a list of items to be displayed in the dialog as the content, you will be notified of</span></span><br><span class="line"><span class="comment"> * the selected item via the supplied listener. The list will have a check mark displayed to</span></span><br><span class="line"><span class="comment"> * the right of the text for the checked item. Clicking on an item in the list will not</span></span><br><span class="line"><span class="comment"> * dismiss the dialog. Clicking on a button will dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> cursor the cursor to retrieve the items from.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> checkedItem specifies which item is checked. If -1 no items are checked.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> labelColumn The column name on the cursor containing the string to display in the</span></span><br><span class="line"><span class="comment"> *        label.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listener notified when an item on the list is clicked. The dialog will not be</span></span><br><span class="line"><span class="comment"> *        dismissed when an item is clicked. It will only be dismissed if clicked on a</span></span><br><span class="line"><span class="comment"> *        button, if no buttons are supplied it's up to the user to dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> This Builder object to allow for chaining of calls to set methods</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Builder <span class="title">setSingleChoiceItems</span><span class="params">(Cursor cursor, <span class="keyword">int</span> checkedItem, String labelColumn,</span></span></span><br><span class="line"><span class="function"><span class="params">        <span class="keyword">final</span> OnClickListener listener)</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Set a list of items to be displayed in the dialog as the content, you will be notified of</span></span><br><span class="line"><span class="comment"> * the selected item via the supplied listener. The list will have a check mark displayed to</span></span><br><span class="line"><span class="comment"> * the right of the text for the checked item. Clicking on an item in the list will not</span></span><br><span class="line"><span class="comment"> * dismiss the dialog. Clicking on a button will dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> items the items to be displayed.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> checkedItem specifies which item is checked. If -1 no items are checked.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listener notified when an item on the list is clicked. The dialog will not be</span></span><br><span class="line"><span class="comment"> *        dismissed when an item is clicked. It will only be dismissed if clicked on a</span></span><br><span class="line"><span class="comment"> *        button, if no buttons are supplied it's up to the user to dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> This Builder object to allow for chaining of calls to set methods</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Builder <span class="title">setSingleChoiceItems</span><span class="params">(CharSequence[] items, <span class="keyword">int</span> checkedItem, <span class="keyword">final</span> OnClickListener listener)</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Set a list of items to be displayed in the dialog as the content, you will be notified of</span></span><br><span class="line"><span class="comment"> * the selected item via the supplied listener. The list will have a check mark displayed to</span></span><br><span class="line"><span class="comment"> * the right of the text for the checked item. Clicking on an item in the list will not</span></span><br><span class="line"><span class="comment"> * dismiss the dialog. Clicking on a button will dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> adapter The {<span class="doctag">@link</span> ListAdapter} to supply the list of items</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> checkedItem specifies which item is checked. If -1 no items are checked.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listener notified when an item on the list is clicked. The dialog will not be</span></span><br><span class="line"><span class="comment"> *        dismissed when an item is clicked. It will only be dismissed if clicked on a</span></span><br><span class="line"><span class="comment"> *        button, if no buttons are supplied it's up to the user to dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> This Builder object to allow for chaining of calls to set methods</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Builder <span class="title">setSingleChoiceItems</span><span class="params">(ListAdapter adapter, <span class="keyword">int</span> checkedItem, <span class="keyword">final</span> OnClickListener listener)</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="三、更多"><a href="#三、更多" class="headerlink" title="三、更多"></a>三、更多</h4><p>如果需要多选的话，<code>setMultiChoiceItems</code> 拿来用就行了。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/tags-android/" rel="tag"><i class="fa fa-tag"></i> Android</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/21/PHP-301-%E9%87%8D%E5%AE%9A%E5%90%91%E8%B7%B3%E8%BD%AC/" rel="prev" title="PHP 301 重定向跳转">
+      <i class="fa fa-chevron-left"></i> PHP 301 重定向跳转
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、先丢代码，方便“面向搜索引擎编程”的同志们"><span class="nav-number">1.</span> <span class="nav-text">一、先丢代码，方便“面向搜索引擎编程”的同志们</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、builder-里提供的-setSingleChoiceItems-目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段："><span class="nav-number">2.</span> <span class="nav-text">二、builder 里提供的 setSingleChoiceItems 目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、更多"><span class="nav-number">3.</span> <span class="nav-text">三、更多</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Playhi</p>
+  <div class="site-description" itemprop="description">Playhi's Blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">91</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Playhi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Playhi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hiplayhi@playhi.net" title="E-Mail → mailto:hiplayhi@playhi.net" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/10011687/playhi" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;10011687&#x2F;playhi" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2014 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Playhi</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : false,
+      appId      : 'nLSogsbDtBClfmRYEvYuvGCR-9Nh9j0Va',
+      appKey     : '5iIl9GBiMWpazGnqTV1HDpF9',
+      placeholder: "",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+<style>
+    .buttomFloat {
+	background: #222;
+	text-align: center;
+	position: fixed;
+	bottom: -100px;
+	z-index: 100;
+	width: 100%;
+	opacity: 0.6;
+	font-size: 12px;
+	color: #fff;
+	transition-property: bottom;
+	transition-delay: 0s;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+    }
+    .buttonFloatShow {
+	bottom: 0;
+    }
+</style>
+<div id="httpsAcc" class="buttomFloat"></div>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    if(document.location.protocol == "http:") {
+        document.getElementById('httpsAcc').innerHTML = "<a style='color: #fff' href='" + document.URL.replace("http://","https://") + "'>通过 HTTPS 访问</a>";
+        document.getElementById('httpsAcc').classList.add("buttonFloatShow");
+    }
+});
+</script>
+
+</body>
+</html>
