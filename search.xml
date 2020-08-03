@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Flutter 判断横竖屏（含尺寸、方向改变时触发）</title>
+    <url>/2020/08/03/Flutter-%E5%88%A4%E6%96%AD%E6%A8%AA%E7%AB%96%E5%B1%8F%EF%BC%88%E5%90%AB%E5%B0%BA%E5%AF%B8%E3%80%81%E6%96%B9%E5%90%91%E6%94%B9%E5%8F%98%E6%97%B6%E8%A7%A6%E5%8F%91%EF%BC%89/</url>
+    <content><![CDATA[<p>只判断横竖屏，拿 <code>height</code> 和 <code>width</code> 比较下就可以了，比如这样：<a id="more"></a></p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line">MediaQuery.of(context).size.width &gt;</span><br><span class="line">        MediaQuery.of(context).size.height <span class="comment">// 还可以 * 1.2 之类的（根据场景自己看着办[滑稽]）</span></span><br><span class="line">    ? <span class="string">"横屏"</span></span><br><span class="line">    : <span class="string">"竖屏"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果说要在横竖屏、应用显示尺寸改变时触发，那可以套一个 <code>OrientationBuilder</code>，比如这样（新建了个 Flutter 项目用来示例，所以以下例子和使用场景其实不太匹配 😂）：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line">OrientationBuilder(</span><br><span class="line">    builder: (context, orientation) {</span><br><span class="line">      <span class="keyword">return</span> Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(</span><br><span class="line">              MediaQuery.of(context).size.width &gt;</span><br><span class="line">                      MediaQuery.of(context).size.height * <span class="number">1.2</span>  <span class="comment">// height 这边多留了点，不需要的话可以看下一个例子（直接用 orientation）</span></span><br><span class="line">                  ? <span class="string">"横屏"</span></span><br><span class="line">                  : <span class="string">"竖屏"</span>,</span><br><span class="line">            ),</span><br><span class="line">            Text(</span><br><span class="line">              <span class="string">"<span class="subst">${MediaQuery.of(context).size.width}</span> × <span class="subst">${MediaQuery.of(context).size.height}</span>"</span>,</span><br><span class="line">              style: Theme.of(context).textTheme.headline4,</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      );</span><br><span class="line">    },</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
+
+<p>或者这样（直接用 <code>OrientationBuilder</code> 的 <code>orientation</code>）：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line">OrientationBuilder(</span><br><span class="line">  builder: (context, orientation) {</span><br><span class="line">    <span class="keyword">return</span> Center(</span><br><span class="line">      child: Column(</span><br><span class="line">        mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">        children: &lt;Widget&gt;[</span><br><span class="line">          Text(</span><br><span class="line">            orientation == Orientation.landscape ? <span class="string">"横屏"</span> : <span class="string">"竖屏"</span>,</span><br><span class="line">            style: Theme.of(context).textTheme.headline4,</span><br><span class="line">          ),</span><br><span class="line">        ],</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  },</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
+
+]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>Flutter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Android 显示一个单选列表对话框（还可利用二维数组配对数据）</title>
     <url>/2020/07/30/Android-%E6%98%BE%E7%A4%BA%E4%B8%80%E4%B8%AA%E5%8D%95%E9%80%89%E5%88%97%E8%A1%A8%E5%AF%B9%E8%AF%9D%E6%A1%86%EF%BC%88%E8%BF%98%E5%8F%AF%E5%88%A9%E7%94%A8%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E9%85%8D%E5%AF%B9%E6%95%B0%E6%8D%AE%EF%BC%89/</url>
     <content><![CDATA[<p>显示一个单选列表对话框</p>
