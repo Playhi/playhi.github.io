@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Flutter 判断是否在暗色模式（Dark）下</title>
+    <url>/2020/08/06/Flutter-%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%9C%A8%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F%EF%BC%88Dark%EF%BC%89%E4%B8%8B/</url>
+    <content><![CDATA[<p>有时出于各种需要，要在运行时判断当前的主题是否处在暗色模式（<code>brightness == Brightness.dark</code>）下，一般情况下这样就可以了：<a id="more"></a></p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">bool</span> isDarkMode(BuildContext context) {</span><br><span class="line">  <span class="keyword">return</span> Theme.of(context).brightness == Brightness.dark;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>为什么这么做呢，因为 <code>theme_data.dart</code> 中就有一句：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">final</span> <span class="built_in">bool</span> isDark = _brightness == Brightness.dark;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>那为什么说 <strong>一般情况下</strong> 呢，还是看 <code>theme_data.dart</code> ：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">final</span> Brightness _brightness = brightness ?? colorScheme?.brightness ?? Brightness.light;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>所以有时候，需要这样做：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line"><span class="built_in">bool</span> isDarkMode(BuildContext context) {</span><br><span class="line">  <span class="keyword">return</span> Theme.of(context).colorScheme.brightness == Brightness.dark;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>Flutter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Flutter 判断横竖屏（含尺寸、方向改变时触发）</title>
     <url>/2020/08/03/Flutter-%E5%88%A4%E6%96%AD%E6%A8%AA%E7%AB%96%E5%B1%8F%EF%BC%88%E5%90%AB%E5%B0%BA%E5%AF%B8%E3%80%81%E6%96%B9%E5%90%91%E6%94%B9%E5%8F%98%E6%97%B6%E8%A7%A6%E5%8F%91%EF%BC%89/</url>
     <content><![CDATA[<p>只判断横竖屏，拿 <code>height</code> 和 <code>width</code> 比较下就可以了，比如这样：<a id="more"></a></p>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2020-08-03T06:55:07.710Z</updated>
+  <updated>2020-08-06T08:23:57.162Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flutter 判断是否在暗色模式（Dark）下</title>
+    <link href="http://www.playhi.net/2020/08/06/Flutter-%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%9C%A8%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F%EF%BC%88Dark%EF%BC%89%E4%B8%8B/"/>
+    <id>http://www.playhi.net/2020/08/06/Flutter-%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%9C%A8%E6%9A%97%E8%89%B2%E6%A8%A1%E5%BC%8F%EF%BC%88Dark%EF%BC%89%E4%B8%8B/</id>
+    <published>2020-08-06T08:21:47.000Z</published>
+    <updated>2020-08-06T08:23:57.162Z</updated>
+    
+    <content type="html"><![CDATA[<p>有时出于各种需要，要在运行时判断当前的主题是否处在暗色模式（<code>brightness == Brightness.dark</code>）下，一般情况下这样就可以了：<a id="more"></a></p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">bool</span> isDarkMode(BuildContext context) {</span><br><span class="line">  <span class="keyword">return</span> Theme.of(context).brightness == Brightness.dark;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>为什么这么做呢，因为 <code>theme_data.dart</code> 中就有一句：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> <span class="built_in">bool</span> isDark = _brightness == Brightness.dark;</span><br></pre></td></tr></tbody></table></figure><p>那为什么说 <strong>一般情况下</strong> 呢，还是看 <code>theme_data.dart</code> ：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> Brightness _brightness = brightness ?? colorScheme?.brightness ?? Brightness.light;</span><br></pre></td></tr></tbody></table></figure><p>所以有时候，需要这样做：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">bool</span> isDarkMode(BuildContext context) {</span><br><span class="line">  <span class="keyword">return</span> Theme.of(context).colorScheme.brightness == Brightness.dark;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有时出于各种需要，要在运行时判断当前的主题是否处在暗色模式（&lt;code&gt;brightness == Brightness.dark&lt;/code&gt;）下，一般情况下这样就可以了：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    
+      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
+    
+  </entry>
   
   <entry>
     <title>Flutter 判断横竖屏（含尺寸、方向改变时触发）</title>
@@ -463,32 +486,6 @@
     
     
       <category term="小记" scheme="http://www.playhi.net/categories/category-notes/"/>
-    
-    
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>欢送2019,迎接2020</title>
-    <link href="http://www.playhi.net/2019/12/31/%E6%AC%A2%E9%80%812019-%E8%BF%8E%E6%8E%A52020/"/>
-    <id>http://www.playhi.net/2019/12/31/%E6%AC%A2%E9%80%812019-%E8%BF%8E%E6%8E%A52020/</id>
-    <published>2019-12-30T16:00:00.000Z</published>
-    <updated>2020-03-23T10:26:33.807Z</updated>
-    
-    <content type="html"><![CDATA[<p>2019即将过去，2020即将到来，时间过得真快，转眼间，大二都快过半了，时间真的是弹指间流逝啊～这一年，收获不多，但也不少，一张张证书奖状，还有许多礼品——手环、键鼠套装……总之，不能说十分充实，但是，也没怎么荒废～这其中一个个收获，自然也少不了2018年埋下的一个个伏笔、一个个铺垫，同样感谢2018，也感谢2019，也感谢我自己为我自己所做出的这一切～这一年，我，更能冲出去了，更能放得开了，更能交际了，更能处事了，也更能……了～主线不变，一切都在为未来，铺起一条足够广阔的路～<br><br>新年快樂！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;2019即将过去，2020即将到来，时间过得真快，转眼间，大二都快过半了，时间真的是弹指间流逝啊～这一年，收获不多，但也不少，一张张证书奖状，还有许多礼品——手环、键鼠套装……总之，不能说十分充实，但是，也没怎么荒废～这其中一个个收获，自然也少不了2018年埋下的一个个伏笔
-      
-    
-    </summary>
-    
-    
-      <category term="新年" scheme="http://www.playhi.net/categories/category-new-year/"/>
     
     
       <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
