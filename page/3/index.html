@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-my.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-my.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-my.png">
@@ -14,11 +14,13 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.playhi.net","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.playhi.net","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}};
   </script>
 
   <meta name="description" content="Playhi&#39;s Blog">
@@ -29,17 +31,14 @@
 <meta property="og:description" content="Playhi&#39;s Blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Playhi">
-<meta property="article:tag" content="Playhi">
-<meta property="article:tag" content="Playhi博客">
-<meta property="article:tag" content="Playhi Blog">
-<meta property="article:tag" content="Playhi&#39;s Blog">
-<meta property="article:tag" content="Playhi的博客">
+<meta property="article:tag" content="Playhi,Playhi博客,Playhi Blog,Playhi&#39;s Blog,Playhi的博客">
 <meta name="twitter:card" content="summary">
+
 
 <link rel="canonical" href="http://www.playhi.net/page/3/">
 
 
-<script id="page-configurations">
+<script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -68,50 +67,62 @@
 
   <noscript>
   <style>
-  .use-motion .brand,
+  body { margin-top: 2rem; }
+
   .use-motion .menu-item,
-  .sidebar-inner,
+  .use-motion .sidebar,
   .use-motion .post-block,
   .use-motion .pagination,
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
   .use-motion .site-title,
-  .use-motion .site-subtitle {
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
     opacity: initial;
     top: initial;
   }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
   </style>
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Playhi's Blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
+  <main class="main">
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
+      <i class="logo-line"></i>
       <h1 class="site-title">Playhi's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">生活|开发|经验|杂谈|分享</p>
   </div>
@@ -125,9 +136,8 @@
 
 
 
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
@@ -150,7 +160,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">93</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">94</span></a>
 
   </li>
         <li class="menu-item menu-item-sitemap">
@@ -174,7 +184,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
@@ -182,9 +192,9 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
 
@@ -192,6 +202,85 @@
   </div>
 
 </div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
+      <!--/noindex-->
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Playhi</p>
+  <div class="site-description" itemprop="description">Playhi's Blog</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">94</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Playhi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Playhi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:hiplayhi@playhi.net" title="E-Mail → mailto:hiplayhi@playhi.net" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://stackoverflow.com/users/10011687/playhi" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;10011687&#x2F;playhi" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/u014799995" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;u014799995" rel="noopener" target="_blank"><i class="fab fa-csdn fa-fw"></i>CSDN</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+      </section>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
     
@@ -200,14 +289,94 @@
     <span>0%</span>
   </div>
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
+
+    <div class="main-inner index posts-expand">
+      
+
+      
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2019/06/24/%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB%E3%80%81%E6%8E%A7%E7%83%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Playhi">
+      <meta itemprop="description" content="Playhi's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Playhi's Blog">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
           
+            <a href="/2019/06/24/%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB%E3%80%81%E6%8E%A7%E7%83%9F/" class="post-title-link" itemprop="url">垃圾分类、控烟</a>
+        </h2>
 
-          <div class="content index posts-expand">
-            
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-24 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-24T00:00:00+08:00">2019-06-24</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>最近这垃圾分类，搞得是真的起劲，又是立法又是垃圾禁（暂停）运又是……的，尽管有些东西，现在垃圾分类还没有明确究竟是属于什么分类，但这分类仍旧是通过各大媒体等宣传渠道尽最大力推进。再看看禁烟呢？弄了这么多年，这税收啊，怕是个难以快速放下的“毒品”，就没有怎么好好的组织过禁烟，鲜有的一点动作也远不如如垃圾分类如此大力的宣传和知识普及，站在禁止吸烟🚭下面吸烟的，也不在少数，按照这进度，吸烟什么时候能近乎完全的控制在各种“条例”的限制框架内呢？</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -223,53 +392,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/06/20/Deepin%E6%B7%B1%E5%BA%A6-%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC-ISO%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F-%E4%B8%8B%E8%BD%BD/" class="post-title-link" itemprop="url">Deepin深度 历史版本 ISO安装镜像 下载</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-20 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-20T00:00:00+08:00">2019-06-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-notes/" itemprop="url" rel="index"><span itemprop="name">小记</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/06/20/Deepin%E6%B7%B1%E5%BA%A6-%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC-ISO%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F-%E4%B8%8B%E8%BD%BD/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/06/20/Deepin%E6%B7%B1%E5%BA%A6-%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC-ISO%E5%AE%89%E8%A3%85%E9%95%9C%E5%83%8F-%E4%B8%8B%E8%BD%BD/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-20 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-20T00:00:00+08:00">2019-06-20</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-notes/" itemprop="url" rel="index"><span itemprop="name">小记</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -278,8 +438,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>地址：<a href="http://packagess.deepin.com:8088/releases-archive/" target="_blank" rel="nofollow noreferrer noopener">http://packagess.deepin.com:8088/releases-archive/</a><br><br>里面还包含了15.4开始不提供32位版本的之前版本的32位的 Deepin 。</p>
 
       
@@ -288,9 +446,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -311,53 +471,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/06/19/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0-Deepin-%E4%B8%8B%E7%9A%84-QQ%E3%80%81%E5%BE%AE%E4%BF%A1-%E7%AD%89%E5%95%86%E5%BA%97%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BD%AF%E4%BB%B6/" class="post-title-link" itemprop="url">手动更新 Deepin 下的 QQ、微信 等商店应用程序软件</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-19 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-19T00:00:00+08:00">2019-06-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-tutorial/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/06/19/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0-Deepin-%E4%B8%8B%E7%9A%84-QQ%E3%80%81%E5%BE%AE%E4%BF%A1-%E7%AD%89%E5%95%86%E5%BA%97%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BD%AF%E4%BB%B6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/06/19/%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0-Deepin-%E4%B8%8B%E7%9A%84-QQ%E3%80%81%E5%BE%AE%E4%BF%A1-%E7%AD%89%E5%95%86%E5%BA%97%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BD%AF%E4%BB%B6/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-19 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-19T00:00:00+08:00">2019-06-19</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-tutorial/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -366,8 +517,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>Deepin 商店里的 QQ、TIM、微信 这些 wine 的软件，至今版本都有些古老了，不升级能用，但有些新功能就没得用了，今天受<a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=166448" rel="nofollow noreferrer noopener" target="_blank">论坛帖子</a>启发，成功手动更新了我这 Deepin 上的 QQ 和 微信。<br><br>1、在深度商店安装对应软件；<br>2、打开一次；<br>3、下载所需软件的更新版本 EXE 到 XX目录；<br>4、打开深度终端；<br>5、执行<code>export  WINEPREFIX=~/.deepinwine/Deepin-WeChat</code>（参照<code>/home/用户/.deepinwine/</code>下的各个文件夹） <small>//指定位置</small>；<br>6、执行<code>deepin-wine 文件路径（/XX目录/XX.EXE）</code> <small>//安装</small>；<br>7、按正常流程安装更新（按钮看不出字的话，鼠标移过去按下（按住并挪开避免执行）左键一般就显示出来了）；<br>8、安装完毕，检查是否能正常运行，有功能异常的话，接着自己魔改或者卸载重装商店版本。<br><br>操作起来吧！BOOM！</p>
 
       
@@ -376,9 +525,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -399,53 +550,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/06/18/20190618/" class="post-title-link" itemprop="url">20190618</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-18T00:00:00+08:00">2019-06-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/06/18/20190618/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/06/18/20190618/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-18T00:00:00+08:00">2019-06-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -454,8 +596,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>这学校真是要废掉了啊</p>
 
       
@@ -464,9 +604,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -487,53 +629,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/06/14/20190614/" class="post-title-link" itemprop="url">20190614</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-14 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-14T00:00:00+08:00">2019-06-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/06/14/20190614/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/06/14/20190614/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-14 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-14T00:00:00+08:00">2019-06-14</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -542,8 +675,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>这边建议退学呢亲。</p>
 
       
@@ -552,9 +683,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -575,53 +708,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/06/12/%E8%B4%A8%E9%87%8F%E9%AB%98%E5%BE%97%E4%B8%80%E5%A1%8C%E7%B3%8A%E6%B6%82%E7%9A%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95/" class="post-title-link" itemprop="url">质量高得一塌糊涂的期末考试</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-12 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-12T00:00:00+08:00">2019-06-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/06/12/%E8%B4%A8%E9%87%8F%E9%AB%98%E5%BE%97%E4%B8%80%E5%A1%8C%E7%B3%8A%E6%B6%82%E7%9A%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/06/12/%E8%B4%A8%E9%87%8F%E9%AB%98%E5%BE%97%E4%B8%80%E5%A1%8C%E7%B3%8A%E6%B6%82%E7%9A%84%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%95/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-12 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-12T00:00:00+08:00">2019-06-12</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -630,8 +754,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>我真是惊了，今天“程序设计基础”期末考试，我们课上学的是 <code>C++</code> ，然后呢，“看代码写结果”一共三道题，第一题<code>#include &lt;stdio.h&gt;</code>，第二题<code>#include &lt;string.h&gt;</code>（连<code>#include &lt;stdio.h&gt;</code>都没了），第三题<code>#include &lt;stdio.h&gt;</code>，头文件“抢” <code>C</code> 的用，一个<code>&lt;iostream&gt;</code>都没见到，然而，代码里输入输出，<code>cin&gt;&gt;</code>、<code>cout&lt;&lt;</code>用的不要太开心哦。考场里，一堆用手机的，开心啊开心啊，一点事都没啊，监考看到都不管呢！这破学校想咋滴？！:)</p>
 
       
@@ -640,9 +762,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -663,53 +787,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/06/06/%E5%8F%88%E6%98%AF%E4%B8%80%E5%B9%B4%E9%AB%98%E8%80%83%E6%97%B6/" class="post-title-link" itemprop="url">又是一年高考时</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-06 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-06T00:00:00+08:00">2019-06-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-essay-informal/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/06/06/%E5%8F%88%E6%98%AF%E4%B8%80%E5%B9%B4%E9%AB%98%E8%80%83%E6%97%B6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/06/06/%E5%8F%88%E6%98%AF%E4%B8%80%E5%B9%B4%E9%AB%98%E8%80%83%E6%97%B6/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-06 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-06T00:00:00+08:00">2019-06-06</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-essay-informal/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -718,8 +833,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>新闻听了看了这么多年，直到去年才以高考考生身份亲自参与了一次高考，一年前的这一切，似乎才刚刚发生，转眼间，我们的下一届，也即将踏上这高中阶段的收官之作。不必多说什么，简简单单，祝每个人都能发挥出自己正常的水平，而后跨入自己所理想并且能学到足够知识的学校，最终行走在一条适合自己未来发展、对社会无害的正确道路上。</p>
 
       
@@ -728,9 +841,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -751,53 +866,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/06/04/20190604/" class="post-title-link" itemprop="url">20190604</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-06-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-04T00:00:00+08:00">2019-06-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/06/04/20190604/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/06/04/20190604/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-06-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-06-04T00:00:00+08:00">2019-06-04</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -806,8 +912,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>遮挡行车视线的横幅、停在上坡（桥）路中间开车门对调主副驾驶的车、在下坡处“屁股”戳在外面占据近乎半根车道停在路口处的车、停在人行道上的车……校内路况，还真是“别致”呢～</p>
 
       
@@ -816,9 +920,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -839,53 +945,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/05/22/20190522/" class="post-title-link" itemprop="url">20190522</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-05-22 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-22T00:00:00+08:00">2019-05-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/05/22/20190522/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/05/22/20190522/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-05-22 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-22T00:00:00+08:00">2019-05-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -894,8 +991,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p><span style="color:white;">研究表明，</span>这幅样子的大学，已经成为我学习的绊脚石了。</p>
 
       
@@ -904,9 +999,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -927,53 +1024,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/05/17/20190517/" class="post-title-link" itemprop="url">20190517</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-05-17 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-17T00:00:00+08:00">2019-05-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/05/17/20190517/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/05/17/20190517/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-05-17 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-17T00:00:00+08:00">2019-05-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -982,8 +1070,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>回顾过去的那么多时间，总觉得做得太少，各个事情推进都过于缓慢，总是被别人（亦或是学校等）“牵着走”，效率低下，何时能做我自己呢。<br>这段时间，一个又一个一个又一个一个又一个一个又一个……的糟糕事情，火气有点溢出，各位，别怕。</p>
 
       
@@ -992,9 +1078,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1015,53 +1103,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/05/17/%E8%BF%99%E7%BE%A4%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BB%AC%EF%BC%8C%E7%A9%B6%E7%AB%9F%E6%83%B3%E5%B9%B2%E4%BB%80%E4%B9%88%E5%91%A2/" class="post-title-link" itemprop="url">这群大学生们，究竟想干什么呢</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-05-17 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-17T00:00:00+08:00">2019-05-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/05/17/%E8%BF%99%E7%BE%A4%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BB%AC%EF%BC%8C%E7%A9%B6%E7%AB%9F%E6%83%B3%E5%B9%B2%E4%BB%80%E4%B9%88%E5%91%A2/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/05/17/%E8%BF%99%E7%BE%A4%E5%A4%A7%E5%AD%A6%E7%94%9F%E4%BB%AC%EF%BC%8C%E7%A9%B6%E7%AB%9F%E6%83%B3%E5%B9%B2%E4%BB%80%E4%B9%88%E5%91%A2/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-05-17 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-17T00:00:00+08:00">2019-05-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1070,8 +1149,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>&nbsp;&nbsp;&nbsp;&nbsp;今天上午的制图（CAD）考试，一进场，突然愣住，老师课上说过多次了，因为上课的地方就是考试的地方，并且这个考试不排座位，希望我们在平时上课时，逐渐固定下自己的座位，这样能尽可能确保考试时自己已经与自己坐的机位上的电脑磨合好了（也避免有的无法正常使用的机器在考试时被使用）。结果今天呢？一进场，上一节课没课的某班的一些人（不是一个两个）已经把之前我们好多人从头坐到尾（截至上一节课）没有变过的机位给“拿下”了，导致我们班一进场，场内就突然有点混乱了——许多人因此不得不变更座位。为何今天突然上火？上课不听玩手机，作业不会又不学，到最后关头还“强行”捅事情，群体性制造混乱，给别人搞出一堆麻烦，加之学校机房设备又各有特点（鼠标、键盘等），这样的莫名奇妙，谁会乐意？机位已被拿下，“夺取者”也在做准备工作了，此时如果再说“这是我的位置”又要消耗时间以及整出新麻烦，加之本身就早已看不顺眼，自然不屑再多说——自寻新座，开始考试。<br>&nbsp;&nbsp;&nbsp;&nbsp;上课看手机不听讲，下课打游戏不学习，临到考试通宵恶补。这种风格，在现在的大学校园里，绝非个例，甚至愈发放肆。请问，这群大学生们，究竟想干什么呢？</p>
 
       
@@ -1080,9 +1157,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1103,53 +1182,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/05/14/20190514/" class="post-title-link" itemprop="url">20190514</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-05-14 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-14T00:00:00+08:00">2019-05-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/05/14/20190514/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/05/14/20190514/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-05-14 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-14T00:00:00+08:00">2019-05-14</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1158,8 +1228,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>这学上的是真的有趣，知识学不到啥，休息都没法好好休息，碰到习惯诡异的的舍友是真的烦人。哎～累～</p>
 
       
@@ -1168,9 +1236,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1191,53 +1261,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/04/30/%E9%9D%99%E6%82%84%E6%82%84%E9%9D%99%E6%82%84%E6%82%84/" class="post-title-link" itemprop="url">静悄悄静悄悄</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-04-30 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-30T00:00:00+08:00">2019-04-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-uncategorized/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/04/30/%E9%9D%99%E6%82%84%E6%82%84%E9%9D%99%E6%82%84%E6%82%84/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/04/30/%E9%9D%99%E6%82%84%E6%82%84%E9%9D%99%E6%82%84%E6%82%84/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-30 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-30T00:00:00+08:00">2019-04-30</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-uncategorized/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1246,8 +1307,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>静悄悄静悄悄，一切静悄悄，真好。</p>
 
       
@@ -1256,9 +1315,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1279,53 +1340,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/04/21/%E6%97%A0%E6%A0%87%E9%A2%98/" class="post-title-link" itemprop="url">无标题</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-04-21 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-21T00:00:00+08:00">2019-04-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/04/21/%E6%97%A0%E6%A0%87%E9%A2%98/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/04/21/%E6%97%A0%E6%A0%87%E9%A2%98/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-21 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-21T00:00:00+08:00">2019-04-21</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1334,8 +1386,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>m<em>g</em>d，怎么会有这么<strong>的舍友，</strong>大喊大叫，吓死了要，***吵死了，滚啊！！！</p>
 
       
@@ -1344,9 +1394,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1367,53 +1419,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/04/18/20190418/" class="post-title-link" itemprop="url">20190418</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-04-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-18T00:00:00+08:00">2019-04-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/04/18/20190418/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/04/18/20190418/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-18T00:00:00+08:00">2019-04-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1422,8 +1465,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>怎么会有这样的舍友，好烦，别的舍友各方面都挺好的，就他一个，一天到晚打游戏，开语音，嘴上说个不停，耳机根本就盖不过他的声音，还会吼，一会儿 垃圾 一会儿 我操 一会儿 我去 一会儿 我靠 一会儿 无语了 一会儿 哎（负能量满满叹气） 一会儿 …… 操着一口奇怪的普通话到处骂街，打游戏动不动就自带“标点符号”，他<em>的这都是谁教的，*</em>一般，吵死了，宿舍里只要他在，几乎就根本没个安静的时候，也真是奇了怪了，他这考试倒是也都不挂科，不知是什么神奇的操作。</p>
 
       
@@ -1432,9 +1473,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1455,53 +1498,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/04/17/%E4%B8%8A%E5%A4%A7%E5%AD%A6%E4%BB%A5%E5%90%8E%EF%BC%8C%E5%9C%A8-%E8%BF%99%E6%96%B9%E9%9D%A2%EF%BC%8C%E6%88%91%E7%9A%84%E8%AE%A4%E7%9F%A5%EF%BC%8C%E8%A2%AB%E4%B8%80%E6%AC%A1%E6%AC%A1%E5%88%B7%E6%96%B0/" class="post-title-link" itemprop="url">上大学以后，在**这方面，我的认知，被一次次刷新</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-04-17 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-17T00:00:00+08:00">2019-04-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/04/17/%E4%B8%8A%E5%A4%A7%E5%AD%A6%E4%BB%A5%E5%90%8E%EF%BC%8C%E5%9C%A8-%E8%BF%99%E6%96%B9%E9%9D%A2%EF%BC%8C%E6%88%91%E7%9A%84%E8%AE%A4%E7%9F%A5%EF%BC%8C%E8%A2%AB%E4%B8%80%E6%AC%A1%E6%AC%A1%E5%88%B7%E6%96%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/04/17/%E4%B8%8A%E5%A4%A7%E5%AD%A6%E4%BB%A5%E5%90%8E%EF%BC%8C%E5%9C%A8-%E8%BF%99%E6%96%B9%E9%9D%A2%EF%BC%8C%E6%88%91%E7%9A%84%E8%AE%A4%E7%9F%A5%EF%BC%8C%E8%A2%AB%E4%B8%80%E6%AC%A1%E6%AC%A1%E5%88%B7%E6%96%B0/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-17 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-17T00:00:00+08:00">2019-04-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1510,8 +1544,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>容易被负能量传染或影响的，建议不要看下去了。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;学校也真是一次又一次刷新了我的认知。我一直认为，大多数996的根本原因，是企业管理体系的溃败，导致效率崩塌，单位产出难以上升甚至是发生下降，而这管理体系从何而来，带有什么色彩呢？这些996的企业的控制者、管理者，大量的来自各个国内的高等院校，而国内的不少高等院校，在效率等各方面，在我看来，似乎不少都做得不怎么样。<br>&nbsp;&nbsp;&nbsp;&nbsp;有着某年12月1日截止的提交，直到第二年的4月，才下发最后的审批结果的事情；<br>&nbsp;&nbsp;&nbsp;&nbsp;有着喊着学生们<b>晚上20:30</b>到某处集合，也不知要做啥，然后呢，排队形啊，花了<b>超过1小时</b>，排了<b>一个</b>队形，怎么排的呢？三个管理（含负责人），200不到的参与者，先塑个型，搞成个方形，然后呢，个子高高低低，这个抽到那里去，那个抽到这里来，换来换去换几次，有的人又被另一个管理抽回到老地方了，开心的不要不要的的事情；<br>&nbsp;&nbsp;&nbsp;&nbsp;有着要给学生们的表演手势更改一下，结果学生们都到了，他们却当场开始讨论了起来怎么改，时间一分一秒过去，不知过了多久，可算是给在边上晾到凉透的学生们一个最终结果的事情，宛如某些企业开一个毫无准备的讨论会；<br>&nbsp;&nbsp;&nbsp;&nbsp;有着“哪里集合？”“体育馆篮球场”“篮球场哪里？一楼二楼？”（“篮球场”：狭义的解释是一层的运动场地，但广义来说的话，二层的看台，也是篮球场的一部分，并且先前这个事项去过的都是二层）“你说呢？体育馆没来过是吧？”（这学校老师（负责人）脾气还真大哈，回答一句“一楼（最后找到在一楼）”会咋滴？）这样的事情，宛如企业中的有些毒瘤，架子真大，脾气真牛，就是办事，毫无效率，棒棒哒。<br><br>&nbsp;&nbsp;&nbsp;&nbsp;真不知道说什么好，类似的事情岂止这些。顺便奉劝一句，如果会遇到某些课程已经会的，但却破不了翘课这个“处”的，作出上大学决定前请先三思。</p>
 
       
@@ -1520,9 +1552,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1543,53 +1577,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/04/10/20190410%E5%B0%8F%E5%B0%8F%E8%AE%B0/" class="post-title-link" itemprop="url">20190410小小记</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-04-10 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-10T00:00:00+08:00">2019-04-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/04/10/20190410%E5%B0%8F%E5%B0%8F%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/04/10/20190410%E5%B0%8F%E5%B0%8F%E8%AE%B0/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-04-10 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-10T00:00:00+08:00">2019-04-10</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1598,8 +1623,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>学校这课上的是真的牛皮。2小时+的课，总和下来，吹逼（此处意思约等于 闲谈）2小时，零头时间里和这课名字相关的稍微多那么一点一点一点点……吹逼吹的东西，还和日常实际有那么些不符～再掺杂些听上去听古老的数据～这大学上的是真的有趣的不要不要的……<br>啊！～我的**……</p>
 
       
@@ -1608,9 +1631,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1631,53 +1656,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/03/30/%E2%80%9C%E7%A5%9E%E5%A5%87%E2%80%9D%E7%9A%84%E4%B8%AD%E8%8B%B1%E6%B7%B7%E5%90%88/" class="post-title-link" itemprop="url">“神奇”的中英混合</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-03-30 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-30T00:00:00+08:00">2019-03-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/03/30/%E2%80%9C%E7%A5%9E%E5%A5%87%E2%80%9D%E7%9A%84%E4%B8%AD%E8%8B%B1%E6%B7%B7%E5%90%88/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/03/30/%E2%80%9C%E7%A5%9E%E5%A5%87%E2%80%9D%E7%9A%84%E4%B8%AD%E8%8B%B1%E6%B7%B7%E5%90%88/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-30 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-30T00:00:00+08:00">2019-03-30</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1686,8 +1702,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>国内有些人奇奇怪怪的语言表达时常被我吐槽。<br>这不，最近又碰到一个，张口闭口“演示Demo”，演示-&gt;Demo，Demo-&gt;演示，两个混着一起上，还真是有趣，搞不清楚，就别秀，说话前面多想一下能怎样，全用中文又能怎样？中文不学好，英文也没学好，就急着到处表现显得自己很厉害？真棒呢……</p>
 
       
@@ -1696,9 +1710,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1719,53 +1735,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/03/24/20190324/" class="post-title-link" itemprop="url">20190324</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-03-24 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-24T00:00:00+08:00">2019-03-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/03/24/20190324/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/03/24/20190324/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-24 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-24T00:00:00+08:00">2019-03-24</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-grumble/" itemprop="url" rel="index"><span itemprop="name">牢骚</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1774,8 +1781,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>怎么会有这么吵闹的室友、怎么会有这么糟糕的网络、怎么会有着这么嘈杂的氛围、怎么会有这么无用的学校、怎么会有这么无耻的浪费，为什么总是难以找到一个大致合适、一个相对理想的环境，来，认真的、专注的、沉入其中的，做，自己，所需要、所应该、所真正需要做的事。<br>总感觉，被一个无形的东西，所绑架。<br>欲挣脱而不能。</p>
 
       
@@ -1784,9 +1789,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
   </article>
   
   
@@ -1807,53 +1814,44 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
+
+    
+    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
             <a href="/2019/03/20/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" class="post-title-link" itemprop="url">记一次无线网络异常处理</a>
         </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-03-20 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-20T00:00:00+08:00">2019-03-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-notes/" itemprop="url" rel="index"><span itemprop="name">小记</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/03/20/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/03/20/%E8%AE%B0%E4%B8%80%E6%AC%A1%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-20 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-20T00:00:00+08:00">2019-03-20</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-notes/" itemprop="url" rel="index"><span itemprop="name">小记</span></a>
+        </span>
+    </span>
+
   
-  
+</div>
 
         </div>
       </header>
@@ -1862,8 +1860,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
           <p>这学期开学没几天，突然就发现自己宿舍的无线网络特别不稳定，一直是十分拥挤的感觉，检查同网用户并没有发现问题，只看到了自己人，陷入沉思。尝试重启路由器，往往好不了几秒钟，又开始频繁掉包（4掉2这种），到路由端延迟200~1000ms左右，极其不寻常。查看tplink路由端管理页面的日志，没有发现什么异常（信息量好少），突然有点懵。突然，灵光一闪，是不是有人在暴力破解——跑PIN、跑字典之类的，于是赶紧停止广播SSID并且更换SSID，1秒2秒3秒，1分2分3分，至今已经大约一周了，网络十分稳定，看来之前是判断正确了，还真是有人在搞事。没想到啊没想到，我这学校居然还有搞这种东西的人，工具泛滥成灾了呵～</p>
 
       
@@ -1872,97 +1868,11 @@
     
     
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
         <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2019/03/16/%E8%BF%98%E6%9C%89%E6%B2%A1%E6%9C%89%E5%AE%89%E5%85%A8%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Playhi">
-      <meta itemprop="description" content="Playhi's Blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Playhi's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/03/16/%E8%BF%98%E6%9C%89%E6%B2%A1%E6%9C%89%E5%AE%89%E5%85%A8%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4/" class="post-title-link" itemprop="url">还有没有安全的饮用水</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-03-16 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-16T00:00:00+08:00">2019-03-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-essay-informal/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/03/16/%E8%BF%98%E6%9C%89%E6%B2%A1%E6%9C%89%E5%AE%89%E5%85%A8%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/03/16/%E8%BF%98%E6%9C%89%E6%B2%A1%E6%9C%89%E5%AE%89%E5%85%A8%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>喝水，看似很简单的事，现在觉得，似乎也并不容易、并不简单，这段时间，几乎天天1+瓶瓶装水的我，总是在想一个曾经被我回避过很多次的问题——我喝的水，对于我有什么可能的风险。<br><br>水里有什么？<br>&nbsp;&nbsp;在垃圾桶中、在草丛中、在海滩边、在河堤边、在极地冰川和浮冰上、在窒息而亡的动物尸体中、甚至在海洋最后的净土海沟上，似乎都有着一类物品的身影——塑料制品。塑料制品，俨然已经成为了世界各地的一道“亮丽的风景线”，五彩斑斓、绚丽夺目。<br>水从哪里来？<br>&nbsp;&nbsp;不管是我们平时常见的自来水、桶装水还是瓶装水，基本上，就是某山泉、某山、某河流、某口井或是某个水龙头、某个水厂等这类的来源。<br>水质如何？<br>&nbsp;&nbsp;既然有大气环流等各种气象因素的存在，这些水体，自然也难以脱离自然而存在着，当在实验室中，发现解剖的鱼的体内有塑料颗粒的存在、发现来自海水中的样品有着不少的塑料颗粒的存在，即使我们喝的水，有着层层工艺处理，我想，也难以有人有底气站出来表示这水是完完全全没有受塑料制品污染的。<br>污染从何而来？<br>&nbsp;&nbsp;源头的水，很可能或多或少有被污染；通过设备运输，到达加工工厂，这期间，受到外部环境的二次污染怕是也是避不开的；接着开始加工，层层工艺处理，但是，这些设备一定不会有来自这些设备的物质析出吗？似乎多少也会有些的；然后，灌装到容器内，譬如塑料瓶，看了看手边一圈塑料瓶，都是PET的，那它除了可能存在的加工残留以及塑料颗粒析出，还可能含有锑，这些仍然是一道难以避开的但可能发生的污染点；最后，当我们喝完瓶中的水，瓶子大多遭到丢弃，或是被掩埋、或是被冲入水体、或是被焚烧而浮于大气之中，最终，进一步加深对水源的污染。<br><br>虽说这一切，目前都是“微量”，但是，日积月累，最后会发生什么，也着实有点难以预料了。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
+    </footer>
   </article>
   
   
@@ -1976,8 +1886,7 @@
 
 
 
-          </div>
-          
+      
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -1986,7 +1895,7 @@
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
     if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
       if (activeTab) {
         activeTab.click();
       }
@@ -1995,101 +1904,20 @@
   if (CONFIG.comments.storage) {
     window.addEventListener('tabs:click', event => {
       if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
+      const commentClass = event.target.classList[1];
       localStorage.setItem('comments_active', commentClass);
     });
   }
 </script>
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Playhi</p>
-  <div class="site-description" itemprop="description">Playhi's Blog</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">93</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">10</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">18</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/Playhi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Playhi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:hiplayhi@playhi.net" title="E-Mail → mailto:hiplayhi@playhi.net" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://stackoverflow.com/users/10011687/playhi" title="StackOverflow → https:&#x2F;&#x2F;stackoverflow.com&#x2F;users&#x2F;10011687&#x2F;playhi" rel="noopener" target="_blank"><i class="fab fa-stack-overflow fa-fw"></i>StackOverflow</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://blog.csdn.net/u014799995" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;u014799995" rel="noopener" target="_blank"><i class="fab fa-csdn fa-fw"></i>CSDN</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-      </span>
-  </div>
-
-
-
-      </div>
-
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
+      
 
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
+      
 
 <div class="copyright">
   
@@ -2100,73 +1928,31 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Playhi</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
   <script>
     (function(){
-      var canonicalURL, curProtocol;
-      //Get the <link> tag
-      var x=document.getElementsByTagName("link");
-		//Find the last canonical URL
-		if(x.length > 0){
-			for (i=0;i<x.length;i++){
-				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
-					canonicalURL=x[i].href;
-				}
-			}
-		}
-    //Get protocol
-	    if (!canonicalURL){
-	    	curProtocol = window.location.protocol.split(':')[0];
-	    }
-	    else{
-	    	curProtocol = canonicalURL.split(':')[0];
-	    }
-      //Get current URL if the canonical URL does not exist
-	    if (!canonicalURL) canonicalURL = window.location.href;
-	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
   </script>
 
 
 
 
-  
-<script src="/js/local-search.js"></script>
-
+  <script src="/js/local-search.js"></script>
 
 
 
@@ -2181,36 +1967,17 @@
 
   
 
+
+
+
+
+
+
+
   
 
+  
 
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : false,
-      appId      : 'nLSogsbDtBClfmRYEvYuvGCR-9Nh9j0Va',
-      appKey     : '5iIl9GBiMWpazGnqTV1HDpF9',
-      placeholder: "",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'zh-cn' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : false,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
-</script>
 <style>
     .buttomFloat {
 	background: #222;

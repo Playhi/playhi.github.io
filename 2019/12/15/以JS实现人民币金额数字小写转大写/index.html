@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-my.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-my.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-my.png">
@@ -14,11 +14,13 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.playhi.net","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.playhi.net","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}};
   </script>
 
   <meta name="description" content="以JS实现人民币金额数字小写转大写">
@@ -34,10 +36,11 @@
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
 
+
 <link rel="canonical" href="http://www.playhi.net/2019/12/15/%E4%BB%A5JS%E5%AE%9E%E7%8E%B0%E4%BA%BA%E6%B0%91%E5%B8%81%E9%87%91%E9%A2%9D%E6%95%B0%E5%AD%97%E5%B0%8F%E5%86%99%E8%BD%AC%E5%A4%A7%E5%86%99/">
 
 
-<script id="page-configurations">
+<script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -66,50 +69,62 @@
 
   <noscript>
   <style>
-  .use-motion .brand,
+  body { margin-top: 2rem; }
+
   .use-motion .menu-item,
-  .sidebar-inner,
+  .use-motion .sidebar,
   .use-motion .post-block,
   .use-motion .pagination,
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
   .use-motion .site-title,
-  .use-motion .site-subtitle {
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
     opacity: initial;
     top: initial;
   }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
   </style>
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Playhi's Blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
+  <main class="main">
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
+      <i class="logo-line"></i>
       <h1 class="site-title">Playhi's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">生活|开发|经验|杂谈|分享</p>
   </div>
@@ -123,9 +138,8 @@
 
 
 
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
@@ -148,7 +162,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">93</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">94</span></a>
 
   </li>
         <li class="menu-item menu-item-sitemap">
@@ -172,7 +186,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
@@ -180,9 +194,9 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
 
@@ -190,176 +204,18 @@
   </div>
 
 </div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2019/12/15/%E4%BB%A5JS%E5%AE%9E%E7%8E%B0%E4%BA%BA%E6%B0%91%E5%B8%81%E9%87%91%E9%A2%9D%E6%95%B0%E5%AD%97%E5%B0%8F%E5%86%99%E8%BD%AC%E5%A4%A7%E5%86%99/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Playhi">
-      <meta itemprop="description" content="Playhi's Blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Playhi's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          以JS实现人民币金额数字小写转大写
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-12-15 00:00:00" itemprop="dateCreated datePublished" datetime="2019-12-15T00:00:00+08:00">2019-12-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-development/" itemprop="url" rel="index"><span itemprop="name">开发</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/12/15/%E4%BB%A5JS%E5%AE%9E%E7%8E%B0%E4%BA%BA%E6%B0%91%E5%B8%81%E9%87%91%E9%A2%9D%E6%95%B0%E5%AD%97%E5%B0%8F%E5%86%99%E8%BD%AC%E5%A4%A7%E5%86%99/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/15/%E4%BB%A5JS%E5%AE%9E%E7%8E%B0%E4%BA%BA%E6%B0%91%E5%B8%81%E9%87%91%E9%A2%9D%E6%95%B0%E5%AD%97%E5%B0%8F%E5%86%99%E8%BD%AC%E5%A4%A7%E5%86%99/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <p>以JS实现人民币金额数字小写转大写</p>
-<a id="more"></a> 
-
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Constants: </span></span><br><span class="line"><span class="keyword">var</span> MAXIMUM_NUMBER = <span class="number">999999999999.99</span>;</span><br><span class="line"><span class="comment">// Predefine the radix characters and currency symbols for output: </span></span><br><span class="line"><span class="keyword">var</span> CN_ZERO = <span class="string">"零"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_ONE = <span class="string">"壹"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_TWO = <span class="string">"贰"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_THREE = <span class="string">"叁"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_FOUR = <span class="string">"肆"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_FIVE = <span class="string">"伍"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_SIX = <span class="string">"陆"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_SEVEN = <span class="string">"柒"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_EIGHT = <span class="string">"捌"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_NINE = <span class="string">"玖"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_TEN = <span class="string">"拾"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_HUNDRED = <span class="string">"佰"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_THOUSAND = <span class="string">"仟"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_TEN_THOUSAND = <span class="string">"万"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_HUNDRED_MILLION = <span class="string">"亿"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_DOLLAR = <span class="string">"圆"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_TEN_CENT = <span class="string">"角"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_CENT = <span class="string">"分"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_INTEGER = <span class="string">"整"</span>;</span><br><span class="line"><span class="comment">// Variables: </span></span><br><span class="line"><span class="keyword">var</span> integral;</span><br><span class="line"><span class="comment">// Represent integral part of digit number. </span></span><br><span class="line"><span class="keyword">var</span> decimal;</span><br><span class="line"><span class="comment">// Represent decimal part of digit number. </span></span><br><span class="line"><span class="keyword">var</span> outputCharacters;</span><br><span class="line"><span class="comment">// The output result. </span></span><br><span class="line"><span class="keyword">var</span> parts;</span><br><span class="line"><span class="keyword">var</span> digits, radices, bigRadices, decimals;</span><br><span class="line"><span class="keyword">var</span> zeroCount;</span><br><span class="line"><span class="keyword">var</span> i, p, d;</span><br><span class="line"><span class="keyword">var</span> quotient, modulus;</span><br><span class="line"><span class="comment">// Validate input string: </span></span><br><span class="line">currencyDigits = $(<span class="string">"#lowerRMB"</span>).val();</span><br><span class="line"><span class="comment">// Normalize the format of input digits: </span></span><br><span class="line">currencyDigits = currencyDigits.replace(<span class="regexp">/,/g</span>, <span class="string">""</span>);</span><br><span class="line"><span class="comment">// Remove comma delimiters. </span></span><br><span class="line">currencyDigits = currencyDigits.replace(<span class="regexp">/^0+/</span>, <span class="string">""</span>);</span><br><span class="line"><span class="comment">// Trim zeros at the beginning. </span></span><br><span class="line"><span class="comment">// Assert the number is not greater than the maximum number. </span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">Number</span>(currencyDigits) &gt; MAXIMUM_NUMBER) {</span><br><span class="line">    $(<span class="string">"#upperRMB"</span>).val(<span class="string">"数字过大"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">}</span><br><span class="line"><span class="comment">// Process the coversion from currency digits to characters: </span></span><br><span class="line"><span class="comment">// Separate integral and decimal parts before processing coversion: </span></span><br><span class="line">parts = currencyDigits.split(<span class="string">"."</span>);</span><br><span class="line"><span class="keyword">if</span> (parts.length &gt; <span class="number">1</span>) {</span><br><span class="line">    integral = parts[<span class="number">0</span>];</span><br><span class="line">    decimal = parts[<span class="number">1</span>];</span><br><span class="line">    <span class="comment">// Cut down redundant decimal digits that are after the second. </span></span><br><span class="line">    decimal = decimal.substr(<span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line">} <span class="keyword">else</span> {</span><br><span class="line">    integral = parts[<span class="number">0</span>];</span><br><span class="line">    decimal = <span class="string">""</span>;</span><br><span class="line">} </span><br><span class="line"><span class="comment">// Prepare the characters corresponding to the digits: </span></span><br><span class="line">digits = <span class="keyword">new</span> <span class="built_in">Array</span>(CN_ZERO, CN_ONE, CN_TWO, CN_THREE, CN_FOUR, CN_FIVE, CN_SIX, CN_SEVEN, CN_EIGHT, CN_NINE);</span><br><span class="line">radices = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">""</span>, CN_TEN, CN_HUNDRED, CN_THOUSAND);</span><br><span class="line">bigRadices = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">""</span>, CN_TEN_THOUSAND, CN_HUNDRED_MILLION);</span><br><span class="line">decimals = <span class="keyword">new</span> <span class="built_in">Array</span>(CN_TEN_CENT, CN_CENT);</span><br><span class="line"><span class="comment">// Start processing:</span></span><br><span class="line">outputCharacters = <span class="string">""</span>;</span><br><span class="line"><span class="comment">// Process integral part if it is larger than 0: </span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">Number</span>(integral) &gt; <span class="number">0</span>) {</span><br><span class="line">    zeroCount = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>;</span><br><span class="line">        i &lt; integral.length;</span><br><span class="line">        i++) {</span><br><span class="line">        p = integral.length - i - <span class="number">1</span>;</span><br><span class="line">        d = integral.substr(i, <span class="number">1</span>);</span><br><span class="line">        quotient = p / <span class="number">4</span>;</span><br><span class="line">        modulus = p % <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">if</span> (d == <span class="string">"0"</span>) {</span><br><span class="line">            zeroCount++;</span><br><span class="line">        } <span class="keyword">else</span> {</span><br><span class="line">            <span class="keyword">if</span> (zeroCount &gt; <span class="number">0</span>) {</span><br><span class="line">                outputCharacters += digits[<span class="number">0</span>];</span><br><span class="line">            } zeroCount = <span class="number">0</span>;</span><br><span class="line">            outputCharacters += digits[<span class="built_in">Number</span>(d)] + radices[modulus];</span><br><span class="line">        } <span class="keyword">if</span> (modulus == <span class="number">0</span> &amp;&amp; zeroCount &lt; <span class="number">4</span>) {</span><br><span class="line">            outputCharacters += bigRadices[quotient];</span><br><span class="line">        }</span><br><span class="line">    } outputCharacters += CN_DOLLAR;</span><br><span class="line">} </span><br><span class="line"><span class="comment">// Process decimal part if there is: </span></span><br><span class="line"><span class="keyword">if</span> (decimal != <span class="string">""</span>) {</span><br><span class="line">    realNotEmpty = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>;</span><br><span class="line">        i &lt; decimal.length;</span><br><span class="line">        i++) {</span><br><span class="line">        d = decimal.substr(i, <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> (d != <span class="string">"0"</span>) {</span><br><span class="line">            outputCharacters += digits[<span class="built_in">Number</span>(d)] + decimals[i];</span><br><span class="line">            realNotEmpty = <span class="literal">true</span>;</span><br><span class="line">        }</span><br><span class="line">    } <span class="keyword">if</span> (!realNotEmpty) {</span><br><span class="line">        decimal = <span class="string">""</span>;</span><br><span class="line">    }</span><br><span class="line">} </span><br><span class="line"><span class="comment">// Confirm and return the final output string: </span></span><br><span class="line"><span class="keyword">if</span> (outputCharacters == <span class="string">""</span>) {</span><br><span class="line">    outputCharacters = CN_ZERO + CN_DOLLAR;</span><br><span class="line">} <span class="keyword">if</span> (decimal == <span class="string">""</span>) {</span><br><span class="line">    outputCharacters += CN_INTEGER;</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
-
-<p>最后 <code>outputCharacters</code> 就是转换后的结果了。<br>可以访问 <a href="https://cjgj.top/rmbdaxiaoxie.php" target="_blank" rel="noopener">https://cjgj.top/rmbdaxiaoxie.php</a> 查看演示。</p>
-<p>JS代码段由 <a href="https://blog.csdn.net/qq7342272/article/details/6658702" target="_blank" rel="noopener">https://blog.csdn.net/qq7342272/article/details/6658702</a> 经修改处理后而来。</p>
-
-    </div>
-
-    
-    
-    
-
-      <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/tags-javascript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
-          </div>
-
         
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2019/12/04/20191204/" rel="prev" title="20191204">
-      <i class="fa fa-chevron-left"></i> 20191204
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/12/31/%E6%AC%A2%E9%80%812019-%E8%BF%8E%E6%8E%A52020/" rel="next" title="欢送2019,迎接2020">
-      欢送2019,迎接2020 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
-          </div>
-          
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
   
   <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
   </div>
 
   <aside class="sidebar">
-    <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
         </li>
@@ -369,21 +225,21 @@
       </ul>
 
       <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
       <!--/noindex-->
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Playhi</p>
   <div class="site-description" itemprop="description">Playhi's Blog</div>
 </div>
-<div class="site-state-wrap motion-element">
+<div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">93</span>
+          <span class="site-state-item-count">94</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -401,7 +257,7 @@
       </div>
   </nav>
 </div>
-  <div class="links-of-author motion-element">
+  <div class="links-of-author animated">
       <span class="links-of-author-item">
         <a href="https://github.com/Playhi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Playhi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
@@ -421,21 +277,164 @@
 
 
 
-      </div>
-
+      </section>
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  <div class="sidebar-dimmer"></div>
 
 
-      </div>
-    </main>
+    </header>
 
-    <footer class="footer">
-      <div class="footer-inner">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2019/12/15/%E4%BB%A5JS%E5%AE%9E%E7%8E%B0%E4%BA%BA%E6%B0%91%E5%B8%81%E9%87%91%E9%A2%9D%E6%95%B0%E5%AD%97%E5%B0%8F%E5%86%99%E8%BD%AC%E5%A4%A7%E5%86%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Playhi">
+      <meta itemprop="description" content="Playhi's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Playhi's Blog">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          以JS实现人民币金额数字小写转大写
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-12-15 00:00:00" itemprop="dateCreated datePublished" datetime="2019-12-15T00:00:00+08:00">2019-12-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-development/" itemprop="url" rel="index"><span itemprop="name">开发</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>以JS实现人民币金额数字小写转大写</p>
+<a id="more"></a> 
+
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Constants: </span></span><br><span class="line"><span class="keyword">var</span> MAXIMUM_NUMBER = <span class="number">999999999999.99</span>;</span><br><span class="line"><span class="comment">// Predefine the radix characters and currency symbols for output: </span></span><br><span class="line"><span class="keyword">var</span> CN_ZERO = <span class="string">"零"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_ONE = <span class="string">"壹"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_TWO = <span class="string">"贰"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_THREE = <span class="string">"叁"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_FOUR = <span class="string">"肆"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_FIVE = <span class="string">"伍"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_SIX = <span class="string">"陆"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_SEVEN = <span class="string">"柒"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_EIGHT = <span class="string">"捌"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_NINE = <span class="string">"玖"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_TEN = <span class="string">"拾"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_HUNDRED = <span class="string">"佰"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_THOUSAND = <span class="string">"仟"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_TEN_THOUSAND = <span class="string">"万"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_HUNDRED_MILLION = <span class="string">"亿"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_DOLLAR = <span class="string">"圆"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_TEN_CENT = <span class="string">"角"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_CENT = <span class="string">"分"</span>;</span><br><span class="line"><span class="keyword">var</span> CN_INTEGER = <span class="string">"整"</span>;</span><br><span class="line"><span class="comment">// Variables: </span></span><br><span class="line"><span class="keyword">var</span> integral;</span><br><span class="line"><span class="comment">// Represent integral part of digit number. </span></span><br><span class="line"><span class="keyword">var</span> decimal;</span><br><span class="line"><span class="comment">// Represent decimal part of digit number. </span></span><br><span class="line"><span class="keyword">var</span> outputCharacters;</span><br><span class="line"><span class="comment">// The output result. </span></span><br><span class="line"><span class="keyword">var</span> parts;</span><br><span class="line"><span class="keyword">var</span> digits, radices, bigRadices, decimals;</span><br><span class="line"><span class="keyword">var</span> zeroCount;</span><br><span class="line"><span class="keyword">var</span> i, p, d;</span><br><span class="line"><span class="keyword">var</span> quotient, modulus;</span><br><span class="line"><span class="comment">// Validate input string: </span></span><br><span class="line">currencyDigits = $(<span class="string">"#lowerRMB"</span>).val();</span><br><span class="line"><span class="comment">// Normalize the format of input digits: </span></span><br><span class="line">currencyDigits = currencyDigits.replace(<span class="regexp">/,/g</span>, <span class="string">""</span>);</span><br><span class="line"><span class="comment">// Remove comma delimiters. </span></span><br><span class="line">currencyDigits = currencyDigits.replace(<span class="regexp">/^0+/</span>, <span class="string">""</span>);</span><br><span class="line"><span class="comment">// Trim zeros at the beginning. </span></span><br><span class="line"><span class="comment">// Assert the number is not greater than the maximum number. </span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">Number</span>(currencyDigits) &gt; MAXIMUM_NUMBER) {</span><br><span class="line">    $(<span class="string">"#upperRMB"</span>).val(<span class="string">"数字过大"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">}</span><br><span class="line"><span class="comment">// Process the coversion from currency digits to characters: </span></span><br><span class="line"><span class="comment">// Separate integral and decimal parts before processing coversion: </span></span><br><span class="line">parts = currencyDigits.split(<span class="string">"."</span>);</span><br><span class="line"><span class="keyword">if</span> (parts.length &gt; <span class="number">1</span>) {</span><br><span class="line">    integral = parts[<span class="number">0</span>];</span><br><span class="line">    decimal = parts[<span class="number">1</span>];</span><br><span class="line">    <span class="comment">// Cut down redundant decimal digits that are after the second. </span></span><br><span class="line">    decimal = decimal.substr(<span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line">} <span class="keyword">else</span> {</span><br><span class="line">    integral = parts[<span class="number">0</span>];</span><br><span class="line">    decimal = <span class="string">""</span>;</span><br><span class="line">} </span><br><span class="line"><span class="comment">// Prepare the characters corresponding to the digits: </span></span><br><span class="line">digits = <span class="keyword">new</span> <span class="built_in">Array</span>(CN_ZERO, CN_ONE, CN_TWO, CN_THREE, CN_FOUR, CN_FIVE, CN_SIX, CN_SEVEN, CN_EIGHT, CN_NINE);</span><br><span class="line">radices = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">""</span>, CN_TEN, CN_HUNDRED, CN_THOUSAND);</span><br><span class="line">bigRadices = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">""</span>, CN_TEN_THOUSAND, CN_HUNDRED_MILLION);</span><br><span class="line">decimals = <span class="keyword">new</span> <span class="built_in">Array</span>(CN_TEN_CENT, CN_CENT);</span><br><span class="line"><span class="comment">// Start processing:</span></span><br><span class="line">outputCharacters = <span class="string">""</span>;</span><br><span class="line"><span class="comment">// Process integral part if it is larger than 0: </span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">Number</span>(integral) &gt; <span class="number">0</span>) {</span><br><span class="line">    zeroCount = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>;</span><br><span class="line">        i &lt; integral.length;</span><br><span class="line">        i++) {</span><br><span class="line">        p = integral.length - i - <span class="number">1</span>;</span><br><span class="line">        d = integral.substr(i, <span class="number">1</span>);</span><br><span class="line">        quotient = p / <span class="number">4</span>;</span><br><span class="line">        modulus = p % <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">if</span> (d == <span class="string">"0"</span>) {</span><br><span class="line">            zeroCount++;</span><br><span class="line">        } <span class="keyword">else</span> {</span><br><span class="line">            <span class="keyword">if</span> (zeroCount &gt; <span class="number">0</span>) {</span><br><span class="line">                outputCharacters += digits[<span class="number">0</span>];</span><br><span class="line">            } zeroCount = <span class="number">0</span>;</span><br><span class="line">            outputCharacters += digits[<span class="built_in">Number</span>(d)] + radices[modulus];</span><br><span class="line">        } <span class="keyword">if</span> (modulus == <span class="number">0</span> &amp;&amp; zeroCount &lt; <span class="number">4</span>) {</span><br><span class="line">            outputCharacters += bigRadices[quotient];</span><br><span class="line">        }</span><br><span class="line">    } outputCharacters += CN_DOLLAR;</span><br><span class="line">} </span><br><span class="line"><span class="comment">// Process decimal part if there is: </span></span><br><span class="line"><span class="keyword">if</span> (decimal != <span class="string">""</span>) {</span><br><span class="line">    realNotEmpty = <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>;</span><br><span class="line">        i &lt; decimal.length;</span><br><span class="line">        i++) {</span><br><span class="line">        d = decimal.substr(i, <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> (d != <span class="string">"0"</span>) {</span><br><span class="line">            outputCharacters += digits[<span class="built_in">Number</span>(d)] + decimals[i];</span><br><span class="line">            realNotEmpty = <span class="literal">true</span>;</span><br><span class="line">        }</span><br><span class="line">    } <span class="keyword">if</span> (!realNotEmpty) {</span><br><span class="line">        decimal = <span class="string">""</span>;</span><br><span class="line">    }</span><br><span class="line">} </span><br><span class="line"><span class="comment">// Confirm and return the final output string: </span></span><br><span class="line"><span class="keyword">if</span> (outputCharacters == <span class="string">""</span>) {</span><br><span class="line">    outputCharacters = CN_ZERO + CN_DOLLAR;</span><br><span class="line">} <span class="keyword">if</span> (decimal == <span class="string">""</span>) {</span><br><span class="line">    outputCharacters += CN_INTEGER;</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<p>最后 <code>outputCharacters</code> 就是转换后的结果了。<br>可以访问 <a href="https://cjgj.top/rmbdaxiaoxie.php" target="_blank" rel="noopener">https://cjgj.top/rmbdaxiaoxie.php</a> 查看演示。</p>
+<p>JS代码段由 <a href="https://blog.csdn.net/qq7342272/article/details/6658702" target="_blank" rel="noopener">https://blog.csdn.net/qq7342272/article/details/6658702</a> 经修改处理后而来。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/tags-javascript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
+          </div>
+
         
 
-        
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/12/04/20191204/" rel="prev" title="20191204">
+                  <i class="fa fa-chevron-left"></i> 20191204
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/12/31/%E6%AC%A2%E9%80%812019-%E8%BF%8E%E6%8E%A52020/" rel="next" title="欢送2019,迎接2020">
+                  欢送2019,迎接2020 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+  
+  
+  
+
+
+
+      
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
 
 <div class="copyright">
   
@@ -446,73 +445,31 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Playhi</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
   <script>
     (function(){
-      var canonicalURL, curProtocol;
-      //Get the <link> tag
-      var x=document.getElementsByTagName("link");
-		//Find the last canonical URL
-		if(x.length > 0){
-			for (i=0;i<x.length;i++){
-				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
-					canonicalURL=x[i].href;
-				}
-			}
-		}
-    //Get protocol
-	    if (!canonicalURL){
-	    	curProtocol = window.location.protocol.split(':')[0];
-	    }
-	    else{
-	    	curProtocol = canonicalURL.split(':')[0];
-	    }
-      //Get current URL if the canonical URL does not exist
-	    if (!canonicalURL) canonicalURL = window.location.href;
-	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
   </script>
 
 
 
 
-  
-<script src="/js/local-search.js"></script>
-
+  <script src="/js/local-search.js"></script>
 
 
 
@@ -527,34 +484,34 @@
 
   
 
+
+
+
+
+
+
+
   
 
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
 
 <script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
+NexT.utils.loadComments('#gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'c796731d1929fa1ba0e4',
+      clientSecret: '87c44bddbf8814287b918f4c090cc16530277e16',
+      repo        : 'playhi.github.io',
+      owner       : 'Playhi',
+      admin       : ['Playhi'],
+      id          : 'd516e7d093027820d1e531949825c018',
+        language: 'zh-CN',
+      distractionFreeMode: true
     });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : false,
-      appId      : 'nLSogsbDtBClfmRYEvYuvGCR-9Nh9j0Va',
-      appKey     : '5iIl9GBiMWpazGnqTV1HDpF9',
-      placeholder: "",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'zh-cn' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : false,
-      serverURLs : ''
-    });
-  }, window.Valine);
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
 });
 </script>
 <style>

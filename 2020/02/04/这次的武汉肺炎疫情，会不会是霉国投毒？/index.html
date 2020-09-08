@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-my.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-my.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-my.png">
@@ -14,11 +14,13 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.playhi.net","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.playhi.net","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}};
   </script>
 
   <meta name="description" content="这次的武汉肺炎，已经给国内各个方面带来了不小的影响，病毒来源这些天来是众说纷纭——蝙蝠、投毒、病毒泄露……有的人说，不信阴谋论；有的人说，为什么吃了这么久，偏偏这次出了事……我觉得吧～一口咬定霉国投毒，没有证据，完全否定霉国投毒的可能性，似乎也不可能……">
@@ -34,10 +36,11 @@
 <meta property="article:tag" content="无标签">
 <meta name="twitter:card" content="summary">
 
+
 <link rel="canonical" href="http://www.playhi.net/2020/02/04/%E8%BF%99%E6%AC%A1%E7%9A%84%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%98%AF%E9%9C%89%E5%9B%BD%E6%8A%95%E6%AF%92%EF%BC%9F/">
 
 
-<script id="page-configurations">
+<script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -66,50 +69,62 @@
 
   <noscript>
   <style>
-  .use-motion .brand,
+  body { margin-top: 2rem; }
+
   .use-motion .menu-item,
-  .sidebar-inner,
+  .use-motion .sidebar,
   .use-motion .post-block,
   .use-motion .pagination,
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
   .use-motion .site-title,
-  .use-motion .site-subtitle {
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
     opacity: initial;
     top: initial;
   }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
   </style>
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Playhi's Blog" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
+  <main class="main">
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
+      <i class="logo-line"></i>
       <h1 class="site-title">Playhi's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">生活|开发|经验|杂谈|分享</p>
   </div>
@@ -123,9 +138,8 @@
 
 
 
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
@@ -148,7 +162,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">93</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">94</span></a>
 
   </li>
         <li class="menu-item menu-item-sitemap">
@@ -172,7 +186,7 @@
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
@@ -180,9 +194,9 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
 
@@ -190,170 +204,18 @@
   </div>
 
 </div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2020/02/04/%E8%BF%99%E6%AC%A1%E7%9A%84%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%98%AF%E9%9C%89%E5%9B%BD%E6%8A%95%E6%AF%92%EF%BC%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Playhi">
-      <meta itemprop="description" content="Playhi's Blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Playhi's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          这次的武汉肺炎疫情，会不会是霉国投毒？
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-04 15:34:37" itemprop="dateCreated datePublished" datetime="2020-02-04T15:34:37+08:00">2020-02-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/category-essay-informal/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/02/04/%E8%BF%99%E6%AC%A1%E7%9A%84%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%98%AF%E9%9C%89%E5%9B%BD%E6%8A%95%E6%AF%92%EF%BC%9F/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/04/%E8%BF%99%E6%AC%A1%E7%9A%84%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%98%AF%E9%9C%89%E5%9B%BD%E6%8A%95%E6%AF%92%EF%BC%9F/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <p>  这次的武汉肺炎，已经给国内各个方面带来了不小的影响，病毒来源这些天来是众说纷纭——蝙蝠、投毒、病毒泄露……有的人说，不信阴谋论；有的人说，为什么吃了这么久，偏偏这次出了事……我觉得吧～一口咬定霉国投毒，没有证据，完全否定霉国投毒的可能性，似乎也不可能……<a id="more"></a><br>  如果说是吃出来的，的确，蝙蝠是很多病毒的携带者，连荒野求生贝尔吃蝙蝠的时候，都要加热很久，生怕出问题，另外，武汉这片区域的确是有吃蝙蝠的情况的，并且，病毒分析后发现这次的新型冠状病毒与蝙蝠中发现的某些冠状病毒相似，这些都能用以辅佐推断得到，这次的病毒是源于吃野味导致的。<br>  那如果说霉国投毒，有什么可以拿来当材料用于辅佐推断得出这一结论呢？比如说，2月3日的外交部网上记者会上，就有记者提出：“美方表示，美方已为中方应对疫情提供了巨大帮助。”，但是发言人华春莹在回应中称：“疫情发生以来，一些国家通过不同方式向中方抗击疫情提供支持和援助，我们对此表示感谢。但据我所知，美国政府迄今未向中方提供任何实质性帮助。相反，美国第一个从武汉撤出领馆人员，第一个提出要撤出部分使馆人员，第一个在世卫组织明确表示不建议甚至反对对华采取旅行和贸易限制措施后，反其道而行之、宣布采取全面禁止中公民入境举措，制造和散播恐慌情绪。”（<a href="https://zx.sina.cn/n/2020-02-03/zx-iimxyqvy9973627.d.html" target="_blank" rel="noopener">参考链接</a>|<a href="https://3w.huanqiu.com/a/5e93e2/9CaKrnKpaLK" target="_blank" rel="noopener">参考链接</a>）；比如说，2月3日，数千名香港医护人员罢工——香港史上头一遭，那么，是什么组织，发起了这场罢工？是香港医管局员工阵线，这个组织是一个类似工会的组织，在今年元旦期间刚刚成立（注意成立时间），其“反修例”的背景十分浓厚，很明显，看起来，它就是为政治而生的（<a href="https://3w.huanqiu.com/a/fe5d4b/9CaKrnKpaYk" target="_blank" rel="noopener">参考链接</a>）；比如说，美国议员声称病毒是武汉泄漏的生化武器；比如说，02年贸易战，03年非典，18、19年贸易战，20年新型冠状病毒；比如说……通过这些情况，我们可以采用某新型美式思维推断认为，这次的疫情，这一切，不是巧合，而是预谋，是由美国主导的一次生化偷袭，是为了达到扼制中国发展、伤害中国经济的目的而执行的又一次精心布置的“恐怖袭击”——它能被完美的解释为是来自蝙蝠身上的冠状病毒变体，而且它的致死力、致残力，也不及传统的细菌战、生化战。<br>  再加之现在再去追溯病毒实际来源是一件十分困难甚至难以100%认定的事件，所以呢，我觉得，这次疫情的实际来源，可能在很长时间里，都是个“悬案”。</p>
-
-    </div>
-
-    
-    
-    
-
-      <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/tags-untagged/" rel="tag"><i class="fa fa-tag"></i> 无标签</a>
-          </div>
-
         
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/02/01/%E9%80%8F%E8%BF%87%E6%95%99%E6%9D%90%E6%8E%A8%E6%B5%8B%E5%9B%BD%E5%86%85%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E5%BC%B1%E5%A4%84/" rel="prev" title="透过教材推测国内计算机教育弱处">
-      <i class="fa fa-chevron-left"></i> 透过教材推测国内计算机教育弱处
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/" rel="next" title="疯狂填坑">
-      疯狂填坑 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
-          </div>
-          
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
   
   <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
   </div>
 
   <aside class="sidebar">
-    <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
         </li>
@@ -363,21 +225,21 @@
       </ul>
 
       <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
+      <section class="post-toc-wrap sidebar-panel">
+      </section>
       <!--/noindex-->
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Playhi</p>
   <div class="site-description" itemprop="description">Playhi's Blog</div>
 </div>
-<div class="site-state-wrap motion-element">
+<div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">93</span>
+          <span class="site-state-item-count">94</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -395,7 +257,7 @@
       </div>
   </nav>
 </div>
-  <div class="links-of-author motion-element">
+  <div class="links-of-author animated">
       <span class="links-of-author-item">
         <a href="https://github.com/Playhi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Playhi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
@@ -415,21 +277,158 @@
 
 
 
-      </div>
-
+      </section>
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  <div class="sidebar-dimmer"></div>
 
 
-      </div>
-    </main>
+    </header>
 
-    <footer class="footer">
-      <div class="footer-inner">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2020/02/04/%E8%BF%99%E6%AC%A1%E7%9A%84%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%98%AF%E9%9C%89%E5%9B%BD%E6%8A%95%E6%AF%92%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Playhi">
+      <meta itemprop="description" content="Playhi's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Playhi's Blog">
+    </span>
+
+    
+    
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          这次的武汉肺炎疫情，会不会是霉国投毒？
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-02-04 15:34:37" itemprop="dateCreated datePublished" datetime="2020-02-04T15:34:37+08:00">2020-02-04</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-03-23 18:26:33" itemprop="dateModified" datetime="2020-03-23T18:26:33+08:00">2020-03-23</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-essay-informal/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>  这次的武汉肺炎，已经给国内各个方面带来了不小的影响，病毒来源这些天来是众说纷纭——蝙蝠、投毒、病毒泄露……有的人说，不信阴谋论；有的人说，为什么吃了这么久，偏偏这次出了事……我觉得吧～一口咬定霉国投毒，没有证据，完全否定霉国投毒的可能性，似乎也不可能……<a id="more"></a><br>  如果说是吃出来的，的确，蝙蝠是很多病毒的携带者，连荒野求生贝尔吃蝙蝠的时候，都要加热很久，生怕出问题，另外，武汉这片区域的确是有吃蝙蝠的情况的，并且，病毒分析后发现这次的新型冠状病毒与蝙蝠中发现的某些冠状病毒相似，这些都能用以辅佐推断得到，这次的病毒是源于吃野味导致的。<br>  那如果说霉国投毒，有什么可以拿来当材料用于辅佐推断得出这一结论呢？比如说，2月3日的外交部网上记者会上，就有记者提出：“美方表示，美方已为中方应对疫情提供了巨大帮助。”，但是发言人华春莹在回应中称：“疫情发生以来，一些国家通过不同方式向中方抗击疫情提供支持和援助，我们对此表示感谢。但据我所知，美国政府迄今未向中方提供任何实质性帮助。相反，美国第一个从武汉撤出领馆人员，第一个提出要撤出部分使馆人员，第一个在世卫组织明确表示不建议甚至反对对华采取旅行和贸易限制措施后，反其道而行之、宣布采取全面禁止中公民入境举措，制造和散播恐慌情绪。”（<a href="https://zx.sina.cn/n/2020-02-03/zx-iimxyqvy9973627.d.html" target="_blank" rel="noopener">参考链接</a>|<a href="https://3w.huanqiu.com/a/5e93e2/9CaKrnKpaLK" target="_blank" rel="noopener">参考链接</a>）；比如说，2月3日，数千名香港医护人员罢工——香港史上头一遭，那么，是什么组织，发起了这场罢工？是香港医管局员工阵线，这个组织是一个类似工会的组织，在今年元旦期间刚刚成立（注意成立时间），其“反修例”的背景十分浓厚，很明显，看起来，它就是为政治而生的（<a href="https://3w.huanqiu.com/a/fe5d4b/9CaKrnKpaYk" target="_blank" rel="noopener">参考链接</a>）；比如说，美国议员声称病毒是武汉泄漏的生化武器；比如说，02年贸易战，03年非典，18、19年贸易战，20年新型冠状病毒；比如说……通过这些情况，我们可以采用某新型美式思维推断认为，这次的疫情，这一切，不是巧合，而是预谋，是由美国主导的一次生化偷袭，是为了达到扼制中国发展、伤害中国经济的目的而执行的又一次精心布置的“恐怖袭击”——它能被完美的解释为是来自蝙蝠身上的冠状病毒变体，而且它的致死力、致残力，也不及传统的细菌战、生化战。<br>  再加之现在再去追溯病毒实际来源是一件十分困难甚至难以100%认定的事件，所以呢，我觉得，这次疫情的实际来源，可能在很长时间里，都是个“悬案”。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/tags-untagged/" rel="tag"><i class="fa fa-tag"></i> 无标签</a>
+          </div>
+
         
 
-        
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/02/01/%E9%80%8F%E8%BF%87%E6%95%99%E6%9D%90%E6%8E%A8%E6%B5%8B%E5%9B%BD%E5%86%85%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E5%BC%B1%E5%A4%84/" rel="prev" title="透过教材推测国内计算机教育弱处">
+                  <i class="fa fa-chevron-left"></i> 透过教材推测国内计算机教育弱处
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/" rel="next" title="疯狂填坑">
+                  疯狂填坑 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+  
+  
+  
+
+
+
+      
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
 
 <div class="copyright">
   
@@ -440,73 +439,31 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Playhi</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
   <script>
     (function(){
-      var canonicalURL, curProtocol;
-      //Get the <link> tag
-      var x=document.getElementsByTagName("link");
-		//Find the last canonical URL
-		if(x.length > 0){
-			for (i=0;i<x.length;i++){
-				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
-					canonicalURL=x[i].href;
-				}
-			}
-		}
-    //Get protocol
-	    if (!canonicalURL){
-	    	curProtocol = window.location.protocol.split(':')[0];
-	    }
-	    else{
-	    	curProtocol = canonicalURL.split(':')[0];
-	    }
-      //Get current URL if the canonical URL does not exist
-	    if (!canonicalURL) canonicalURL = window.location.href;
-	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
   </script>
 
 
 
 
-  
-<script src="/js/local-search.js"></script>
-
+  <script src="/js/local-search.js"></script>
 
 
 
@@ -521,34 +478,34 @@
 
   
 
+
+
+
+
+
+
+
   
 
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css">
 
 <script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
+NexT.utils.loadComments('#gitalk-container', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'c796731d1929fa1ba0e4',
+      clientSecret: '87c44bddbf8814287b918f4c090cc16530277e16',
+      repo        : 'playhi.github.io',
+      owner       : 'Playhi',
+      admin       : ['Playhi'],
+      id          : 'c52f5292aaa30f8bf01e483c88bd6e75',
+        language: 'zh-CN',
+      distractionFreeMode: true
     });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : false,
-      appId      : 'nLSogsbDtBClfmRYEvYuvGCR-9Nh9j0Va',
-      appKey     : '5iIl9GBiMWpazGnqTV1HDpF9',
-      placeholder: "",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'zh-cn' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : false,
-      serverURLs : ''
-    });
-  }, window.Valine);
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
 });
 </script>
 <style>

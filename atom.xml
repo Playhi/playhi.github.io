@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2020-08-06T08:23:57.162Z</updated>
+  <updated>2020-09-08T03:30:06.000Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有点担心深度接下来的……</title>
+    <link href="http://www.playhi.net/2020/09/08/%E6%9C%89%E7%82%B9%E6%8B%85%E5%BF%83%E6%B7%B1%E5%BA%A6%E6%8E%A5%E4%B8%8B%E6%9D%A5%E7%9A%84%E2%80%A6%E2%80%A6/"/>
+    <id>http://www.playhi.net/2020/09/08/%E6%9C%89%E7%82%B9%E6%8B%85%E5%BF%83%E6%B7%B1%E5%BA%A6%E6%8E%A5%E4%B8%8B%E6%9D%A5%E7%9A%84%E2%80%A6%E2%80%A6/</id>
+    <published>2020-09-08T03:30:06.000Z</published>
+    <updated>2020-09-08T03:30:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>从去年某个时候，或者可以再往前点，就开始有点担心 Deepin（现统信）未来到底能不能好好走下去了……</p><a id="more"></a><p>深度的技术积淀在国内看应该还是不少的了，但是或许是从老王离职了开始吧，明显感觉到稳定性啥的不如前了，很迷。先说个很基础的吧，比如 15.11 的时候，右下角 dock 的时间12/24小时制切换就坏了，一重启 dock 或者系统，大概率就自动回12小时制了，社区好几个贴，也没修，直到 v20 才恢复正常。出完 15.11 后不久，社区又因为官方在筹备统信而几乎就是不闻不问，也没个人在社区告诉一下他们在忙着筹备统信，全靠一堆版主里的个别一两个（非官方，真·志愿者）在帮忙打理……写到这，我又开始怀念老王在职的时候了……<br>一转眼，左等右等，一众用户离开，我都快认为深度凉了的时候，v20初版终于公开了，可是……真·BUG成堆……<br>不管怎样，v20 也算是有了，至少说是 Deepin 没凉……<br>但是给我的感觉，v20 的质量，真的，没法说好，很多看上去很离谱的BUG，都在这个华丽的外表下暗藏着……<br>说到华丽，再扯一句，虽说华丽，但其实也未必华丽，不管是大圆角，还是消失的侧边栏，亦或是失踪的热区……众人吐槽无数……<br>v20 初版发布到现在，理应已经比较稳定了吧～哈？Are you ok？我一共就两台电脑装了 Deepin，其中一台还停在 15.11，至于这是为什么，你觉得呢？ 😂<br>当然，Deepin 变统信，业务量多了不少，系统也有好几个分支了现在，新招的员工也不少，有些离谱BUG也能接受，但是，却又不注重社区维护。比如，即使一堆人报的BUG，有些仍然没有官方一个认真的处理情况，甚至是回复。再比如，发帖有些关键词拦截，需要额外审核，可是，审核，谁审核？发个帖过了几天，还在审核，在审啥？<br>顺便吐槽下 jingle，有时感觉也不太着调……或许是太忙了吧……<br>诶还有个，差点忘了，Deepin 的论坛不知道怎么回事，经常出错……（把 DZ 名声都带坏了那么一点点…… DZ 明明挺稳的好不好……）<br>总之，还是希望，统信，能正常的走下去，别被一些外环境的乌烟瘴气给带偏了……各方面，也能往好的方向，一点点走下去……  </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从去年某个时候，或者可以再往前点，就开始有点担心 Deepin（现统信）未来到底能不能好好走下去了……&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    
+    
+      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>Flutter 判断是否在暗色模式（Dark）下</title>
@@ -454,33 +477,6 @@
     <summary type="html">
     
       &lt;p&gt;顺便把一篇之前写了但是我那生成器生成报错的也提交上来了 ☺&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="小记" scheme="http://www.playhi.net/categories/category-notes/"/>
-    
-    
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 旅程开始了</title>
-    <link href="http://www.playhi.net/2020/01/30/Hexo-%E6%97%85%E7%A8%8B%E5%BC%80%E5%A7%8B%E4%BA%86/"/>
-    <id>http://www.playhi.net/2020/01/30/Hexo-%E6%97%85%E7%A8%8B%E5%BC%80%E5%A7%8B%E4%BA%86/</id>
-    <published>2020-01-30T14:02:44.000Z</published>
-    <updated>2020-03-23T10:26:33.763Z</updated>
-    
-    <content type="html"><![CDATA[<p>有点晚了，明天再写着玩～</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;有点晚了，明天再写着玩～&lt;/p&gt;
-
-      
     
     </summary>
     
