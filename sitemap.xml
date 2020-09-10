@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.playhi.net/2020/09/10/Flutter-TextField-InputDecoration-Border-%E9%BB%91%E8%BE%B9/</loc>
+    
+    <lastmod>2020-09-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.playhi.net/2020/09/08/%E6%9C%89%E7%82%B9%E6%8B%85%E5%BF%83%E6%B7%B1%E5%BA%A6%E6%8E%A5%E4%B8%8B%E6%9D%A5%E7%9A%84%E2%80%A6%E2%80%A6/</loc>
     
     <lastmod>2020-09-08</lastmod>
@@ -690,7 +697,7 @@
 
   <url>
     <loc>http://www.playhi.net/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -698,126 +705,126 @@
   
   <url>
     <loc>http://www.playhi.net/tags/tags-freezeyou/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-untagged/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-network/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-android/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-deepin/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-linux/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-php/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-vscode/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-windows/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-javascript/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-java/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-dart/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-flutter/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-base64/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-elang/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-mediawiki/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-markdown/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-virtualbox/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -826,70 +833,70 @@
   
   <url>
     <loc>http://www.playhi.net/categories/category-feeling/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-uncategorized/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-development/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-tc/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-grumble/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-notes/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-tutorial/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-essay-informal/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-ponder/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-new-year/</loc>
-    <lastmod>2020-09-09</lastmod>
+    <lastmod>2020-09-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

@@ -1240,4 +1240,18 @@
         <tag>无标签</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Flutter TextField InputDecoration Border 黑边</title>
+    <url>/2020/09/10/Flutter-TextField-InputDecoration-Border-%E9%BB%91%E8%BE%B9/</url>
+    <content><![CDATA[<p>整一个 <code>TextField</code> 的边框效果，拿 <code>border:</code> 尝试了半天，普通状态下总有个黑边，自定义的颜色也没看到，<a id="more"></a>再看了眼 <code>TextField</code> 的一堆属性，突然发现 <code>TextField</code> 不仅有 <code>border</code> ，还有 <code>errorBorder</code>、<code>focusedBorderfocusedBorder</code>、<code>focusedErrorBorder</code>、<code>disabledBorder</code>、<code>enabledBorder</code> 这几个 border …… 好了，问题解开 😂 </p>
+<p>示例：</p>
+<figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line">TextField(</span><br><span class="line">    onChanged: (str) {},</span><br><span class="line">    decoration: InputDecoration(</span><br><span class="line">      border: OutlineInputBorder(</span><br><span class="line">        borderSide: BorderSide(</span><br><span class="line">          color: Colors.white.withOpacity(<span class="number">0.5</span>),  <span class="comment">// 边框颜色</span></span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      enabledBorder: OutlineInputBorder(</span><br><span class="line">        borderSide: BorderSide(</span><br><span class="line">          color: Colors.white.withOpacity(<span class="number">0.3</span>),  <span class="comment">// 边框颜色</span></span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      filled: <span class="keyword">true</span>,  <span class="comment">// 不然 fillColor 等 不生效</span></span><br><span class="line">      fillColor: Colors.white.withOpacity(<span class="number">0.6</span>),</span><br><span class="line">      focusColor: Colors.white.withOpacity(<span class="number">0.5</span>),</span><br><span class="line">      hoverColor: Colors.white.withOpacity(<span class="number">0.3</span>),</span><br><span class="line">    ),</span><br><span class="line">    maxLines: <span class="number">1</span>,</span><br><span class="line">    keyboardType: TextInputType.text,</span><br><span class="line">    onSubmitted: (text) {},</span><br><span class="line">  ),</span><br></pre></td></tr></tbody></table></figure>
+]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>Flutter</tag>
+      </tags>
+  </entry>
 </search>
