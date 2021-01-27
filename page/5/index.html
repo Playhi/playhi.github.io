@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.1.1">
+<meta name="generator" content="Hexo 5.3.0">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-my.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-my.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-my.png">
@@ -15,14 +17,13 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.playhi.net","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":false,"lazyload":false,"nav":null,"activeClass":"gitalk"},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}};
+    var CONFIG = {"hostname":"www.playhi.net","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":false,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}};
   </script>
-
-  <meta name="description" content="Playhi&#39;s Blog">
+<meta name="description" content="Playhi&#39;s Blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Playhi&#39;s Blog">
 <meta property="og:url" content="http://www.playhi.net/page/5/index.html">
@@ -46,10 +47,8 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>Playhi's Blog - 生活|开发|经验|杂谈|分享</title>
+<title>Playhi's Blog - 生活|开发|经验|杂谈|分享</title>
   
-
 
   <script>
     var _hmt = _hmt || [];
@@ -60,7 +59,6 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-
 
 
 
@@ -109,7 +107,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
+    <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -137,36 +135,12 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">18</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">95</span></a>
-
-  </li>
-        <li class="menu-item menu-item-sitemap">
-
-    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
-
-  </li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">18</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">97</span></a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -177,8 +151,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -187,7 +160,7 @@
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
-  <span class="popup-btn-close">
+  <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
@@ -203,7 +176,7 @@
 </div>
         
   
-  <div class="toggle sidebar-toggle">
+  <div class="toggle sidebar-toggle" role="button">
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
@@ -221,22 +194,23 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Playhi</p>
   <div class="site-description" itemprop="description">Playhi's Blog</div>
 </div>
-<div class="site-state-wrap animated">
+<div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">95</span>
+          <span class="site-state-item-count">97</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -254,7 +228,7 @@
       </div>
   </nav>
 </div>
-  <div class="links-of-author animated">
+  <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
         <a href="https://github.com/Playhi" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Playhi" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
@@ -274,7 +248,8 @@
 
 
 
-      </section>
+        </div>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -283,7 +258,7 @@
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -294,13 +269,161 @@
 
 
     <div class="main-inner index posts-expand">
-      
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/14/%E7%94%9F%E6%88%90%E5%99%A8%E6%9B%B4%E6%96%B0%E4%B8%80%E7%82%B9%E5%86%85%E5%AE%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Playhi">
+      <meta itemprop="description" content="Playhi's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Playhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/12/14/%E7%94%9F%E6%88%90%E5%99%A8%E6%9B%B4%E6%96%B0%E4%B8%80%E7%82%B9%E5%86%85%E5%AE%B9/" class="post-title-link" itemprop="url">生成器更新一点内容</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-12-14 00:00:00" itemprop="dateCreated datePublished" datetime="2018-12-14T00:00:00+08:00">2018-12-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-uncategorized/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>加了个生成一个新的空源文章的能力，嘿嘿嘿～</p>
 
       
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
       
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/12/20181212/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Playhi">
+      <meta itemprop="description" content="Playhi's Blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Playhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/12/12/20181212/" class="post-title-link" itemprop="url">20181212</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-12-12 00:00:00" itemprop="dateCreated datePublished" datetime="2018-12-12T00:00:00+08:00">2018-12-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/category-development/" itemprop="url" rel="index"><span itemprop="name">开发</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>写FreezeYou的备份恢复，结果，好像要换思路了，呜[心情复杂][思考]</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/10/20181210/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -312,13 +435,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/12/10/20181210/" class="post-title-link" itemprop="url">20181210</a>
+          <a href="/2018/12/10/20181210/" class="post-title-link" itemprop="url">20181210</a>
         </h2>
 
         <div class="post-meta-container">
@@ -365,14 +484,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/09/20181209/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -384,13 +508,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/12/09/20181209/" class="post-title-link" itemprop="url">20181209</a>
+          <a href="/2018/12/09/20181209/" class="post-title-link" itemprop="url">20181209</a>
         </h2>
 
         <div class="post-meta-container">
@@ -437,14 +557,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/08/%E4%B8%8B%E9%9B%AA%E4%BA%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -456,13 +581,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/12/08/%E4%B8%8B%E9%9B%AA%E4%BA%86/" class="post-title-link" itemprop="url">下雪了</a>
+          <a href="/2018/12/08/%E4%B8%8B%E9%9B%AA%E4%BA%86/" class="post-title-link" itemprop="url">下雪了</a>
         </h2>
 
         <div class="post-meta-container">
@@ -509,14 +630,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/04/%E5%A4%A7%E6%A6%82%E6%98%AF%E5%9C%A8%E8%BF%B7%E8%8C%AB%E4%B8%AD%E5%90%A7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -528,13 +654,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/12/04/%E5%A4%A7%E6%A6%82%E6%98%AF%E5%9C%A8%E8%BF%B7%E8%8C%AB%E4%B8%AD%E5%90%A7/" class="post-title-link" itemprop="url">大概是在迷茫中吧</a>
+          <a href="/2018/12/04/%E5%A4%A7%E6%A6%82%E6%98%AF%E5%9C%A8%E8%BF%B7%E8%8C%AB%E4%B8%AD%E5%90%A7/" class="post-title-link" itemprop="url">大概是在迷茫中吧</a>
         </h2>
 
         <div class="post-meta-container">
@@ -581,14 +703,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/04/%E8%BF%99%E5%8F%AF%E7%9C%9F%E7%9A%84%E6%98%AF%E5%A4%AA%E5%B7%A7%E4%BA%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -600,13 +727,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/12/04/%E8%BF%99%E5%8F%AF%E7%9C%9F%E7%9A%84%E6%98%AF%E5%A4%AA%E5%B7%A7%E4%BA%86/" class="post-title-link" itemprop="url">这可真的是太巧了</a>
+          <a href="/2018/12/04/%E8%BF%99%E5%8F%AF%E7%9C%9F%E7%9A%84%E6%98%AF%E5%A4%AA%E5%B7%A7%E4%BA%86/" class="post-title-link" itemprop="url">这可真的是太巧了</a>
         </h2>
 
         <div class="post-meta-container">
@@ -653,14 +776,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/03/%E6%B2%A1%E5%95%A5%E5%8F%AF%E5%A4%B1%E6%9C%9B%E7%9A%84%EF%BC%8C%E4%B8%80%E5%88%87%E5%B0%BD%E5%9C%A8%E9%A2%84%E6%96%99%E4%B9%8B%E4%B8%AD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -672,13 +800,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/12/03/%E6%B2%A1%E5%95%A5%E5%8F%AF%E5%A4%B1%E6%9C%9B%E7%9A%84%EF%BC%8C%E4%B8%80%E5%88%87%E5%B0%BD%E5%9C%A8%E9%A2%84%E6%96%99%E4%B9%8B%E4%B8%AD/" class="post-title-link" itemprop="url">没啥可失望的，一切尽在预料之中</a>
+          <a href="/2018/12/03/%E6%B2%A1%E5%95%A5%E5%8F%AF%E5%A4%B1%E6%9C%9B%E7%9A%84%EF%BC%8C%E4%B8%80%E5%88%87%E5%B0%BD%E5%9C%A8%E9%A2%84%E6%96%99%E4%B9%8B%E4%B8%AD/" class="post-title-link" itemprop="url">没啥可失望的，一切尽在预料之中</a>
         </h2>
 
         <div class="post-meta-container">
@@ -725,14 +849,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/12/01/%E5%8D%81%E4%BA%8C%E6%9C%88%E7%AC%AC%E4%B8%80%E5%A4%A9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -744,13 +873,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/12/01/%E5%8D%81%E4%BA%8C%E6%9C%88%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="post-title-link" itemprop="url">十二月第一天</a>
+          <a href="/2018/12/01/%E5%8D%81%E4%BA%8C%E6%9C%88%E7%AC%AC%E4%B8%80%E5%A4%A9/" class="post-title-link" itemprop="url">十二月第一天</a>
         </h2>
 
         <div class="post-meta-container">
@@ -797,14 +922,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/11/28/%E6%A0%A1%E4%BC%81%E5%90%88%E4%BD%9C%EF%BC%8C%E7%AC%91%E5%85%B6%E5%90%88%E4%BD%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -816,13 +946,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/11/28/%E6%A0%A1%E4%BC%81%E5%90%88%E4%BD%9C%EF%BC%8C%E7%AC%91%E5%85%B6%E5%90%88%E4%BD%9C/" class="post-title-link" itemprop="url">校企合作，笑其合作</a>
+          <a href="/2018/11/28/%E6%A0%A1%E4%BC%81%E5%90%88%E4%BD%9C%EF%BC%8C%E7%AC%91%E5%85%B6%E5%90%88%E4%BD%9C/" class="post-title-link" itemprop="url">校企合作，笑其合作</a>
         </h2>
 
         <div class="post-meta-container">
@@ -869,14 +995,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/11/26/%E7%AA%81%E7%84%B6%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%EF%BC%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -888,13 +1019,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/11/26/%E7%AA%81%E7%84%B6%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%EF%BC%81/" class="post-title-link" itemprop="url">突然更新博客！</a>
+          <a href="/2018/11/26/%E7%AA%81%E7%84%B6%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2%EF%BC%81/" class="post-title-link" itemprop="url">突然更新博客！</a>
         </h2>
 
         <div class="post-meta-container">
@@ -941,14 +1068,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/06/10/%E5%9B%9E%E6%9D%A5%E5%95%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -960,13 +1092,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/06/10/%E5%9B%9E%E6%9D%A5%E5%95%A6/" class="post-title-link" itemprop="url">回来啦</a>
+          <a href="/2018/06/10/%E5%9B%9E%E6%9D%A5%E5%95%A6/" class="post-title-link" itemprop="url">回来啦</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1013,14 +1141,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/02/22/%E5%BE%85%E6%88%91%E5%85%AD%E6%9C%88%E6%BB%A1%E8%A1%80%E5%BD%92%E6%9D%A5%EF%BC%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1032,13 +1165,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/02/22/%E5%BE%85%E6%88%91%E5%85%AD%E6%9C%88%E6%BB%A1%E8%A1%80%E5%BD%92%E6%9D%A5%EF%BC%81/" class="post-title-link" itemprop="url">待我六月满血归来！</a>
+          <a href="/2018/02/22/%E5%BE%85%E6%88%91%E5%85%AD%E6%9C%88%E6%BB%A1%E8%A1%80%E5%BD%92%E6%9D%A5%EF%BC%81/" class="post-title-link" itemprop="url">待我六月满血归来！</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1085,14 +1214,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2018/01/25/android-studio-aapt2-%E6%8A%A5%E9%94%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1104,13 +1238,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2018/01/25/android-studio-aapt2-%E6%8A%A5%E9%94%99/" class="post-title-link" itemprop="url">android studio aapt2 报错</a>
+          <a href="/2018/01/25/android-studio-aapt2-%E6%8A%A5%E9%94%99/" class="post-title-link" itemprop="url">android studio aapt2 报错</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1157,14 +1287,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2017/08/28/%E5%AF%B9android-webview-shouldoverrideurlloading%E7%9A%84%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%8D%E5%90%8C%E6%83%B3%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1176,13 +1311,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/08/28/%E5%AF%B9android-webview-shouldoverrideurlloading%E7%9A%84%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%8D%E5%90%8C%E6%83%B3%E6%B3%95/" class="post-title-link" itemprop="url">对android webview shouldoverrideurlloading的使用的不同想法</a>
+          <a href="/2017/08/28/%E5%AF%B9android-webview-shouldoverrideurlloading%E7%9A%84%E4%BD%BF%E7%94%A8%E7%9A%84%E4%B8%8D%E5%90%8C%E6%83%B3%E6%B3%95/" class="post-title-link" itemprop="url">对android webview shouldoverrideurlloading的使用的不同想法</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1229,14 +1360,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2017/08/28/%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2%E5%95%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1248,13 +1384,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/08/28/%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2%E5%95%A6/" class="post-title-link" itemprop="url">开始写博客啦</a>
+          <a href="/2017/08/28/%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2%E5%95%A6/" class="post-title-link" itemprop="url">开始写博客啦</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1301,14 +1433,19 @@
       
     </footer>
   </article>
-  
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2017/08/28/Jekyll%E6%B2%A1%E7%94%A8%E6%88%90%EF%BC%8C%E6%B2%A1%E6%83%B3%E5%88%B0%E7%AA%81%E7%84%B6%E5%BF%83%E8%A1%80%E6%9D%A5%E6%BD%AE%EF%BC%8C%E8%87%AA%E5%B7%B1%E7%BB%99%E7%9E%8E%E6%95%B4%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%AE%B6%E4%BC%99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1320,13 +1457,9 @@
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Playhi's Blog">
     </span>
-
-    
-    
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2017/08/28/Jekyll%E6%B2%A1%E7%94%A8%E6%88%90%EF%BC%8C%E6%B2%A1%E6%83%B3%E5%88%B0%E7%AA%81%E7%84%B6%E5%BF%83%E8%A1%80%E6%9D%A5%E6%BD%AE%EF%BC%8C%E8%87%AA%E5%B7%B1%E7%BB%99%E7%9E%8E%E6%95%B4%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%AE%B6%E4%BC%99/" class="post-title-link" itemprop="url">Jekyll没用成，没想到突然心血来潮，自己给瞎整了一个小家伙</a>
+          <a href="/2017/08/28/Jekyll%E6%B2%A1%E7%94%A8%E6%88%90%EF%BC%8C%E6%B2%A1%E6%83%B3%E5%88%B0%E7%AA%81%E7%84%B6%E5%BF%83%E8%A1%80%E6%9D%A5%E6%BD%AE%EF%BC%8C%E8%87%AA%E5%B7%B1%E7%BB%99%E7%9E%8E%E6%95%B4%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B0%8F%E5%AE%B6%E4%BC%99/" class="post-title-link" itemprop="url">Jekyll没用成，没想到突然心血来潮，自己给瞎整了一个小家伙</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1373,19 +1506,15 @@
       
     </footer>
   </article>
-  
-  
-  
+</div>
 
 
-  
+
+
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
   </nav>
 
-
-
-      
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -1408,20 +1537,16 @@
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   &copy; 2014 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1434,30 +1559,11 @@
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/hexo-theme-next@8.0.0/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-next@8.0.0/source/js/next-boot.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-next@8.2.0/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-next@8.2.0/source/js/next-boot.js"></script>
 
   
-  <script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
-
-
-
-  <script src="//cdn.jsdelivr.net/npm/hexo-theme-next@8.0.0/source/js/local-search.js"></script>
-
-
-
-
-
-
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-next@8.2.0/source/js/local-search.js"></script>
 
 
 
@@ -1468,14 +1574,6 @@
 
 
 
-
-
-
-
-
-  
-
-  
 
 <style>
     .buttomFloat {
