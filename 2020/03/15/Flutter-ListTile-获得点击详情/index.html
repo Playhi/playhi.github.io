@@ -281,12 +281,10 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>Flutter ListTile <code>onTap</code>、<code>onLongPress</code> 事件获得详细信息（如点击位置等）</p>
-<a id="more"></a>
+<span id="more"></span>
 <ol>
 <li>引入依赖 <a target="_blank" rel="noopener" href="https://pub.dev/packages/list_tile_more_customizable">pub.dev:list_tile_more_customizable</a>：<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="attr">list_tile_more_customizable:</span> <span class="string">^1.2.1</span></span><br></pre></td></tr></tbody></table></figure></li>
-<li>将需要处的 <code>ListTile</code> 替换成 <code>ListTileMoreCustomizable</code>，然后 <code>onTap</code>、<code>onLongPress</code> 事件就包含了 <code>TapDownDetails</code>，直接使用即可。<figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类似于</span></span><br><span class="line">ListTileMoreCustomizable(</span><br><span class="line">    title: Text(<span class="string">"标题"</span>),</span><br><span class="line">    onTap: (details){},</span><br><span class="line">    onLongPress: (details){},</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
-
-</li>
+<li>将需要处的 <code>ListTile</code> 替换成 <code>ListTileMoreCustomizable</code>，然后 <code>onTap</code>、<code>onLongPress</code> 事件就包含了 <code>TapDownDetails</code>，直接使用即可。<figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类似于</span></span><br><span class="line">ListTileMoreCustomizable(</span><br><span class="line">    title: Text(<span class="string">"标题"</span>),</span><br><span class="line">    onTap: (details){},</span><br><span class="line">    onLongPress: (details){},</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure></li>
 </ol>
 <p><a target="_blank" rel="noopener" href="https://pub.dev/packages/list_tile_more_customizable">pub.dev 地址</a><br><a target="_blank" rel="noopener" href="https://github.com/Playhi/list_tile_more_customizable">源码 GitHub 地址</a></p>
 

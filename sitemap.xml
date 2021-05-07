@@ -4,7 +4,7 @@
   <url>
     <loc>http://www.playhi.net/about/index.html</loc>
     
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     
   </url>
   
@@ -12,6 +12,13 @@
     <loc>http://www.playhi.net/2021/01/27/%E5%A5%BD%E4%B9%85%E6%B2%A1%E4%B8%8AGitHub%E4%BA%86/</loc>
     
     <lastmod>2021-01-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.playhi.net/images/manifest.json</loc>
+    
+    <lastmod>2021-01-05</lastmod>
     
   </url>
   
@@ -73,13 +80,6 @@
   
   <url>
     <loc>http://www.playhi.net/2020/07/20/%E6%8A%8A%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86/</loc>
-    
-    <lastmod>2020-07-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.playhi.net/images/manifest.json</loc>
     
     <lastmod>2020-07-20</lastmod>
     
@@ -711,7 +711,7 @@
 
   <url>
     <loc>http://www.playhi.net/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -719,126 +719,126 @@
   
   <url>
     <loc>http://www.playhi.net/tags/tags-freezeyou/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-untagged/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-network/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-android/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-deepin/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-linux/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-php/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-vscode/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-windows/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-javascript/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-java/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-dart/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-flutter/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-base64/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-elang/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-mediawiki/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-markdown/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/tags/tags-virtualbox/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -847,70 +847,70 @@
   
   <url>
     <loc>http://www.playhi.net/categories/category-feeling/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-uncategorized/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-development/</loc>
-    <lastmod>2021-05-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.playhi.net/categories/category-tc/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-grumble/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.playhi.net/categories/category-tc/</loc>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-notes/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-tutorial/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-essay-informal/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-ponder/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://www.playhi.net/categories/category-new-year/</loc>
-    <lastmod>2021-05-04</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

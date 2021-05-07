@@ -280,7 +280,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>只判断横竖屏，拿 <code>height</code> 和 <code>width</code> 比较下就可以了，比如这样：<a id="more"></a></p>
+        <p>只判断横竖屏，拿 <code>height</code> 和 <code>width</code> 比较下就可以了，比如这样：<span id="more"></span></p>
 <figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MediaQuery.of(context).size.width &gt;</span><br><span class="line">        MediaQuery.of(context).size.height <span class="comment">// 还可以 * 1.2 之类的（根据场景自己看着办[滑稽]）</span></span><br><span class="line">    ? <span class="string">"横屏"</span></span><br><span class="line">    : <span class="string">"竖屏"</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>如果说要在横竖屏、应用显示尺寸改变时触发，那可以套一个 <code>OrientationBuilder</code>，比如这样（新建了个 Flutter 项目用来示例，所以以下例子和使用场景其实不太匹配 😂）：</p>

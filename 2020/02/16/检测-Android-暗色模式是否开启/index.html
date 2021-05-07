@@ -282,7 +282,7 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>检测 Android 暗色模式是否开启：</p>
-<a id="more"></a>
+<span id="more"></span>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isSystemDarkModeEnabled</span><span class="params">(Context context)</span> </span>{</span><br><span class="line">    <span class="keyword">return</span> (context.getResources().getConfiguration().uiMode &amp;</span><br><span class="line">            Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
     </div>
