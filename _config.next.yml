@@ -134,12 +134,13 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/Playhi || fab fa-github
-  E-Mail: mailto:hiplayhi@playhi.net || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   StackOverflow: https://stackoverflow.com/users/10011687/playhi || fab fa-stack-overflow
+  E-Mail: mailto:hiplayhi@playhi.net || fa fa-envelope
+  QQMail: mailto:2641395469@qq.com || fa fa-envelope
   #YouTube: https://youtube.com/yourname || fab fa-youtube
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
