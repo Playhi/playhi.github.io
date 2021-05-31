@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2021-01-27T06:18:45.000Z</updated>
+  <updated>2021-05-31T14:42:19.000Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20210531</title>
+    <link href="http://www.playhi.net/2021/05/31/20210531/"/>
+    <id>http://www.playhi.net/2021/05/31/20210531/</id>
+    <published>2021-05-31T14:42:19.000Z</published>
+    <updated>2021-05-31T14:42:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>当应试教育之风，一步步侵袭了一个又一个角落……从刷题背题，到一昧的题海战术，到刷面经背面经……可又到底从中学到了多少，又有多少有足够的实际意义，最关键的是，又真正理解了多少……看起来，这似乎并不是最正确的方向，虽然它也不失为一种在一定程度上有效的手段……</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;当应试教育之风，一步步侵袭了一个又一个角落……从刷题背题，到一昧的题海战术，到刷面经背面经……可又到底从中学到了多少，又有多少有足够的实际意义，最关键的是，又真正理解了多少……看起来，这似乎并不是最正确的方向，虽然它也不失为一种在一定程度上有效的手段……&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="牢骚" scheme="http://www.playhi.net/categories/category-grumble/"/>
+    
+    
+      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>好久没上GitHub了</title>
@@ -465,29 +492,6 @@
       <category term="Android" scheme="http://www.playhi.net/tags/tags-android/"/>
     
       <category term="Java" scheme="http://www.playhi.net/tags/tags-java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>疯狂填坑</title>
-    <link href="http://www.playhi.net/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/"/>
-    <id>http://www.playhi.net/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/</id>
-    <published>2020-02-08T09:46:08.000Z</published>
-    <updated>2020-02-08T09:46:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>假期里疯狂填坑（以前挖的坑有点多，并且还有新坑）<br>话不多说，代码提交记录图片奉上（手动狗头）<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="私有服务平台"><span id="more"></span><br>有点刺激 😉</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;假期里疯狂填坑（以前挖的坑有点多，并且还有新坑）&lt;br&gt;话不多说，代码提交记录图片奉上（手动狗头）&lt;br&gt;&lt;img src=&quot;/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png&quot; alt=&quot;GitHub&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png&quot; alt=&quot;私有服务平台&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
-    
-    
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
