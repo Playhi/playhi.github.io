@@ -37,24 +37,24 @@
       </tags>
   </entry>
   <entry>
-    <title>20190221</title>
-    <url>/2019/02/21/20190221/</url>
-    <content><![CDATA[<p>虽然一直不怎么喜欢下雨天心情不好这类的言辞，不过，这一个寒假的雨，现在看来，是真的应景的不行。<br>整个寒假，计划完成的，似乎是全都没有完成。期末考又捅出了个不及格，又得补考～家里又不知道附近那个邻居，几乎天天都会有发出总计大约一小时左右的类似于“呜～”或者说是“嗡～”这类声音，传遍家中各个角落，头都要给搞大了～360这奇葩系统，用他的Package Installer安装应用的时候，不仅有广告（自称“推荐”，“关闭推荐”以后过段时间又会出来，躲猫猫啊？），而且很多时候还会把被安装的安装包复制一份丢在Download文件夹里，注意是丢，不管的那种，活活把存储空间塞满[吐血]～<del>台电的磁吸键盘才差不多一个月，就出故障了，寄过去修我这边寄过去的快递费还得我自己自掏腰包，客服说应该三天左右能处理完，结果要不是主动打电话去，不知道等到猴年马月他们才会主动打来电话呢，真是够了……</del>（时间在元宵节前后，或许都在休息吧，这件事就暂且忽略不计了～）</p>
-]]></content>
-      <categories>
-        <category>牢骚</category>
-      </categories>
-      <tags>
-        <tag>无标签</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>20190113随意吐槽</title>
     <url>/2019/01/13/20190113%E9%9A%8F%E6%84%8F%E5%90%90%E6%A7%BD/</url>
     <content><![CDATA[<p>随意吐槽几句，吐了也没用，吐吐更健康。高数平时分，有时不去上课+作业几乎不交的 和 一节课都不落+作业经常交（漏交的后面也补上了）的 同学 的平时分，居然是一样的，真是滑稽。</p>
 ]]></content>
       <categories>
         <category>吐槽</category>
+      </categories>
+      <tags>
+        <tag>无标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>20190221</title>
+    <url>/2019/02/21/20190221/</url>
+    <content><![CDATA[<p>虽然一直不怎么喜欢下雨天心情不好这类的言辞，不过，这一个寒假的雨，现在看来，是真的应景的不行。<br>整个寒假，计划完成的，似乎是全都没有完成。期末考又捅出了个不及格，又得补考～家里又不知道附近那个邻居，几乎天天都会有发出总计大约一小时左右的类似于“呜～”或者说是“嗡～”这类声音，传遍家中各个角落，头都要给搞大了～360这奇葩系统，用他的Package Installer安装应用的时候，不仅有广告（自称“推荐”，“关闭推荐”以后过段时间又会出来，躲猫猫啊？），而且很多时候还会把被安装的安装包复制一份丢在Download文件夹里，注意是丢，不管的那种，活活把存储空间塞满[吐血]～<del>台电的磁吸键盘才差不多一个月，就出故障了，寄过去修我这边寄过去的快递费还得我自己自掏腰包，客服说应该三天左右能处理完，结果要不是主动打电话去，不知道等到猴年马月他们才会主动打来电话呢，真是够了……</del>（时间在元宵节前后，或许都在休息吧，这件事就暂且忽略不计了～）</p>
+]]></content>
+      <categories>
+        <category>牢骚</category>
       </categories>
       <tags>
         <tag>无标签</tag>
@@ -889,8 +889,8 @@
   <entry>
     <title>把数据都迁移到 Hexo 啦</title>
     <url>/2020/01/31/%E6%8A%8A%E6%95%B0%E6%8D%AE%E9%83%BD%E8%BF%81%E7%A7%BB%E5%88%B0-Hexo-%E5%95%A6/</url>
-    <content><![CDATA[<p>顺便把一篇之前写了但是我那生成器生成报错的也提交上来了 ☺ <span id="more"></span><br>日期懒得改了，就全 更新于 2020-01-31 了 😁<br>迁移的时候，还犹豫了下，以前的那堆牢骚要不要过滤掉，后来想想，还是留着吧 😂 嘿嘿嘿，毕竟也算是种别样的回忆～<br>这一迁 Hexo ，实际上也大致表明了，我之前糊的那生成器，emm，约等于弃坑啦～<br>以前还造着玩，就是不用现成的，现在真是没工夫造轮子了，既然有轮子，而且也挺好用，那这就用吧 😏 </p>
-<p> ☀ </p>
+    <content><![CDATA[<p>顺便把一篇之前写了但是我那生成器生成报错的也提交上来了 <span class="github-emoji"><span>☺</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/263a.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <span id="more"></span><br>日期懒得改了，就全 更新于 2020-01-31 了 <span class="github-emoji"><span>😁</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>迁移的时候，还犹豫了下，以前的那堆牢骚要不要过滤掉，后来想想，还是留着吧 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 嘿嘿嘿，毕竟也算是种别样的回忆～<br>这一迁 Hexo ，实际上也大致表明了，我之前糊的那生成器，emm，约等于弃坑啦～<br>以前还造着玩，就是不用现成的，现在真是没工夫造轮子了，既然有轮子，而且也挺好用，那这就用吧 <span class="github-emoji"><span>😏</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f60f.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p>
+<p> <span class="github-emoji"><span>☀</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2600.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p>
 ]]></content>
       <categories>
         <category>小记</category>
@@ -926,7 +926,7 @@
   <entry>
     <title>疯狂填坑</title>
     <url>/2020/02/08/%E7%96%AF%E7%8B%82%E5%A1%AB%E5%9D%91/</url>
-    <content><![CDATA[<p>假期里疯狂填坑（以前挖的坑有点多，并且还有新坑）<br>话不多说，代码提交记录图片奉上（手动狗头）<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="私有服务平台"><span id="more"></span><br>有点刺激 😉</p>
+    <content><![CDATA[<p>假期里疯狂填坑（以前挖的坑有点多，并且还有新坑）<br>话不多说，代码提交记录图片奉上（手动狗头）<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="私有服务平台"><span id="more"></span><br>有点刺激 <span class="github-emoji"><span>😉</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -1036,7 +1036,7 @@
   <entry>
     <title>易语言 Sqlite3 支持库报 syntax error</title>
     <url>/2020/03/16/%E6%98%93%E8%AF%AD%E8%A8%80-Sqlite3-%E6%94%AF%E6%8C%81%E5%BA%93%E6%8A%A5-syntax-error/</url>
-    <content><![CDATA[<p>难得又摸了下几年前的易语言代码，现在要把一些数据放数据库里保存一份，结果居然卡在了新建表，一直报 <code>syntax error</code>，<span id="more"></span>找了半天原因，最后突然发现处理后生成的表名是纯数字的，然后加对<code>'</code>就好了 😅 </p>
+    <content><![CDATA[<p>难得又摸了下几年前的易语言代码，现在要把一些数据放数据库里保存一份，结果居然卡在了新建表，一直报 <code>syntax error</code>，<span id="more"></span>找了半天原因，最后突然发现处理后生成的表名是纯数字的，然后加对<code>'</code>就好了 <span class="github-emoji"><span>😅</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f605.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p>
 ]]></content>
       <categories>
         <category>开发</category>
@@ -1048,7 +1048,7 @@
   <entry>
     <title>深度的 jingle 回来了[兴奋]</title>
     <url>/2020/03/27/%E6%B7%B1%E5%BA%A6%E7%9A%84-jingle-%E5%9B%9E%E6%9D%A5%E4%BA%86-%E5%85%B4%E5%A5%8B/</url>
-    <content><![CDATA[<p>今天难得逛逛Deepin论坛，突然发现jingle发新帖了！宣布回归呢！好兴奋～<span id="more"></span>本来这段时间疫情原因，V20拖了好久，大家都有点迫不及待的小失落，加之论坛最近几个月冷冷清清凄凄惨惨戚戚，不少人有了暂时不用Deepin的想法了，包括我也有一点，这会好了，jingle回来了！Deepin又能回到曾经的那个Deepin了吗？！让我们拭目以待～ 😃</p>
+    <content><![CDATA[<p>今天难得逛逛Deepin论坛，突然发现jingle发新帖了！宣布回归呢！好兴奋～<span id="more"></span>本来这段时间疫情原因，V20拖了好久，大家都有点迫不及待的小失落，加之论坛最近几个月冷冷清清凄凄惨惨戚戚，不少人有了暂时不用Deepin的想法了，包括我也有一点，这会好了，jingle回来了！Deepin又能回到曾经的那个Deepin了吗？！让我们拭目以待～ <span class="github-emoji"><span>😃</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -1088,7 +1088,7 @@
   <entry>
     <title>把文章评论也打开了</title>
     <url>/2020/07/20/%E6%8A%8A%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E4%B9%9F%E6%89%93%E5%BC%80%E4%BA%86/</url>
-    <content><![CDATA[<p>这两天终于抽空把Blog整了下，今天把文章评论也打开了，慢点把自己CSDN上那些再在这也同步一下就完事了。之前把魔改的主题搞丢了，然后自己这个Blog就停滞到现在 😃 这次趁此机会，正好再整理整理 😉 </p>
+    <content><![CDATA[<p>这两天终于抽空把Blog整了下，今天把文章评论也打开了，慢点把自己CSDN上那些再在这也同步一下就完事了。之前把魔改的主题搞丢了，然后自己这个Blog就停滞到现在 <span class="github-emoji"><span>😃</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 这次趁此机会，正好再整理整理 <span class="github-emoji"><span>😉</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -1100,11 +1100,11 @@
   <entry>
     <title>PHP 301 重定向跳转</title>
     <url>/2020/07/21/PHP-301-%E9%87%8D%E5%AE%9A%E5%90%91%E8%B7%B3%E8%BD%AC/</url>
-    <content><![CDATA[<p>好久没碰 PHP 了 😂 </p>
+    <content><![CDATA[<p>好久没碰 PHP 了 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p>
 <span id="more"></span>
 <p>网上搜了一圈，PHP 301 重定向都是用 <code>header('HTTP/1.1 301 Moved Permanently');</code> 再配合 <code>header('Location: https://www.example.com');</code> 完成的。</p>
-<p>总感觉一句话干不完，再加上<code>HTTP/2</code>啥的都出来许久了还写了个<code>HTTP/1.1</code>看着不太爽，当然写成<code>HTTP/2</code>或是<code>HTTP/1.0</code>也没事，但是不管写什么总之有种表述不清的感觉（比如写的<code>HTTP/1.1</code>实际访问时是<code>HTTP/2</code>——访问的时候该<code>HTTP/2</code>的时候还是<code>HTTP/2</code>也没问题不会乱变<code>HTTP/1.1</code> 😂）</p>
-<p>又去 <a href="https://php.net/">php.net</a> 寻觅一番，发现 <a href="https://www.php.net/manual/en/function.header.php">Header</a> 可以这样用<br><code>header ( string $header [, bool $replace = TRUE [, int $http_response_code ]] )</code><br>这就好办了，一句话<br><code>header('Location: https://www.example.com', true, 301);</code><br>完事，哈哈哈哈哈哈 😁</p>
+<p>总感觉一句话干不完，再加上<code>HTTP/2</code>啥的都出来许久了还写了个<code>HTTP/1.1</code>看着不太爽，当然写成<code>HTTP/2</code>或是<code>HTTP/1.0</code>也没事，但是不管写什么总之有种表述不清的感觉（比如写的<code>HTTP/1.1</code>实际访问时是<code>HTTP/2</code>——访问的时候该<code>HTTP/2</code>的时候还是<code>HTTP/2</code>也没问题不会乱变<code>HTTP/1.1</code> <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>）</p>
+<p>又去 <a href="https://php.net/">php.net</a> 寻觅一番，发现 <a href="https://www.php.net/manual/en/function.header.php">Header</a> 可以这样用<br><code>header ( string $header [, bool $replace = TRUE [, int $http_response_code ]] )</code><br>这就好办了，一句话<br><code>header('Location: https://www.example.com', true, 301);</code><br>完事，哈哈哈哈哈哈 <span class="github-emoji"><span>😁</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
 <p>额外再提一句，如果要自适应<code>HTTPS/HTTP</code>的话，这样就可以了：<br><code>header('Location: //www.example.com', true, 301);</code></p>
 <p>同步自<a href="https://blog.csdn.net/u014799995/article/details/106492555">我的CSDN</a></p>
 ]]></content>
@@ -1171,7 +1171,7 @@
     <content><![CDATA[<p>只判断横竖屏，拿 <code>height</code> 和 <code>width</code> 比较下就可以了，比如这样：<span id="more"></span></p>
 <figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line">MediaQuery.of(context).size.width &gt;</span><br><span class="line">        MediaQuery.of(context).size.height <span class="comment">// 还可以 * 1.2 之类的（根据场景自己看着办[滑稽]）</span></span><br><span class="line">    ? <span class="string">"横屏"</span></span><br><span class="line">    : <span class="string">"竖屏"</span></span><br></pre></td></tr></tbody></table></figure>
 
-<p>如果说要在横竖屏、应用显示尺寸改变时触发，那可以套一个 <code>OrientationBuilder</code>，比如这样（新建了个 Flutter 项目用来示例，所以以下例子和使用场景其实不太匹配 😂）：</p>
+<p>如果说要在横竖屏、应用显示尺寸改变时触发，那可以套一个 <code>OrientationBuilder</code>，比如这样（新建了个 Flutter 项目用来示例，所以以下例子和使用场景其实不太匹配 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>）：</p>
 <figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line">OrientationBuilder(</span><br><span class="line">    builder: (context, orientation) {</span><br><span class="line">      <span class="keyword">return</span> Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(</span><br><span class="line">              MediaQuery.of(context).size.width &gt;</span><br><span class="line">                      MediaQuery.of(context).size.height * <span class="number">1.2</span>  <span class="comment">// height 这边多留了点，不需要的话可以看下一个例子（直接用 orientation）</span></span><br><span class="line">                  ? <span class="string">"横屏"</span></span><br><span class="line">                  : <span class="string">"竖屏"</span>,</span><br><span class="line">            ),</span><br><span class="line">            Text(</span><br><span class="line">              <span class="string">"<span class="subst">${MediaQuery.of(context).size.width}</span> × <span class="subst">${MediaQuery.of(context).size.height}</span>"</span>,</span><br><span class="line">              style: Theme.of(context).textTheme.headline4,</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      );</span><br><span class="line">    },</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>
 
 <p>或者这样（直接用 <code>OrientationBuilder</code> 的 <code>orientation</code>）：</p>
@@ -1213,7 +1213,7 @@
     <url>/2020/09/08/%E6%9C%89%E7%82%B9%E6%8B%85%E5%BF%83%E6%B7%B1%E5%BA%A6%E6%8E%A5%E4%B8%8B%E6%9D%A5%E7%9A%84%E2%80%A6%E2%80%A6/</url>
     <content><![CDATA[<p>从去年某个时候，或者可以再往前点，就开始有点担心 Deepin（现统信）未来到底能不能好好走下去了……</p>
 <span id="more"></span>
-<p>深度的技术积淀在国内看应该还是不少的了，但是或许是从老王离职了开始吧，明显感觉到稳定性啥的不如前了，很迷。先说个很基础的吧，比如 15.11 的时候，右下角 dock 的时间12/24小时制切换就坏了，一重启 dock 或者系统，大概率就自动回12小时制了，社区好几个贴，也没修，直到 v20 才恢复正常。出完 15.11 后不久，社区又因为官方在筹备统信而几乎就是不闻不问，也没个人在社区告诉一下他们在忙着筹备统信，全靠一堆版主里的个别一两个（非官方，真·志愿者）在帮忙打理……写到这，我又开始怀念老王在职的时候了……<br>一转眼，左等右等，一众用户离开，我都快认为深度凉了的时候，v20初版终于公开了，可是……真·BUG成堆……<br>不管怎样，v20 也算是有了，至少说是 Deepin 没凉……<br>但是给我的感觉，v20 的质量，真的，没法说好，很多看上去很离谱的BUG，都在这个华丽的外表下暗藏着……<br>说到华丽，再扯一句，虽说华丽，但其实也未必华丽，不管是大圆角，还是消失的侧边栏，亦或是失踪的热区……众人吐槽无数……<br>v20 初版发布到现在，理应已经比较稳定了吧～哈？Are you ok？我一共就两台电脑装了 Deepin，其中一台还停在 15.11，至于这是为什么，你觉得呢？ 😂<br>当然，Deepin 变统信，业务量多了不少，系统也有好几个分支了现在，新招的员工也不少，有些离谱BUG也能接受，但是，却又不注重社区维护。比如，即使一堆人报的BUG，有些仍然没有官方一个认真的处理情况，甚至是回复。再比如，发帖有些关键词拦截，需要额外审核，可是，审核，谁审核？发个帖过了几天，还在审核，在审啥？<br>顺便吐槽下 jingle，有时感觉也不太着调……或许是太忙了吧……<br>诶还有个，差点忘了，Deepin 的论坛不知道怎么回事，经常出错……（把 DZ 名声都带坏了那么一点点…… DZ 明明挺稳的好不好……）<br>总之，还是希望，统信，能正常的走下去，别被一些外环境的乌烟瘴气给带偏了……各方面，也能往好的方向，一点点走下去……  </p>
+<p>深度的技术积淀在国内看应该还是不少的了，但是或许是从老王离职了开始吧，明显感觉到稳定性啥的不如前了，很迷。先说个很基础的吧，比如 15.11 的时候，右下角 dock 的时间12/24小时制切换就坏了，一重启 dock 或者系统，大概率就自动回12小时制了，社区好几个贴，也没修，直到 v20 才恢复正常。出完 15.11 后不久，社区又因为官方在筹备统信而几乎就是不闻不问，也没个人在社区告诉一下他们在忙着筹备统信，全靠一堆版主里的个别一两个（非官方，真·志愿者）在帮忙打理……写到这，我又开始怀念老王在职的时候了……<br>一转眼，左等右等，一众用户离开，我都快认为深度凉了的时候，v20初版终于公开了，可是……真·BUG成堆……<br>不管怎样，v20 也算是有了，至少说是 Deepin 没凉……<br>但是给我的感觉，v20 的质量，真的，没法说好，很多看上去很离谱的BUG，都在这个华丽的外表下暗藏着……<br>说到华丽，再扯一句，虽说华丽，但其实也未必华丽，不管是大圆角，还是消失的侧边栏，亦或是失踪的热区……众人吐槽无数……<br>v20 初版发布到现在，理应已经比较稳定了吧～哈？Are you ok？我一共就两台电脑装了 Deepin，其中一台还停在 15.11，至于这是为什么，你觉得呢？ <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>当然，Deepin 变统信，业务量多了不少，系统也有好几个分支了现在，新招的员工也不少，有些离谱BUG也能接受，但是，却又不注重社区维护。比如，即使一堆人报的BUG，有些仍然没有官方一个认真的处理情况，甚至是回复。再比如，发帖有些关键词拦截，需要额外审核，可是，审核，谁审核？发个帖过了几天，还在审核，在审啥？<br>顺便吐槽下 jingle，有时感觉也不太着调……或许是太忙了吧……<br>诶还有个，差点忘了，Deepin 的论坛不知道怎么回事，经常出错……（把 DZ 名声都带坏了那么一点点…… DZ 明明挺稳的好不好……）<br>总之，还是希望，统信，能正常的走下去，别被一些外环境的乌烟瘴气给带偏了……各方面，也能往好的方向，一点点走下去……  </p>
 ]]></content>
       <categories>
         <category>未分类</category>
@@ -1225,7 +1225,7 @@
   <entry>
     <title>Flutter TextField InputDecoration Border 黑边</title>
     <url>/2020/09/10/Flutter-TextField-InputDecoration-Border-%E9%BB%91%E8%BE%B9/</url>
-    <content><![CDATA[<p>整一个 <code>TextField</code> 的边框效果，拿 <code>border:</code> 尝试了半天，普通状态下总有个黑边，自定义的颜色也没看到，<span id="more"></span>再看了眼 <code>TextField</code> 的一堆属性，突然发现 <code>TextField</code> 不仅有 <code>border</code> ，还有 <code>errorBorder</code>、<code>focusedBorderfocusedBorder</code>、<code>focusedErrorBorder</code>、<code>disabledBorder</code>、<code>enabledBorder</code> 这几个 border …… 好了，问题解开 😂 </p>
+    <content><![CDATA[<p>整一个 <code>TextField</code> 的边框效果，拿 <code>border:</code> 尝试了半天，普通状态下总有个黑边，自定义的颜色也没看到，<span id="more"></span>再看了眼 <code>TextField</code> 的一堆属性，突然发现 <code>TextField</code> 不仅有 <code>border</code> ，还有 <code>errorBorder</code>、<code>focusedBorderfocusedBorder</code>、<code>focusedErrorBorder</code>、<code>disabledBorder</code>、<code>enabledBorder</code> 这几个 border …… 好了，问题解开 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p>
 <p>示例：</p>
 <figure class="highlight dart"><table><tbody><tr><td class="code"><pre><span class="line">TextField(</span><br><span class="line">    onChanged: (str) {},</span><br><span class="line">    decoration: InputDecoration(</span><br><span class="line">      border: OutlineInputBorder(</span><br><span class="line">        borderSide: BorderSide(</span><br><span class="line">          color: Colors.white.withOpacity(<span class="number">0.5</span>),  <span class="comment">// 边框颜色</span></span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      enabledBorder: OutlineInputBorder(</span><br><span class="line">        borderSide: BorderSide(</span><br><span class="line">          color: Colors.white.withOpacity(<span class="number">0.3</span>),  <span class="comment">// 边框颜色</span></span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      filled: <span class="keyword">true</span>,  <span class="comment">// 不然 fillColor 等 不生效</span></span><br><span class="line">      fillColor: Colors.white.withOpacity(<span class="number">0.6</span>),</span><br><span class="line">      focusColor: Colors.white.withOpacity(<span class="number">0.5</span>),</span><br><span class="line">      hoverColor: Colors.white.withOpacity(<span class="number">0.3</span>),</span><br><span class="line">    ),</span><br><span class="line">    maxLines: <span class="number">1</span>,</span><br><span class="line">    keyboardType: TextInputType.text,</span><br><span class="line">    onSubmitted: (text) {},</span><br><span class="line">  ),</span><br></pre></td></tr></tbody></table></figure>
 ]]></content>
@@ -1239,7 +1239,7 @@
   <entry>
     <title>送别2020，迎接2021</title>
     <url>/2021/01/01/%E9%80%81%E5%88%AB2020%EF%BC%8C%E8%BF%8E%E6%8E%A52021/</url>
-    <content><![CDATA[<p>2020已经过去，但去年的一切似乎还历历在目——新冠、宅家、网课、健康码……万物皆“云”，这一年里，变化颇多……<br>不过，网课对我不算是坏事，上网课，我可以更自由的安排时间了，也不再那么容易被外界影响（影响源也在自己家上网课呢～），碰到上课稀里糊涂的老师也不用浪费时间了，挂上放一边就好了 😉<br>2021，做好防护，继续前进！</p>
+    <content><![CDATA[<p>2020已经过去，但去年的一切似乎还历历在目——新冠、宅家、网课、健康码……万物皆“云”，这一年里，变化颇多……<br>不过，网课对我不算是坏事，上网课，我可以更自由的安排时间了，也不再那么容易被外界影响（影响源也在自己家上网课呢～），碰到上课稀里糊涂的老师也不用浪费时间了，挂上放一边就好了 <span class="github-emoji"><span>😉</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>2021，做好防护，继续前进！</p>
 ]]></content>
       <categories>
         <category>新年</category>
@@ -1251,22 +1251,10 @@
   <entry>
     <title>好久没上GitHub了</title>
     <url>/2021/01/27/%E5%A5%BD%E4%B9%85%E6%B2%A1%E4%B8%8AGitHub%E4%BA%86/</url>
-    <content><![CDATA[<p>最近这一个月都在整课设的东西，GitHub都没怎么打开 😐 再之前又要重心期末考试，还抽时间做了自己班的晚间疫情上报前后端 + Q群机器人，也就没怎么上了，几个月转瞬间就过去了……<span id="more"></span><br>可算寒假了，又有更多的时间可以自己安排了 😀 不过这可能是最后一个相对完整的寒假了，下次大四的寒假可能就不太寒假了吧～毕竟对考研没啥兴致，加之这将近三年这些学校也没让我感到收获到很多我所需要的东西～<br>丢个我自有服务器和GitHub的图 😌 合起来看，还是挺充实的<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="自有"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"></p>
+    <content><![CDATA[<p>最近这一个月都在整课设的东西，GitHub都没怎么打开 <span class="github-emoji"><span>😐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f610.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 再之前又要重心期末考试，还抽时间做了自己班的晚间疫情上报前后端 + Q群机器人，也就没怎么上了，几个月转瞬间就过去了……<span id="more"></span><br>可算寒假了，又有更多的时间可以自己安排了 <span class="github-emoji"><span>😀</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f600.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 不过这可能是最后一个相对完整的寒假了，下次大四的寒假可能就不太寒假了吧～毕竟对考研没啥兴致，加之这将近三年这些学校也没让我感到收获到很多我所需要的东西～<br>丢个我自有服务器和GitHub的图 <span class="github-emoji"><span>😌</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f60c.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 合起来看，还是挺充实的<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="自有"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"></p>
 ]]></content>
       <categories>
         <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>无标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 旅程开始了</title>
-    <url>/2020/01/30/Hexo-%E6%97%85%E7%A8%8B%E5%BC%80%E5%A7%8B%E4%BA%86/</url>
-    <content><![CDATA[<p>有点晚了，明天再写着玩～</p>
-]]></content>
-      <categories>
-        <category>小记</category>
       </categories>
       <tags>
         <tag>无标签</tag>
@@ -1279,6 +1267,18 @@
 ]]></content>
       <categories>
         <category>牢骚</category>
+      </categories>
+      <tags>
+        <tag>无标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 旅程开始了</title>
+    <url>/2020/01/30/Hexo-%E6%97%85%E7%A8%8B%E5%BC%80%E5%A7%8B%E4%BA%86/</url>
+    <content><![CDATA[<p>有点晚了，明天再写着玩～</p>
+]]></content>
+      <categories>
+        <category>小记</category>
       </categories>
       <tags>
         <tag>无标签</tag>
