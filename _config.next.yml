@@ -145,6 +145,8 @@ social:
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
   CSDN: https://blog.csdn.net/u014799995 || fab fa-csdn
+  LeetCode: https://leetcode-cn.com/u/playhi/ || fab fa-leetcode
+  NowCoder: https://www.nowcoder.com/profile/355160057 || fab fa-nowcoder
   RSS: /atom.xml || fa fa-rss
 
 social_icons:
