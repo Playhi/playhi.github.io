@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2021-07-24T04:27:19.000Z</updated>
+  <updated>2021-08-10T11:56:57.000Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20210810</title>
+    <link href="http://www.playhi.net/2021/08/10/20210810/"/>
+    <id>http://www.playhi.net/2021/08/10/20210810/</id>
+    <published>2021-08-10T11:56:57.000Z</published>
+    <updated>2021-08-10T11:56:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>一直想要控制住自己不要在别人目光之下不敢尝试可能失败或是出错的东西，可总有那么些时候不知不觉的就不敢在“光天化日之下”尝试了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一直想要控制住自己不要在别人目光之下不敢尝试可能失败或是出错的东西，可总有那么些时候不知不觉的就不敢在“光天化日之下”尝试了。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="感慨" scheme="http://www.playhi.net/categories/category-feeling/"/>
+    
+    
+      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>噪音污染几时休</title>
@@ -462,33 +489,6 @@
     
     
       <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flutter(Dart) Base64编解码</title>
-    <link href="http://www.playhi.net/2020/02/21/Flutter-Dart-Base64%E7%BC%96%E8%A7%A3%E7%A0%81/"/>
-    <id>http://www.playhi.net/2020/02/21/Flutter-Dart-Base64%E7%BC%96%E8%A7%A3%E7%A0%81/</id>
-    <published>2020-02-21T06:19:19.000Z</published>
-    <updated>2020-02-21T06:19:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Flutter(Dart) Base64编解码转换(UTF8)：</p><span id="more"></span><p>首先需要：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'dart:convert'</span>;</span><br></pre></td></tr></tbody></table></figure><p>Base64编码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> encoded = base64.encode(utf8.encode(<span class="string">"input"</span>));</span><br></pre></td></tr></tbody></table></figure><p>Base64解码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> decoded = utf8.decode(base64.decode(<span class="string">"aW5wdXQ="</span>));</span><br></pre></td></tr></tbody></table></figure><p>Base64Url编码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> encoded = base64Url.encode(utf8.encode(<span class="string">"input"</span>));</span><br></pre></td></tr></tbody></table></figure><p>Base64Url解码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> decoded = utf8.decode(base64Url.decode(<span class="string">"aW5wdXQ="</span>));</span><br></pre></td></tr></tbody></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Flutter(Dart) Base64编解码转换(UTF8)：&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
-    
-    
-      <category term="Dart" scheme="http://www.playhi.net/tags/tags-dart/"/>
-    
-      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
-    
-      <category term="Base64" scheme="http://www.playhi.net/tags/tags-base64/"/>
     
   </entry>
   
