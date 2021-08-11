@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2021-08-10T11:56:57.000Z</updated>
+  <updated>2021-08-11T02:52:03.000Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20210811</title>
+    <link href="http://www.playhi.net/2021/08/11/20210811/"/>
+    <id>http://www.playhi.net/2021/08/11/20210811/</id>
+    <published>2021-08-11T02:52:03.000Z</published>
+    <updated>2021-08-11T02:52:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>好家伙，放假回家了没有那个舍友偶发的吵闹了，本以为可以好好的更加安安心心的清静下来了，但是万万没想到啊没想到，清晨要被楼上的轰隆隆音响强行吵醒，深夜要被商铺的轰隆隆烧水阻止入眠。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;好家伙，放假回家了没有那个舍友偶发的吵闹了，本以为可以好好的更加安安心心的清静下来了，但是万万没想到啊没想到，清晨要被楼上的轰隆隆音响强行吵醒，深夜要被商铺的轰隆隆烧水阻止入眠。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="吐槽" scheme="http://www.playhi.net/categories/category-tc/"/>
+    
+    
+      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>20210810</title>
@@ -458,29 +485,6 @@
     <summary type="html">
     
       &lt;p&gt;Flutter ListTile &lt;code&gt;onTap&lt;/code&gt;、&lt;code&gt;onLongPress&lt;/code&gt; 事件获得详细信息（如点击位置等）&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
-    
-    
-      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flutter 实现点击控件后在对应位置弹出 Menu 菜单</title>
-    <link href="http://www.playhi.net/2020/02/22/Flutter-%E5%AE%9E%E7%8E%B0%E7%82%B9%E5%87%BB%E6%8E%A7%E4%BB%B6%E5%90%8E%E5%9C%A8%E5%AF%B9%E5%BA%94%E4%BD%8D%E7%BD%AE%E5%BC%B9%E5%87%BA-Menu-%E8%8F%9C%E5%8D%95/"/>
-    <id>http://www.playhi.net/2020/02/22/Flutter-%E5%AE%9E%E7%8E%B0%E7%82%B9%E5%87%BB%E6%8E%A7%E4%BB%B6%E5%90%8E%E5%9C%A8%E5%AF%B9%E5%BA%94%E4%BD%8D%E7%BD%AE%E5%BC%B9%E5%87%BA-Menu-%E8%8F%9C%E5%8D%95/</id>
-    <published>2020-02-22T11:51:15.000Z</published>
-    <updated>2020-02-22T11:51:15.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Flutter 实现点击控件后在对应位置弹出 Menu 菜单</p><span id="more"></span><p>先上图：<br><img src="/images/postsImgs/Screenshot_1582374460.png" alt="效果图"></p><p>直入主题，直接贴关键代码：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">GestureDetector(</span><br><span class="line">  child: <span class="comment">//Child,</span></span><br><span class="line">  onLongPressStart: (details) { <span class="comment">// 一般的 onLongPress 没有位置信息，所以套了一个 GestureDetector </span></span><br><span class="line">    showMenu(</span><br><span class="line">      context: context,</span><br><span class="line">      position: RelativeRect.fromLTRB(</span><br><span class="line">        details.globalPosition.dx,</span><br><span class="line">        details.globalPosition.dy,</span><br><span class="line">        details.globalPosition.dx,</span><br><span class="line">        details.globalPosition.dy,</span><br><span class="line">      ),</span><br><span class="line">      items: &lt;PopupMenuEntry&gt;[</span><br><span class="line">        PopupMenuItem(child: Text(<span class="string">"123"</span>)), <span class="comment">// Menu Item</span></span><br><span class="line">      ],</span><br><span class="line">    );</span><br><span class="line">  },</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure><p>如果要单击而不是长按实现的话，把 onLongPressStart 换成 onTapUp 就有了。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Flutter 实现点击控件后在对应位置弹出 Menu 菜单&lt;/p&gt;
     
     </summary>
     
