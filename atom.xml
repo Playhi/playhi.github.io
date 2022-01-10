@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2021-08-11T02:52:03.000Z</updated>
+  <updated>2022-01-10T13:14:17.000Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20220110</title>
+    <link href="http://www.playhi.net/2022/01/10/20220110/"/>
+    <id>http://www.playhi.net/2022/01/10/20220110/</id>
+    <published>2022-01-10T13:14:17.000Z</published>
+    <updated>2022-01-10T13:14:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这几天花时间给家里的超长服役（6年多了）的笔记本小升级了下，<span id="more"></span>500G希捷机械变1T光威（长江存储的颗粒）固态，2.4G单频WiFi变AX200(WiFi6+WPA3+2.4/5G)，硬件装好，数据整完，开机终于不用等好久了，几秒完事，无线网络也快多了，老的理论最高也就只有150M，加上家里这里2.4G的拥挤，平时基本上到100M就很不容易了，换上新的可算能跑满家里的带宽了，以及也有蓝牙可以用了 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 不过这新网卡可是给我整了出大的，刚装上机，认都不认，Win里的设备管理器也看不到，Deepin里lspci亦无踪影，翻来覆去没有找到什么痕迹，差不多懵了 <span class="github-emoji"><span>🙃</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f643.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 找商家问问去，商家表示进PE看看，进去也没有，又自己随便搞进带网络的安全模式逛了一圈，也没有，再拿Deepin那个“古董”级别的PE（Live）进去，本以为没什么希望了，估计硬件坏了准备换货，突然lspci里冒出来了AX200——好家伙，耍我是吧？我…… <span class="github-emoji"><span>😒</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f612.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 搞的我在商家那好……尬…… <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 换硬盘也废了好大功夫，老的F盘不知道什么情况，DiskGenius克隆别的Ntfs分区的时候都没什么问题，到F就各种不行，要么闪退要么卡死 <span class="github-emoji"><span>😕</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f615.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 还好我还有万能的Linux，啊哈哈哈哈哈，dd大法出动，完事！这次dd帮我把两个Ext4搬好了，还搬了个Win里怎么都没搬成功的Ntfs <span class="github-emoji"><span>😘</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f618.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>好啦～明天把年度写了，然后就该正式开展寒假活动了，得把毕设、就业、自冻等等的这些都整整了，早点搞完早点安心 <span class="github-emoji"><span>😉</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>  </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这几天花时间给家里的超长服役（6年多了）的笔记本小升级了下，&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    
+    
+      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>或许是最后一个寒假</title>
+    <link href="http://www.playhi.net/2022/01/09/%E6%88%96%E8%AE%B8%E6%98%AF%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%AF%92%E5%81%87/"/>
+    <id>http://www.playhi.net/2022/01/09/%E6%88%96%E8%AE%B8%E6%98%AF%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%AF%92%E5%81%87/</id>
+    <published>2022-01-09T12:58:54.000Z</published>
+    <updated>2022-01-09T12:58:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这一学期的学校课程终于是结束了，在计划课程12.3的正常结束之后，又在两周的学院计划外（提前一学期）安排的毕业实习（我更倾向于称之为企业实训）终于结束之后，伴随着一食堂的关门大修、篮球场的喧闹不再，我的寒假也即将开始了。希望在这个寒假中，可以少些打扰多些收获～<span id="more"></span><br>以及拖了好久的“送21迎22”，这两天也补上它，完了这件心事 <span class="github-emoji"><span>😁</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>  </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这一学期的学校课程终于是结束了，在计划课程12.3的正常结束之后，又在两周的学院计划外（提前一学期）安排的毕业实习（我更倾向于称之为企业实训）终于结束之后，伴随着一食堂的关门大修、篮球场的喧闹不再，我的寒假也即将开始了。希望在这个寒假中，可以少些打扰多些收获～&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    
+    
+      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>20210811</title>
@@ -447,52 +493,6 @@
     
     
       <category term="易语言" scheme="http://www.playhi.net/tags/tags-elang/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flutter ListTile 自定义垂直边距、标题与两边的水平间距</title>
-    <link href="http://www.playhi.net/2020/03/15/Flutter-ListTile-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9E%82%E7%9B%B4%E8%BE%B9%E8%B7%9D%E3%80%81%E6%A0%87%E9%A2%98%E4%B8%8E%E4%B8%A4%E8%BE%B9%E7%9A%84%E6%B0%B4%E5%B9%B3%E9%97%B4%E8%B7%9D/"/>
-    <id>http://www.playhi.net/2020/03/15/Flutter-ListTile-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9E%82%E7%9B%B4%E8%BE%B9%E8%B7%9D%E3%80%81%E6%A0%87%E9%A2%98%E4%B8%8E%E4%B8%A4%E8%BE%B9%E7%9A%84%E6%B0%B4%E5%B9%B3%E9%97%B4%E8%B7%9D/</id>
-    <published>2020-03-15T11:54:24.000Z</published>
-    <updated>2020-03-15T11:54:24.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>自定义 Flutter ListTile <code>minVerticalPadding</code> 最小垂直边距、<code>horizontalTitleGap</code> 标题与两边的水平间距。</p><span id="more"></span><ol><li>引入依赖 <a href="https://pub.dev/packages/list_tile_more_customizable">pub.dev:list_tile_more_customizable</a>：<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="attr">list_tile_more_customizable:</span> <span class="string">^1.2.1</span></span><br></pre></td></tr></tbody></table></figure></li><li>将需要处的 <code>ListTile</code> 替换成 <code>ListTileMoreCustomizable</code>，即可直接修改 <code>minVerticalPadding</code>、<code>horizontalTitleGap</code> 以修改相应的值：<figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类似于</span></span><br><span class="line">ListTileMoreCustomizable(</span><br><span class="line">    title: Text(<span class="string">"标题"</span>),</span><br><span class="line">    horizontalTitleGap: <span class="number">0.0</span>, <span class="comment">// 标题与两边的水平间距</span></span><br><span class="line">    minVerticalPadding: <span class="number">0.0</span>, <span class="comment">// 最小垂直边距</span></span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure></li></ol><p><a href="https://pub.dev/packages/list_tile_more_customizable">pub.dev 地址</a><br><a href="https://github.com/Playhi/list_tile_more_customizable">源码 GitHub 地址</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;自定义 Flutter ListTile &lt;code&gt;minVerticalPadding&lt;/code&gt; 最小垂直边距、&lt;code&gt;horizontalTitleGap&lt;/code&gt; 标题与两边的水平间距。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
-    
-    
-      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Flutter ListTile 获得点击详情</title>
-    <link href="http://www.playhi.net/2020/03/15/Flutter-ListTile-%E8%8E%B7%E5%BE%97%E7%82%B9%E5%87%BB%E8%AF%A6%E6%83%85/"/>
-    <id>http://www.playhi.net/2020/03/15/Flutter-ListTile-%E8%8E%B7%E5%BE%97%E7%82%B9%E5%87%BB%E8%AF%A6%E6%83%85/</id>
-    <published>2020-03-15T11:32:39.000Z</published>
-    <updated>2020-03-15T11:32:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Flutter ListTile <code>onTap</code>、<code>onLongPress</code> 事件获得详细信息（如点击位置等）</p><span id="more"></span><ol><li>引入依赖 <a href="https://pub.dev/packages/list_tile_more_customizable">pub.dev:list_tile_more_customizable</a>：<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="attr">list_tile_more_customizable:</span> <span class="string">^1.2.1</span></span><br></pre></td></tr></tbody></table></figure></li><li>将需要处的 <code>ListTile</code> 替换成 <code>ListTileMoreCustomizable</code>，然后 <code>onTap</code>、<code>onLongPress</code> 事件就包含了 <code>TapDownDetails</code>，直接使用即可。<figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类似于</span></span><br><span class="line">ListTileMoreCustomizable(</span><br><span class="line">    title: Text(<span class="string">"标题"</span>),</span><br><span class="line">    onTap: (details){},</span><br><span class="line">    onLongPress: (details){},</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure></li></ol><p><a href="https://pub.dev/packages/list_tile_more_customizable">pub.dev 地址</a><br><a href="https://github.com/Playhi/list_tile_more_customizable">源码 GitHub 地址</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Flutter ListTile &lt;code&gt;onTap&lt;/code&gt;、&lt;code&gt;onLongPress&lt;/code&gt; 事件获得详细信息（如点击位置等）&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
-    
-    
-      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
     
   </entry>
   
