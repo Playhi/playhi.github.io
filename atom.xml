@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2022-01-10T13:14:17.000Z</updated>
+  <updated>2022-01-11T07:17:38.000Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>回顾2021，展望2022</title>
+    <link href="http://www.playhi.net/2022/01/11/%E5%9B%9E%E9%A1%BE2021%EF%BC%8C%E5%B1%95%E6%9C%9B2022/"/>
+    <id>http://www.playhi.net/2022/01/11/%E5%9B%9E%E9%A1%BE2021%EF%BC%8C%E5%B1%95%E6%9C%9B2022/</id>
+    <published>2022-01-11T07:17:38.000Z</published>
+    <updated>2022-01-11T07:17:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这篇年度，虽迟但到 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <span id="more"></span><br>在过去的2021年里，又有了许多个第一次——第一次打新冠疫苗、第一次正式的面试、第一次求职的笔试、第一次取得了驾照……在这一年里，也从共青团员发展成了预备党员，还从学办办公室老师大多看我面生到一不小心就至少有个脸熟了，还知道了好几个老师们互相之间的“昵称” <span class="github-emoji"><span>🤭</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f92d.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>2021的就业旅途并不怎么顺利，在准备不充分的紧张下（不充分的紧张是日常了，充分就丝毫不慌了，参考N次充分背景下的一等奖学金 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>），加之学校学习这三年多专业水平等的收效甚微却又难以撼动的痛苦 <span class="github-emoji"><span>☹</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2639.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>，再到后期又叠加辅导员的催促就业Buff后（本意呢，是怕大家一直拖不早点找工作，后面可选余地和学院就业率都要出事，但是我……我比辅导员起跑早多了……不过目标不太一样，以及又出了好多非预期的情况，路途有点坎坷 <span class="github-emoji"><span>😀</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f600.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 然后这隔三差五大群小群里发这发那的，把我想办法一点点降下来的压力又抬上去了 <span class="github-emoji"><span>😣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f623.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>）。总之，各种情况的叠加，最后很多次面试都出了些大大小小的问题，也额外消耗了时间和精力与机会，再一次次的吸取经验，一次次的想方设法去调整去改善。<br>2022，能不能像小米12和MIUI13的“快，更稳”一样，早日拿上合适的Offer呢？拭目以待吧～<br>2022，一起加油！ <span class="github-emoji"><span>🥳</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f973.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>  </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇年度，虽迟但到 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😂&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="新年" scheme="http://www.playhi.net/categories/category-new-year/"/>
+    
+    
+      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
   
   <entry>
     <title>20220110</title>
@@ -470,29 +493,6 @@
     
     
       <category term="Deepin" scheme="http://www.playhi.net/tags/tags-deepin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>易语言 Sqlite3 支持库报 syntax error</title>
-    <link href="http://www.playhi.net/2020/03/16/%E6%98%93%E8%AF%AD%E8%A8%80-Sqlite3-%E6%94%AF%E6%8C%81%E5%BA%93%E6%8A%A5-syntax-error/"/>
-    <id>http://www.playhi.net/2020/03/16/%E6%98%93%E8%AF%AD%E8%A8%80-Sqlite3-%E6%94%AF%E6%8C%81%E5%BA%93%E6%8A%A5-syntax-error/</id>
-    <published>2020-03-16T08:43:46.000Z</published>
-    <updated>2020-03-16T08:43:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>难得又摸了下几年前的易语言代码，现在要把一些数据放数据库里保存一份，结果居然卡在了新建表，一直报 <code>syntax error</code>，<span id="more"></span>找了半天原因，最后突然发现处理后生成的表名是纯数字的，然后加对<code>'</code>就好了 <span class="github-emoji"><span>😅</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f605.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;难得又摸了下几年前的易语言代码，现在要把一些数据放数据库里保存一份，结果居然卡在了新建表，一直报 &lt;code&gt;syntax error&lt;/code&gt;，&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
-    
-    
-      <category term="易语言" scheme="http://www.playhi.net/tags/tags-elang/"/>
     
   </entry>
   
