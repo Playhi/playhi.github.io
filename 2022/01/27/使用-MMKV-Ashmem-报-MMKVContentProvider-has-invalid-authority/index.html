@@ -21,28 +21,30 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.playhi.net","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":false,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":false}}</script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.9.0/source/js/config.min.js"></script>
-<meta name="description" content="似乎最近几年一到两会的时候，上 github 、 gitlab 之类的就会慢好多，最近几天 push 的过程真是艰辛，直连网络炸，挂代理的话这版的 deepin 在我这要炸，得，索性休息几天得了。">
+<meta name="description" content="前一阵子用了 MMKV 的 mmkvWithAshmemID (Ashmem MMKV 是 Android 里的一个 memory-only 的多进程共享 key-value 存储，在一个 App 的所有进程退出后，会自动消失。她不使用任何文件来做存储，因此很适合在一个 App 内的众多进程之间共享敏感数据。)，结果在非主进程使用的时候直接报了 java.lang.IllegalStateExce">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20190305">
-<meta property="og:url" content="http://www.playhi.net/2019/03/05/20190305/index.html">
+<meta property="og:title" content="解决使用 MMKV Ashmem 报 MMKVContentProvider has invalid authority">
+<meta property="og:url" content="http://www.playhi.net/2022/01/27/%E4%BD%BF%E7%94%A8-MMKV-Ashmem-%E6%8A%A5-MMKVContentProvider-has-invalid-authority/index.html">
 <meta property="og:site_name" content="Playhi&#39;s Blog">
-<meta property="og:description" content="似乎最近几年一到两会的时候，上 github 、 gitlab 之类的就会慢好多，最近几天 push 的过程真是艰辛，直连网络炸，挂代理的话这版的 deepin 在我这要炸，得，索性休息几天得了。">
+<meta property="og:description" content="前一阵子用了 MMKV 的 mmkvWithAshmemID (Ashmem MMKV 是 Android 里的一个 memory-only 的多进程共享 key-value 存储，在一个 App 的所有进程退出后，会自动消失。她不使用任何文件来做存储，因此很适合在一个 App 内的众多进程之间共享敏感数据。)，结果在非主进程使用的时候直接报了 java.lang.IllegalStateExce">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-03-04T16:00:00.000Z">
-<meta property="article:modified_time" content="2019-03-04T16:00:00.000Z">
+<meta property="og:image" content="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8">
+<meta property="article:published_time" content="2022-01-27T13:10:56.000Z">
+<meta property="article:modified_time" content="2022-01-27T13:10:56.000Z">
 <meta property="article:author" content="Playhi">
-<meta property="article:tag" content="网络">
+<meta property="article:tag" content="Android">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8">
 
 
-<link rel="canonical" href="http://www.playhi.net/2019/03/05/20190305/">
+<link rel="canonical" href="http://www.playhi.net/2022/01/27/%E4%BD%BF%E7%94%A8-MMKV-Ashmem-%E6%8A%A5-MMKVContentProvider-has-invalid-authority/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://www.playhi.net/2019/03/05/20190305/","path":"2019/03/05/20190305/","title":"20190305"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://www.playhi.net/2022/01/27/%E4%BD%BF%E7%94%A8-MMKV-Ashmem-%E6%8A%A5-MMKVContentProvider-has-invalid-authority/","path":"2022/01/27/使用-MMKV-Ashmem-报-MMKVContentProvider-has-invalid-authority/","title":"解决使用 MMKV Ashmem 报 MMKVContentProvider has invalid authority"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>20190305 | Playhi's Blog</title>
+<title>解决使用 MMKV Ashmem 报 MMKVContentProvider has invalid authority | Playhi's Blog</title>
   
 
   <script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.9.0/source/js/third-party/analytics/baidu-analytics.min.js"></script>
@@ -243,7 +245,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2019/03/05/20190305/">
+    <link itemprop="mainEntityOfPage" href="http://www.playhi.net/2022/01/27/%E4%BD%BF%E7%94%A8-MMKV-Ashmem-%E6%8A%A5-MMKVContentProvider-has-invalid-authority/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -256,7 +258,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          20190305
+          解决使用 MMKV Ashmem 报 MMKVContentProvider has invalid authority
         </h1>
 
         <div class="post-meta-container">
@@ -267,7 +269,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2019-03-05 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-05T00:00:00+08:00">2019-03-05</time>
+      <time title="创建时间：2022-01-27 21:10:56" itemprop="dateCreated datePublished" datetime="2022-01-27T21:10:56+08:00">2022-01-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -275,7 +277,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/category-tc/" itemprop="url" rel="index"><span itemprop="name">吐槽</span></a>
+          <a href="/categories/category-development/" itemprop="url" rel="index"><span itemprop="name">开发</span></a>
         </span>
     </span>
 
@@ -289,7 +291,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>似乎最近几年一到两会的时候，上 github 、 gitlab 之类的就会慢好多，最近几天 push 的过程真是艰辛，直连网络炸，挂代理的话这版的 deepin 在我这要炸，得，索性休息几天得了。</p>
+        <p>前一阵子用了 <code>MMKV</code> 的 <code>mmkvWithAshmemID</code> (<a target="_blank" rel="noopener" href="https://github.com/Tencent/MMKV/wiki/FAQ_cn">Ashmem MMKV 是 Android 里的一个 memory-only 的多进程共享 key-value 存储，在一个 App 的所有进程退出后，会自动消失。她不使用任何文件来做存储，因此很适合在一个 App 内的众多进程之间共享敏感数据。</a>)，结果在非主进程使用的时候直接报了 <code>java.lang.IllegalStateException: MMKVContentProvider has invalid authority</code>，拿 Demo 看了看，发现这段  </p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;provider</span><br><span class="line">    android:name="com.tencent.mmkv.MMKVContentProvider"</span><br><span class="line">    android:authorities="xx.yy.zz.MMKVContentProvider"</span><br><span class="line">    android:exported="false" /&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>我给漏了 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> ，依赖里也没自带，或许是因为只有 <code>Ashmem</code> 的时候才需要吧。加上就好了～<br>记一笔，万一还有别的人也漏了，啊哈哈哈哈哈～  </p>
 
     </div>
 
@@ -299,21 +303,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/tags-network/" rel="tag"><i class="fa fa-tag"></i> 网络</a>
+              <a href="/tags/tags-android/" rel="tag"><i class="fa fa-tag"></i> Android</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2019/03/03/20190303/" rel="prev" title="20190303">
-                  <i class="fa fa-chevron-left"></i> 20190303
+                <a href="/2022/01/11/%E5%9B%9E%E9%A1%BE2021%EF%BC%8C%E5%B1%95%E6%9C%9B2022/" rel="prev" title="回顾2021，展望2022">
+                  <i class="fa fa-chevron-left"></i> 回顾2021，展望2022
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2019/03/16/%E8%BF%98%E6%9C%89%E6%B2%A1%E6%9C%89%E5%AE%89%E5%85%A8%E7%9A%84%E9%A5%AE%E7%94%A8%E6%B0%B4/" rel="next" title="还有没有安全的饮用水">
-                  还有没有安全的饮用水 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

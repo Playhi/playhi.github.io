@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2022-01-11T07:17:38.000Z</updated>
+  <updated>2022-01-27T13:10:56.000Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决使用 MMKV Ashmem 报 MMKVContentProvider has invalid authority</title>
+    <link href="http://www.playhi.net/2022/01/27/%E4%BD%BF%E7%94%A8-MMKV-Ashmem-%E6%8A%A5-MMKVContentProvider-has-invalid-authority/"/>
+    <id>http://www.playhi.net/2022/01/27/%E4%BD%BF%E7%94%A8-MMKV-Ashmem-%E6%8A%A5-MMKVContentProvider-has-invalid-authority/</id>
+    <published>2022-01-27T13:10:56.000Z</published>
+    <updated>2022-01-27T13:10:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>前一阵子用了 <code>MMKV</code> 的 <code>mmkvWithAshmemID</code> (<a href="https://github.com/Tencent/MMKV/wiki/FAQ_cn">Ashmem MMKV 是 Android 里的一个 memory-only 的多进程共享 key-value 存储，在一个 App 的所有进程退出后，会自动消失。她不使用任何文件来做存储，因此很适合在一个 App 内的众多进程之间共享敏感数据。</a>)，结果在非主进程使用的时候直接报了 <code>java.lang.IllegalStateException: MMKVContentProvider has invalid authority</code>，拿 Demo 看了看，发现这段  </p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;provider</span><br><span class="line">    android:name="com.tencent.mmkv.MMKVContentProvider"</span><br><span class="line">    android:authorities="xx.yy.zz.MMKVContentProvider"</span><br><span class="line">    android:exported="false" /&gt;</span><br></pre></td></tr></tbody></table></figure><p>我给漏了 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> ，依赖里也没自带，或许是因为只有 <code>Ashmem</code> 的时候才需要吧。加上就好了～<br>记一笔，万一还有别的人也漏了，啊哈哈哈哈哈～  </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前一阵子用了 &lt;code&gt;MMKV&lt;/code&gt; 的 &lt;code&gt;mmkvWithAshmemID&lt;/code&gt; (&lt;a href=&quot;https://github.com/Tencent/MMKV/wiki/FAQ_cn&quot;&gt;Ashmem MMKV 是 Android 里的一
+      
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    
+      <category term="Android" scheme="http://www.playhi.net/tags/tags-android/"/>
+    
+  </entry>
   
   <entry>
     <title>回顾2021，展望2022</title>
@@ -470,29 +496,6 @@
       <category term="MediaWiki" scheme="http://www.playhi.net/tags/tags-mediawiki/"/>
     
       <category term="Markdown" scheme="http://www.playhi.net/tags/tags-markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深度的 jingle 回来了[兴奋]</title>
-    <link href="http://www.playhi.net/2020/03/27/%E6%B7%B1%E5%BA%A6%E7%9A%84-jingle-%E5%9B%9E%E6%9D%A5%E4%BA%86-%E5%85%B4%E5%A5%8B/"/>
-    <id>http://www.playhi.net/2020/03/27/%E6%B7%B1%E5%BA%A6%E7%9A%84-jingle-%E5%9B%9E%E6%9D%A5%E4%BA%86-%E5%85%B4%E5%A5%8B/</id>
-    <published>2020-03-27T11:59:40.000Z</published>
-    <updated>2020-03-27T11:59:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天难得逛逛Deepin论坛，突然发现jingle发新帖了！宣布回归呢！好兴奋～<span id="more"></span>本来这段时间疫情原因，V20拖了好久，大家都有点迫不及待的小失落，加之论坛最近几个月冷冷清清凄凄惨惨戚戚，不少人有了暂时不用Deepin的想法了，包括我也有一点，这会好了，jingle回来了！Deepin又能回到曾经的那个Deepin了吗？！让我们拭目以待～ <span class="github-emoji"><span>😃</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天难得逛逛Deepin论坛，突然发现jingle发新帖了！宣布回归呢！好兴奋～&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
-    
-    
-      <category term="Deepin" scheme="http://www.playhi.net/tags/tags-deepin/"/>
     
   </entry>
   
