@@ -159,9 +159,14 @@ links_settings:
   icon: fa fa-globe
   title: Links
   # Available values: block | inline
-  layout: block
+  layout: inline
 
 links:
+  腾讯云（推广）: https://curl.qcloud.com/ms9h3Rpu
+  卡拉云低代码: https://kalacloud.com
+  Cloudflare: https://www.cloudflare.com
+  老薛主机（推广）: https://my.laoxuehost.com/aff.php?aff=7551
+  自冻 FreezeYou: https://www.zidon.com
   #Title: https://example.com
 
 # Table of Contents in the Sidebar
@@ -844,11 +849,11 @@ vendors:
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg | cdnjs
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
-  internal: jsdelivr
+  internal: local
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: jsdelivr
+  plugins: local
 
   # In the following settings, you can specify the CDN link for each plugin.
   # If left blank, the default CDN provider set by `plugins` option will be used.
