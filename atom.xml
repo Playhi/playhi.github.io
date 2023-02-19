@@ -3,10 +3,10 @@
   <title>Playhi&#39;s Blog</title>
   
   <subtitle>生活|开发|经验|杂谈|分享</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="http://www.playhi.net/atom.xml" rel="self"/>
   
   <link href="http://www.playhi.net/"/>
-  <updated>2022-04-15T09:10:56.000Z</updated>
+  <updated>2023-02-19T10:00:56.000Z</updated>
   <id>http://www.playhi.net/</id>
   
   <author>
@@ -17,6 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>告别魔幻2022，步入2023</title>
+    <link href="http://www.playhi.net/2023/02/19/%E5%91%8A%E5%88%AB%E9%AD%94%E5%B9%BB2022%EF%BC%8C%E6%AD%A5%E5%85%A52023/"/>
+    <id>http://www.playhi.net/2023/02/19/%E5%91%8A%E5%88%AB%E9%AD%94%E5%B9%BB2022%EF%BC%8C%E6%AD%A5%E5%85%A52023/</id>
+    <published>2023-02-19T10:00:56.000Z</published>
+    <updated>2023-02-19T10:00:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>赶在正月的最后一天，终于是分配到了时间来正式与 2022 作个告别，正式与 2023 打个招呼了。<span id="more"></span><br>2022 还是非常的魔幻的，三个月的封城与空城，年底的放开、布洛芬、蒙脱石散与空荡荡的列车车厢和班次锐减的公共交通，一切在情理之中，却又有些许措手不及。<br>在 2022，这个疯狂的年度中，尽管遇到了就业寒冬、金三银四还变成了“奶头保供”，不论如何，我终究还是在相对合适的时候，找到了自认为合适的伙伴与团队，虽然在物质方面给的是真的一点也不多，但是从包括但不限于氛围上来说属实是满意的。<br>2023，继续成长，不断丰满羽翼。探索未来，稳步前行！ <span class="github-emoji"><span>😉</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>  </p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;赶在正月的最后一天，终于是分配到了时间来正式与 2022 作个告别，正式与 2023 打个招呼了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="新年" scheme="http://www.playhi.net/categories/category-new-year/"/>
+    
+    
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    
+  </entry>
+  
+  <entry>
     <title>20220415</title>
     <link href="http://www.playhi.net/2022/04/15/20220415/"/>
     <id>http://www.playhi.net/2022/04/15/20220415/</id>
@@ -25,20 +46,18 @@
     
     <content type="html"><![CDATA[<p>笔试又菜又干不过作弊的，面试又紧张又发挥不到120%，往往只有20%，又慢热又放不开。虽然能拿到腾讯字节小米蔚来的面试机会，但却又总是发挥不足失之交臂。经济也不景气，细分人才市场也供大于需。难搞 <span class="github-emoji"><span>😕</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f615.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;笔试又菜又干不过作弊的，面试又紧张又发挥不到120%，往往只有20%，又慢热又放不开。虽然能拿到腾讯字节小米蔚来的面试机会，但却又总是发挥不足失之交臂。经济也不景气，细分人才市场也供大于需。难搞 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😕&lt;/sp
+    <summary type="html">&lt;p&gt;笔试又菜又干不过作弊的，面试又紧张又发挥不到120%，往往只有20%，又慢热又放不开。虽然能拿到腾讯字节小米蔚来的面试机会，但却又总是发挥不足失之交臂。经济也不景气，细分人才市场也供大于需。难搞 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😕&lt;/sp</summary>
       
     
-    </summary>
     
     
-      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -51,17 +70,15 @@
     
     <content type="html"><![CDATA[<p>前一阵子用了 <code>MMKV</code> 的 <code>mmkvWithAshmemID</code> (<a href="https://github.com/Tencent/MMKV/wiki/FAQ_cn">Ashmem MMKV 是 Android 里的一个 memory-only 的多进程共享 key-value 存储，在一个 App 的所有进程退出后，会自动消失。她不使用任何文件来做存储，因此很适合在一个 App 内的众多进程之间共享敏感数据。</a>)，结果在非主进程使用的时候直接报了 <code>java.lang.IllegalStateException: MMKVContentProvider has invalid authority</code>，<span id="more"></span>拿 Demo 看了看，发现这段  </p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;provider</span><br><span class="line">    android:name="com.tencent.mmkv.MMKVContentProvider"</span><br><span class="line">    android:authorities="xx.yy.zz.MMKVContentProvider"</span><br><span class="line">    android:exported="false" /&gt;</span><br></pre></td></tr></tbody></table></figure><p>我给漏了 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> ，依赖里也没自带，或许是因为只有 <code>Ashmem</code> 的时候才需要吧，所以依赖里默认没带上。加上就好了～<br>记一笔，万一还有别的人也漏了，啊哈哈哈哈哈～  </p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;前一阵子用了 &lt;code&gt;MMKV&lt;/code&gt; 的 &lt;code&gt;mmkvWithAshmemID&lt;/code&gt; (&lt;a href=&quot;https://github.com/Tencent/MMKV/wiki/FAQ_cn&quot;&gt;Ashmem MMKV 是 Android 里的一个 memory-only 的多进程共享 key-value 存储，在一个 App 的所有进程退出后，会自动消失。她不使用任何文件来做存储，因此很适合在一个 App 内的众多进程之间共享敏感数据。&lt;/a&gt;)，结果在非主进程使用的时候直接报了 &lt;code&gt;java.lang.IllegalStateException: MMKVContentProvider has invalid authority&lt;/code&gt;，&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;前一阵子用了 &lt;code&gt;MMKV&lt;/code&gt; 的 &lt;code&gt;mmkvWithAshmemID&lt;/code&gt; (&lt;a href=&quot;https://github.com/Tencent/MMKV/wiki/FAQ_cn&quot;&gt;Ashmem MMKV 是 Android 里的一个 memory-only 的多进程共享 key-value 存储，在一个 App 的所有进程退出后，会自动消失。她不使用任何文件来做存储，因此很适合在一个 App 内的众多进程之间共享敏感数据。&lt;/a&gt;)，结果在非主进程使用的时候直接报了 &lt;code&gt;java.lang.IllegalStateException: MMKVContentProvider has invalid authority&lt;/code&gt;，&lt;/p&gt;</summary>
     
     
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
     
     
-      <category term="Android" scheme="http://www.playhi.net/tags/tags-android/"/>
+    <category term="Android" scheme="http://www.playhi.net/tags/tags-android/"/>
     
   </entry>
   
@@ -74,17 +91,15 @@
     
     <content type="html"><![CDATA[<p>这篇年度，虽迟但到 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <span id="more"></span><br>在过去的2021年里，又有了许多个第一次——第一次打新冠疫苗、第一次正式的面试、第一次求职的笔试、第一次取得了驾照……在这一年里，也从共青团员发展成了预备党员，还从学办办公室老师大多看我面生到一不小心就至少有个脸熟了，还知道了好几个老师们互相之间的“昵称” <span class="github-emoji"><span>🤭</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f92d.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>2021的就业旅途并不怎么顺利，在准备不充分的紧张下（不充分的紧张是日常了，充分就丝毫不慌了，参考N次充分背景下的一等奖学金 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>），加之学校学习这三年多专业水平等的收效甚微却又难以撼动的痛苦 <span class="github-emoji"><span>☹</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2639.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>，再到后期又叠加辅导员的催促就业Buff后（本意呢，是怕大家一直拖不早点找工作，后面可选余地和学院就业率都要出事，但是我……我比辅导员起跑早多了……不过目标不太一样，以及又出了好多非预期的情况，路途有点坎坷 <span class="github-emoji"><span>😀</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f600.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 然后这隔三差五大群小群里发这发那的，把我想办法一点点降下来的压力又抬上去了 <span class="github-emoji"><span>😣</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f623.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>）。总之，各种情况的叠加，最后很多次面试都出了些大大小小的问题，也额外消耗了时间和精力与机会，再一次次的吸取经验，一次次的想方设法去调整去改善。<br>2022，能不能像小米12和MIUI13的“快，更稳”一样，早日拿上合适的Offer呢？拭目以待吧～<br>2022，一起加油！ <span class="github-emoji"><span>🥳</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f973.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>  </p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;这篇年度，虽迟但到 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😂&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;这篇年度，虽迟但到 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😂&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt;&lt;/p&gt;</summary>
     
     
-      <category term="新年" scheme="http://www.playhi.net/categories/category-new-year/"/>
+    
+    <category term="新年" scheme="http://www.playhi.net/categories/category-new-year/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -97,17 +112,15 @@
     
     <content type="html"><![CDATA[<p>这几天花时间给家里的超长服役（6年多了）的笔记本小升级了下，<span id="more"></span>500G希捷机械变1T光威（长江存储的颗粒）固态，2.4G单频WiFi变AX200(WiFi6+WPA3+2.4/5G)，硬件装好，数据整完，开机终于不用等好久了，几秒完事，无线网络也快多了，老的理论最高也就只有150M，加上家里这里2.4G的拥挤，平时基本上到100M就很不容易了，换上新的可算能跑满家里的带宽了，以及也有蓝牙可以用了 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 不过这新网卡可是给我整了出大的，刚装上机，认都不认，Win里的设备管理器也看不到，Deepin里lspci亦无踪影，翻来覆去没有找到什么痕迹，差不多懵了 <span class="github-emoji"><span>🙃</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f643.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 找商家问问去，商家表示进PE看看，进去也没有，又自己随便搞进带网络的安全模式逛了一圈，也没有，再拿Deepin那个“古董”级别的PE（Live）进去，本以为没什么希望了，估计硬件坏了准备换货，突然lspci里冒出来了AX200——好家伙，耍我是吧？我…… <span class="github-emoji"><span>😒</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f612.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 搞的我在商家那好……尬…… <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 换硬盘也废了好大功夫，老的F盘不知道什么情况，DiskGenius克隆别的Ntfs分区的时候都没什么问题，到F就各种不行，要么闪退要么卡死 <span class="github-emoji"><span>😕</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f615.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 还好我还有万能的Linux，啊哈哈哈哈哈，dd大法出动，完事！这次dd帮我把两个Ext4搬好了，还搬了个Win里怎么都没搬成功的Ntfs <span class="github-emoji"><span>😘</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f618.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>好啦～明天把年度写了，然后就该正式开展寒假活动了，得把毕设、就业、自冻等等的这些都整整了，早点搞完早点安心 <span class="github-emoji"><span>😉</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>  </p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;这几天花时间给家里的超长服役（6年多了）的笔记本小升级了下，&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;这几天花时间给家里的超长服役（6年多了）的笔记本小升级了下，&lt;/p&gt;</summary>
     
     
-      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    
+    <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -120,17 +133,15 @@
     
     <content type="html"><![CDATA[<p>这一学期的学校课程终于是结束了，在计划课程12.3的正常结束之后，又在两周的学院计划外（提前一学期）安排的毕业实习（我更倾向于称之为企业实训）终于结束之后，伴随着一食堂的关门大修、篮球场的喧闹不再，我的寒假也即将开始了。希望在这个寒假中，可以少些打扰多些收获～<span id="more"></span><br>以及拖了好久的“送21迎22”，这两天也补上它，完了这件心事 <span class="github-emoji"><span>😁</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>  </p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;这一学期的学校课程终于是结束了，在计划课程12.3的正常结束之后，又在两周的学院计划外（提前一学期）安排的毕业实习（我更倾向于称之为企业实训）终于结束之后，伴随着一食堂的关门大修、篮球场的喧闹不再，我的寒假也即将开始了。希望在这个寒假中，可以少些打扰多些收获～&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;这一学期的学校课程终于是结束了，在计划课程12.3的正常结束之后，又在两周的学院计划外（提前一学期）安排的毕业实习（我更倾向于称之为企业实训）终于结束之后，伴随着一食堂的关门大修、篮球场的喧闹不再，我的寒假也即将开始了。希望在这个寒假中，可以少些打扰多些收获～&lt;/p&gt;</summary>
     
     
-      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    
+    <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -143,21 +154,19 @@
     
     <content type="html"><![CDATA[<p>好家伙，放假回家了没有那个舍友偶发的吵闹了，本以为可以好好的更加安安心心的清静下来了，但是万万没想到啊没想到，清晨要被楼上的轰隆隆音响强行吵醒，深夜要被商铺的轰隆隆烧水阻止入眠。</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;好家伙，放假回家了没有那个舍友偶发的吵闹了，本以为可以好好的更加安安心心的清静下来了，但是万万没想到啊没想到，清晨要被楼上的轰隆隆音响强行吵醒，深夜要被商铺的轰隆隆烧水阻止入眠。&lt;/p&gt;
-
+    <summary type="html">&lt;p&gt;好家伙，放假回家了没有那个舍友偶发的吵闹了，本以为可以好好的更加安安心心的清静下来了，但是万万没想到啊没想到，清晨要被楼上的轰隆隆音响强行吵醒，深夜要被商铺的轰隆隆烧水阻止入眠。&lt;/p&gt;
+</summary>
       
     
-    </summary>
     
     
-      <category term="吐槽" scheme="http://www.playhi.net/categories/category-tc/"/>
+    <category term="吐槽" scheme="http://www.playhi.net/categories/category-tc/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -170,21 +179,19 @@
     
     <content type="html"><![CDATA[<p>一直想要控制住自己不要在别人目光之下不敢尝试可能失败或是出错的东西，可总有那么些时候不知不觉的就不敢在“光天化日之下”尝试了。</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;一直想要控制住自己不要在别人目光之下不敢尝试可能失败或是出错的东西，可总有那么些时候不知不觉的就不敢在“光天化日之下”尝试了。&lt;/p&gt;
-
+    <summary type="html">&lt;p&gt;一直想要控制住自己不要在别人目光之下不敢尝试可能失败或是出错的东西，可总有那么些时候不知不觉的就不敢在“光天化日之下”尝试了。&lt;/p&gt;
+</summary>
       
     
-    </summary>
     
     
-      <category term="感慨" scheme="http://www.playhi.net/categories/category-feeling/"/>
+    <category term="感慨" scheme="http://www.playhi.net/categories/category-feeling/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -197,17 +204,15 @@
     
     <content type="html"><![CDATA[<p>最近这些年，时不时就会被各种噪声袭扰，也不知为何，这噪音们啊，总是挥之不去。<span id="more"></span><br>从家边上的琴行“日夜不绝”敲锣打鼓一展歌喉，到道路施工无人管理半夜轰鸣难以入睡，再到楼上的楼上那自清晨就可能响起并持续数小时的“低音加强”，再到沉迷《某某人格》的舍友外放那洗脑似的游戏音乐以及一惊一乍的大吼大叫，再到家中突然吹起的《斗地主》风所带来的一声又一声“轰”、“炸你”、“要不起”——耳机难以压住这一切，而我，也无处可躲。<br>不止一次在早上，被那“扣人心弦”的“动次打次”所“震”醒，啊！这酸爽，一整天都是满脑子的浆糊。<br>连续约一个多月，几乎每天晚上七八点，窗外就能断断续续传来超过 80 分贝的机器轰鸣声，而此时，本应是巩固加强初入高一所学内容之时。声音一旦传来，时常断断续续可以持续到深夜 2 至 4 点，向各方面反映，依然我行我素，亦无回音。晚间不睡何时睡？上课点头昏沉睡。<br>本以为摆脱宿舍内的喧嚣，回到家中，要觅一片相对安静之处，还相对容易，但当《斗地主》大风刮起，尘土飞扬，连最安静适宜的那块宝地，也给扬了。幸好，还有工作日的白天，可以独处，只要琴行与邻居们没在闹腾，就可以集中精力满负荷做事了。<br>鸟鸣声、猫叫声、花草树木摇曳声……自然声，依旧那么动听……  </p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;最近这些年，时不时就会被各种噪声袭扰，也不知为何，这噪音们啊，总是挥之不去。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;最近这些年，时不时就会被各种噪声袭扰，也不知为何，这噪音们啊，总是挥之不去。&lt;/p&gt;</summary>
     
     
-      <category term="吐槽" scheme="http://www.playhi.net/categories/category-tc/"/>
+    
+    <category term="吐槽" scheme="http://www.playhi.net/categories/category-tc/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -220,21 +225,19 @@
     
     <content type="html"><![CDATA[<p>当应试教育之风，一步步侵袭了一个又一个角落……从刷题背题，到一昧的题海战术，到刷面经背面经……可又到底从中学到了多少，又有多少有足够的实际意义，最关键的是，又真正理解了多少……看起来，这似乎并不是最正确的方向，虽然它也不失为一种在一定程度上有效的手段……</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;当应试教育之风，一步步侵袭了一个又一个角落……从刷题背题，到一昧的题海战术，到刷面经背面经……可又到底从中学到了多少，又有多少有足够的实际意义，最关键的是，又真正理解了多少……看起来，这似乎并不是最正确的方向，虽然它也不失为一种在一定程度上有效的手段……&lt;/p&gt;
-
+    <summary type="html">&lt;p&gt;当应试教育之风，一步步侵袭了一个又一个角落……从刷题背题，到一昧的题海战术，到刷面经背面经……可又到底从中学到了多少，又有多少有足够的实际意义，最关键的是，又真正理解了多少……看起来，这似乎并不是最正确的方向，虽然它也不失为一种在一定程度上有效的手段……&lt;/p&gt;
+</summary>
       
     
-    </summary>
     
     
-      <category term="牢骚" scheme="http://www.playhi.net/categories/category-grumble/"/>
+    <category term="牢骚" scheme="http://www.playhi.net/categories/category-grumble/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -247,17 +250,15 @@
     
     <content type="html"><![CDATA[<p>最近这一个月都在整课设的东西，GitHub都没怎么打开 <span class="github-emoji"><span>😐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f610.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 再之前又要重心期末考试，还抽时间做了自己班的晚间疫情上报前后端 + Q群机器人，也就没怎么上了，几个月转瞬间就过去了……<span id="more"></span><br>可算寒假了，又有更多的时间可以自己安排了 <span class="github-emoji"><span>😀</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f600.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 不过这可能是最后一个相对完整的寒假了，下次大四的寒假可能就不太寒假了吧～毕竟对考研没啥兴致，加之这将近三年这些学校也没让我感到收获到很多我所需要的东西～<br>丢个我自有服务器和GitHub的图 <span class="github-emoji"><span>😌</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f60c.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 合起来看，还是挺充实的<br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174259.png" alt="自有"><br><img src="/images/postsImgs/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20200208174225.png" alt="GitHub"></p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;最近这一个月都在整课设的东西，GitHub都没怎么打开 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😐&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f610.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt; 再之前又要重心期末考试，还抽时间做了自己班的晚间疫情上报前后端 + Q群机器人，也就没怎么上了，几个月转瞬间就过去了……&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;最近这一个月都在整课设的东西，GitHub都没怎么打开 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😐&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f610.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt; 再之前又要重心期末考试，还抽时间做了自己班的晚间疫情上报前后端 + Q群机器人，也就没怎么上了，几个月转瞬间就过去了……&lt;/p&gt;</summary>
     
     
-      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    
+    <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -270,20 +271,18 @@
     
     <content type="html"><![CDATA[<p>2020已经过去，但去年的一切似乎还历历在目——新冠、宅家、网课、健康码……万物皆“云”，这一年里，变化颇多……<br>不过，网课对我不算是坏事，上网课，我可以更自由的安排时间了，也不再那么容易被外界影响（影响源也在自己家上网课呢～），碰到上课稀里糊涂的老师也不用浪费时间了，挂上放一边就好了 <span class="github-emoji"><span>😉</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>2021，做好防护，继续前进！</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;2020已经过去，但去年的一切似乎还历历在目——新冠、宅家、网课、健康码……万物皆“云”，这一年里，变化颇多……&lt;br&gt;不过，网课对我不算是坏事，上网课，我可以更自由的安排时间了，也不再那么容易被外界影响（影响源也在自己家上网课呢～），碰到上课稀里糊涂的老师也不用浪费时间了
+    <summary type="html">&lt;p&gt;2020已经过去，但去年的一切似乎还历历在目——新冠、宅家、网课、健康码……万物皆“云”，这一年里，变化颇多……&lt;br&gt;不过，网课对我不算是坏事，上网课，我可以更自由的安排时间了，也不再那么容易被外界影响（影响源也在自己家上网课呢～），碰到上课稀里糊涂的老师也不用浪费时间了</summary>
       
     
-    </summary>
     
     
-      <category term="新年" scheme="http://www.playhi.net/categories/category-new-year/"/>
+    <category term="新年" scheme="http://www.playhi.net/categories/category-new-year/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -296,17 +295,15 @@
     
     <content type="html"><![CDATA[<p>整一个 <code>TextField</code> 的边框效果，拿 <code>border:</code> 尝试了半天，普通状态下总有个黑边，自定义的颜色也没看到，<span id="more"></span>再看了眼 <code>TextField</code> 的一堆属性，突然发现 <code>TextField</code> 不仅有 <code>border</code> ，还有 <code>errorBorder</code>、<code>focusedBorderfocusedBorder</code>、<code>focusedErrorBorder</code>、<code>disabledBorder</code>、<code>enabledBorder</code> 这几个 border …… 好了，问题解开 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p><p>示例：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">TextField(</span><br><span class="line">    onChanged: (str) {},</span><br><span class="line">    decoration: InputDecoration(</span><br><span class="line">      border: OutlineInputBorder(</span><br><span class="line">        borderSide: BorderSide(</span><br><span class="line">          color: Colors.white.withOpacity(<span class="number">0.5</span>),  <span class="comment">// 边框颜色</span></span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      enabledBorder: OutlineInputBorder(</span><br><span class="line">        borderSide: BorderSide(</span><br><span class="line">          color: Colors.white.withOpacity(<span class="number">0.3</span>),  <span class="comment">// 边框颜色</span></span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      filled: <span class="keyword">true</span>,  <span class="comment">// 不然 fillColor 等 不生效</span></span><br><span class="line">      fillColor: Colors.white.withOpacity(<span class="number">0.6</span>),</span><br><span class="line">      focusColor: Colors.white.withOpacity(<span class="number">0.5</span>),</span><br><span class="line">      hoverColor: Colors.white.withOpacity(<span class="number">0.3</span>),</span><br><span class="line">    ),</span><br><span class="line">    maxLines: <span class="number">1</span>,</span><br><span class="line">    keyboardType: TextInputType.text,</span><br><span class="line">    onSubmitted: (text) {},</span><br><span class="line">  ),</span><br></pre></td></tr></tbody></table></figure>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;整一个 &lt;code&gt;TextField&lt;/code&gt; 的边框效果，拿 &lt;code&gt;border:&lt;/code&gt; 尝试了半天，普通状态下总有个黑边，自定义的颜色也没看到，&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;整一个 &lt;code&gt;TextField&lt;/code&gt; 的边框效果，拿 &lt;code&gt;border:&lt;/code&gt; 尝试了半天，普通状态下总有个黑边，自定义的颜色也没看到，&lt;/p&gt;</summary>
     
     
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
     
     
-      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
+    <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
     
   </entry>
   
@@ -319,17 +316,15 @@
     
     <content type="html"><![CDATA[<p>从去年某个时候，或者可以再往前点，就开始有点担心 Deepin（现统信）未来到底能不能好好走下去了……</p><span id="more"></span><p>深度的技术积淀在国内看应该还是不少的了，但是或许是从老王离职了开始吧，明显感觉到稳定性啥的不如前了，很迷。先说个很基础的吧，比如 15.11 的时候，右下角 dock 的时间12/24小时制切换就坏了，一重启 dock 或者系统，大概率就自动回12小时制了，社区好几个贴，也没修，直到 v20 才恢复正常。出完 15.11 后不久，社区又因为官方在筹备统信而几乎就是不闻不问，也没个人在社区告诉一下他们在忙着筹备统信，全靠一堆版主里的个别一两个（非官方，真·志愿者）在帮忙打理……写到这，我又开始怀念老王在职的时候了……<br>一转眼，左等右等，一众用户离开，我都快认为深度凉了的时候，v20初版终于公开了，可是……真·BUG成堆……<br>不管怎样，v20 也算是有了，至少说是 Deepin 没凉……<br>但是给我的感觉，v20 的质量，真的，没法说好，很多看上去很离谱的BUG，都在这个华丽的外表下暗藏着……<br>说到华丽，再扯一句，虽说华丽，但其实也未必华丽，不管是大圆角，还是消失的侧边栏，亦或是失踪的热区……众人吐槽无数……<br>v20 初版发布到现在，理应已经比较稳定了吧～哈？Are you ok？我一共就两台电脑装了 Deepin，其中一台还停在 15.11，至于这是为什么，你觉得呢？ <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>当然，Deepin 变统信，业务量多了不少，系统也有好几个分支了现在，新招的员工也不少，有些离谱BUG也能接受，但是，却又不注重社区维护。比如，即使一堆人报的BUG，有些仍然没有官方一个认真的处理情况，甚至是回复。再比如，发帖有些关键词拦截，需要额外审核，可是，审核，谁审核？发个帖过了几天，还在审核，在审啥？<br>顺便吐槽下 jingle，有时感觉也不太着调……或许是太忙了吧……<br>诶还有个，差点忘了，Deepin 的论坛不知道怎么回事，经常出错……（把 DZ 名声都带坏了那么一点点…… DZ 明明挺稳的好不好……）<br>总之，还是希望，统信，能正常的走下去，别被一些外环境的乌烟瘴气给带偏了……各方面，也能往好的方向，一点点走下去……  </p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;从去年某个时候，或者可以再往前点，就开始有点担心 Deepin（现统信）未来到底能不能好好走下去了……&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;从去年某个时候，或者可以再往前点，就开始有点担心 Deepin（现统信）未来到底能不能好好走下去了……&lt;/p&gt;</summary>
     
     
-      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    
+    <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
@@ -342,17 +337,15 @@
     
     <content type="html"><![CDATA[<p>有时出于各种需要，要在运行时判断当前的主题是否处在暗色模式（<code>brightness == Brightness.dark</code>）下，一般情况下这样就可以了：<span id="more"></span></p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">bool</span> isDarkMode(BuildContext context) {</span><br><span class="line">  <span class="keyword">return</span> Theme.of(context).brightness == Brightness.dark;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>为什么这么做呢，因为 <code>theme_data.dart</code> 中就有一句：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> <span class="built_in">bool</span> isDark = _brightness == Brightness.dark;</span><br></pre></td></tr></tbody></table></figure><p>那为什么说 <strong>一般情况下</strong> 呢，还是看 <code>theme_data.dart</code> ：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> Brightness _brightness = brightness ?? colorScheme?.brightness ?? Brightness.light;</span><br></pre></td></tr></tbody></table></figure><p>所以有时候，需要这样做：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">bool</span> isDarkMode(BuildContext context) {</span><br><span class="line">  <span class="keyword">return</span> Theme.of(context).colorScheme.brightness == Brightness.dark;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;有时出于各种需要，要在运行时判断当前的主题是否处在暗色模式（&lt;code&gt;brightness == Brightness.dark&lt;/code&gt;）下，一般情况下这样就可以了：&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;有时出于各种需要，要在运行时判断当前的主题是否处在暗色模式（&lt;code&gt;brightness == Brightness.dark&lt;/code&gt;）下，一般情况下这样就可以了：&lt;/p&gt;</summary>
     
     
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
     
     
-      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
+    <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
     
   </entry>
   
@@ -365,17 +358,15 @@
     
     <content type="html"><![CDATA[<p>只判断横竖屏，拿 <code>height</code> 和 <code>width</code> 比较下就可以了，比如这样：<span id="more"></span></p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MediaQuery.of(context).size.width &gt;</span><br><span class="line">        MediaQuery.of(context).size.height <span class="comment">// 还可以 * 1.2 之类的（根据场景自己看着办[滑稽]）</span></span><br><span class="line">    ? <span class="string">"横屏"</span></span><br><span class="line">    : <span class="string">"竖屏"</span></span><br></pre></td></tr></tbody></table></figure><p>如果说要在横竖屏、应用显示尺寸改变时触发，那可以套一个 <code>OrientationBuilder</code>，比如这样（新建了个 Flutter 项目用来示例，所以以下例子和使用场景其实不太匹配 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>）：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">OrientationBuilder(</span><br><span class="line">    builder: (context, orientation) {</span><br><span class="line">      <span class="keyword">return</span> Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            Text(</span><br><span class="line">              MediaQuery.of(context).size.width &gt;</span><br><span class="line">                      MediaQuery.of(context).size.height * <span class="number">1.2</span>  <span class="comment">// height 这边多留了点，不需要的话可以看下一个例子（直接用 orientation）</span></span><br><span class="line">                  ? <span class="string">"横屏"</span></span><br><span class="line">                  : <span class="string">"竖屏"</span>,</span><br><span class="line">            ),</span><br><span class="line">            Text(</span><br><span class="line">              <span class="string">"<span class="subst">${MediaQuery.of(context).size.width}</span> × <span class="subst">${MediaQuery.of(context).size.height}</span>"</span>,</span><br><span class="line">              style: Theme.of(context).textTheme.headline4,</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      );</span><br><span class="line">    },</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure><p>或者这样（直接用 <code>OrientationBuilder</code> 的 <code>orientation</code>）：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">OrientationBuilder(</span><br><span class="line">  builder: (context, orientation) {</span><br><span class="line">    <span class="keyword">return</span> Center(</span><br><span class="line">      child: Column(</span><br><span class="line">        mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">        children: &lt;Widget&gt;[</span><br><span class="line">          Text(</span><br><span class="line">            orientation == Orientation.landscape ? <span class="string">"横屏"</span> : <span class="string">"竖屏"</span>,</span><br><span class="line">            style: Theme.of(context).textTheme.headline4,</span><br><span class="line">          ),</span><br><span class="line">        ],</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  },</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;只判断横竖屏，拿 &lt;code&gt;height&lt;/code&gt; 和 &lt;code&gt;width&lt;/code&gt; 比较下就可以了，比如这样：&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;只判断横竖屏，拿 &lt;code&gt;height&lt;/code&gt; 和 &lt;code&gt;width&lt;/code&gt; 比较下就可以了，比如这样：&lt;/p&gt;</summary>
     
     
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
     
     
-      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
+    <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
     
   </entry>
   
@@ -388,17 +379,15 @@
     
     <content type="html"><![CDATA[<p>显示一个单选列表对话框</p><span id="more"></span><h4 id="一、先丢代码，方便“面向搜索引擎编程”的同志们"><a href="#一、先丢代码，方便“面向搜索引擎编程”的同志们" class="headerlink" title="一、先丢代码，方便“面向搜索引擎编程”的同志们"></a>一、先丢代码，<del>方便“面向搜索引擎编程”的同志们</del></h4><ol><li>不考虑 <code>item</code> 和 <code>value</code> 的配对的情况下（很简单的啦）： <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">AlertDialog</span>.Builder(context)</span><br><span class="line">  .setTitle(R.string.title)</span><br><span class="line">  .setSingleChoiceItems(</span><br><span class="line">      R.array.items,    <span class="comment">// 显示的每行的内容</span></span><br><span class="line">      checkedItem,      <span class="comment">// 已选中的项（ -1 均不选中）</span></span><br><span class="line">      (dialog, which) -&gt; {</span><br><span class="line">          checkedItem = which;  <span class="comment">// 保存选中的项的在 R.array.items 中所处的位置（从 0 开始）</span></span><br><span class="line">          dialog.dismiss();</span><br><span class="line">      }</span><br><span class="line">  )</span><br><span class="line">  .setNegativeButton(android.R.string.cancel, <span class="literal">null</span>)  <span class="comment">// “取消”按钮</span></span><br><span class="line">  .show();</span><br></pre></td></tr></tbody></table></figure></li><li><code>item</code> 和 <code>value</code> 配对的情况下（实现中利用了一个二维数组，或许还有更好的方案）： <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 此例中 Items 和 Values 的内容是按顺序一一对应的</span></span><br><span class="line">String[][] keyValuePair = {</span><br><span class="line">    getResources().getStringArray(R.array.items),  <span class="comment">// Items</span></span><br><span class="line">    getResources().getStringArray(R.array.values)  <span class="comment">// Values</span></span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">AlertDialog</span>.Builder(context)</span><br><span class="line">    .setTitle(R.string.title)</span><br><span class="line">    .setSingleChoiceItems(</span><br><span class="line">        keyValuePair[<span class="number">0</span>],              <span class="comment">// 显示的每行的内容</span></span><br><span class="line">        checkedKeyValuePairPosition,  <span class="comment">// 已选中的项的位置（ -1 均不选中）</span></span><br><span class="line">        (dialog, which) -&gt; {</span><br><span class="line">            checkedKeyValuePairPosition = which;  <span class="comment">// 保存选中的项所处的位置（从 0 开始）</span></span><br><span class="line">            checkedKeyValuePairValue =</span><br><span class="line">                keyValuePair[<span class="number">1</span>][which];           <span class="comment">// 保存选中的项对应的 Value</span></span><br><span class="line">            dialog.dismiss();</span><br><span class="line">        }</span><br><span class="line">    )</span><br><span class="line">    .setNegativeButton(R.string.cancel, <span class="literal">null</span>)     <span class="comment">// “取消”按钮</span></span><br><span class="line">    .show();</span><br></pre></td></tr></tbody></table></figure></li></ol><h4 id="二、builder-里提供的-setSingleChoiceItems-目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段："><a href="#二、builder-里提供的-setSingleChoiceItems-目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段：" class="headerlink" title="二、builder 里提供的 setSingleChoiceItems 目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段："></a>二、<code>builder</code> 里提供的 <code>setSingleChoiceItems</code> 目前看是有四种，可以按需使用。上方的代码只用了其中一种，使用方式区别不大，靠官方文档的注释应该就足够了。这里略微带过几小段：</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Set a list of items to be displayed in the dialog as the content, you will be notified of</span></span><br><span class="line"><span class="comment"> * the selected item via the supplied listener. This should be an array type i.e.</span></span><br><span class="line"><span class="comment"> * R.array.foo The list will have a check mark displayed to the right of the text for the</span></span><br><span class="line"><span class="comment"> * checked item. Clicking on an item in the list will not dismiss the dialog. Clicking on a</span></span><br><span class="line"><span class="comment"> * button will dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> itemsId the resource id of an array i.e. R.array.foo</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> checkedItem specifies which item is checked. If -1 no items are checked.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listener notified when an item on the list is clicked. The dialog will not be</span></span><br><span class="line"><span class="comment"> *        dismissed when an item is clicked. It will only be dismissed if clicked on a</span></span><br><span class="line"><span class="comment"> *        button, if no buttons are supplied it's up to the user to dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> This Builder object to allow for chaining of calls to set methods</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> Builder <span class="title function_">setSingleChoiceItems</span><span class="params">(<span class="meta">@ArrayRes</span> <span class="type">int</span> itemsId, <span class="type">int</span> checkedItem,</span></span><br><span class="line"><span class="params">        <span class="keyword">final</span> OnClickListener listener)</span></span><br></pre></td></tr></tbody></table></figure><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Set a list of items to be displayed in the dialog as the content, you will be notified of</span></span><br><span class="line"><span class="comment"> * the selected item via the supplied listener. The list will have a check mark displayed to</span></span><br><span class="line"><span class="comment"> * the right of the text for the checked item. Clicking on an item in the list will not</span></span><br><span class="line"><span class="comment"> * dismiss the dialog. Clicking on a button will dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> cursor the cursor to retrieve the items from.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> checkedItem specifies which item is checked. If -1 no items are checked.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> labelColumn The column name on the cursor containing the string to display in the</span></span><br><span class="line"><span class="comment"> *        label.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listener notified when an item on the list is clicked. The dialog will not be</span></span><br><span class="line"><span class="comment"> *        dismissed when an item is clicked. It will only be dismissed if clicked on a</span></span><br><span class="line"><span class="comment"> *        button, if no buttons are supplied it's up to the user to dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> This Builder object to allow for chaining of calls to set methods</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> Builder <span class="title function_">setSingleChoiceItems</span><span class="params">(Cursor cursor, <span class="type">int</span> checkedItem, String labelColumn,</span></span><br><span class="line"><span class="params">        <span class="keyword">final</span> OnClickListener listener)</span></span><br></pre></td></tr></tbody></table></figure><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Set a list of items to be displayed in the dialog as the content, you will be notified of</span></span><br><span class="line"><span class="comment"> * the selected item via the supplied listener. The list will have a check mark displayed to</span></span><br><span class="line"><span class="comment"> * the right of the text for the checked item. Clicking on an item in the list will not</span></span><br><span class="line"><span class="comment"> * dismiss the dialog. Clicking on a button will dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> items the items to be displayed.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> checkedItem specifies which item is checked. If -1 no items are checked.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listener notified when an item on the list is clicked. The dialog will not be</span></span><br><span class="line"><span class="comment"> *        dismissed when an item is clicked. It will only be dismissed if clicked on a</span></span><br><span class="line"><span class="comment"> *        button, if no buttons are supplied it's up to the user to dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> This Builder object to allow for chaining of calls to set methods</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> Builder <span class="title function_">setSingleChoiceItems</span><span class="params">(CharSequence[] items, <span class="type">int</span> checkedItem, <span class="keyword">final</span> OnClickListener listener)</span> </span><br></pre></td></tr></tbody></table></figure><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Set a list of items to be displayed in the dialog as the content, you will be notified of</span></span><br><span class="line"><span class="comment"> * the selected item via the supplied listener. The list will have a check mark displayed to</span></span><br><span class="line"><span class="comment"> * the right of the text for the checked item. Clicking on an item in the list will not</span></span><br><span class="line"><span class="comment"> * dismiss the dialog. Clicking on a button will dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> adapter The {<span class="doctag">@link</span> ListAdapter} to supply the list of items</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> checkedItem specifies which item is checked. If -1 no items are checked.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> listener notified when an item on the list is clicked. The dialog will not be</span></span><br><span class="line"><span class="comment"> *        dismissed when an item is clicked. It will only be dismissed if clicked on a</span></span><br><span class="line"><span class="comment"> *        button, if no buttons are supplied it's up to the user to dismiss the dialog.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> This Builder object to allow for chaining of calls to set methods</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> Builder <span class="title function_">setSingleChoiceItems</span><span class="params">(ListAdapter adapter, <span class="type">int</span> checkedItem, <span class="keyword">final</span> OnClickListener listener)</span> </span><br></pre></td></tr></tbody></table></figure><h4 id="三、更多"><a href="#三、更多" class="headerlink" title="三、更多"></a>三、更多</h4><p>如果需要多选的话，<code>setMultiChoiceItems</code> 拿来用就行了。</p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;显示一个单选列表对话框&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;显示一个单选列表对话框&lt;/p&gt;</summary>
     
     
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
     
     
-      <category term="Android" scheme="http://www.playhi.net/tags/tags-android/"/>
+    <category term="Android" scheme="http://www.playhi.net/tags/tags-android/"/>
     
   </entry>
   
@@ -411,17 +400,15 @@
     
     <content type="html"><![CDATA[<p>好久没碰 PHP 了 <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p><span id="more"></span><p>网上搜了一圈，PHP 301 重定向都是用 <code>header('HTTP/1.1 301 Moved Permanently');</code> 再配合 <code>header('Location: https://www.example.com');</code> 完成的。</p><p>总感觉一句话干不完，再加上<code>HTTP/2</code>啥的都出来许久了还写了个<code>HTTP/1.1</code>看着不太爽，当然写成<code>HTTP/2</code>或是<code>HTTP/1.0</code>也没事，但是不管写什么总之有种表述不清的感觉（比如写的<code>HTTP/1.1</code>实际访问时是<code>HTTP/2</code>——访问的时候该<code>HTTP/2</code>的时候还是<code>HTTP/2</code>也没问题不会乱变<code>HTTP/1.1</code> <span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>）</p><p>又去 <a href="https://php.net/">php.net</a> 寻觅一番，发现 <a href="https://www.php.net/manual/en/function.header.php">Header</a> 可以这样用<br><code>header ( string $header [, bool $replace = TRUE [, int $http_response_code ]] )</code><br>这就好办了，一句话<br><code>header('Location: https://www.example.com', true, 301);</code><br>完事，哈哈哈哈哈哈 <span class="github-emoji"><span>😁</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p><p>额外再提一句，如果要自适应<code>HTTPS/HTTP</code>的话，这样就可以了：<br><code>header('Location: //www.example.com', true, 301);</code></p><p>同步自<a href="https://blog.csdn.net/u014799995/article/details/106492555">我的CSDN</a></p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;好久没碰 PHP 了 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😂&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt; &lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;好久没碰 PHP 了 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😂&lt;/span&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8&quot; aria-hidden=&quot;true&quot; onerror=&quot;this.parent.classList.add(&#39;github-emoji-fallback&#39;)&quot;&gt;&lt;/span&gt; &lt;/p&gt;</summary>
     
     
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
+    
+    <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
     
     
-      <category term="PHP" scheme="http://www.playhi.net/tags/tags-php/"/>
+    <category term="PHP" scheme="http://www.playhi.net/tags/tags-php/"/>
     
   </entry>
   
@@ -434,17 +421,15 @@
     
     <content type="html"><![CDATA[<p>写这个的事件缘由：有人问我Virtualbox怎么装MSDOS。<br>题外话：其实吧，DOSBOX可以胜任不少情况下的需要了（也可以尝试一下的）。</p><span id="more"></span><p>进入正题：</p><ol><li>到 <a href="https://virtualbox.org/">https://virtualbox.org/</a> 下载安装好 Virtualbox；</li><li>下载三个DOS安装镜像：百度网盘链接: <a href="https://pan.baidu.com/s/1XLdx0sBFgb18WDL1bun09g">https://pan.baidu.com/s/1XLdx0sBFgb18WDL1bun09g</a> 提取码:83ts ；</li><li>打开 Virtualbox，新建，名称直接输DOS（会自动选好下面的类型、版本），或者在下面选类型 Other ，版本DOS，然后下一步一直到完成按需设定（直接疯狂下一步也不是不可以）；</li><li>插入第一个安装镜像开始安装，出现提示换盘的时候换第二个，之后提示换盘换第三个，最后把盘弹出，安装完成。</li></ol><p>再来个<a href="https://www.bilibili.com/video/BV1JT4y1g7NN">视频</a>：</p><iframe src="//player.bilibili.com/player.html?aid=925832168&amp;bvid=BV1JT4y1g7NN&amp;cid=195777749&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>同步<a href="https://blog.csdn.net/u014799995/article/details/106462457">我的CSDN</a></p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;写这个的事件缘由：有人问我Virtualbox怎么装MSDOS。&lt;br&gt;题外话：其实吧，DOSBOX可以胜任不少情况下的需要了（也可以尝试一下的）。&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;写这个的事件缘由：有人问我Virtualbox怎么装MSDOS。&lt;br&gt;题外话：其实吧，DOSBOX可以胜任不少情况下的需要了（也可以尝试一下的）。&lt;/p&gt;</summary>
     
     
-      <category term="教程" scheme="http://www.playhi.net/categories/category-tutorial/"/>
+    
+    <category term="教程" scheme="http://www.playhi.net/categories/category-tutorial/"/>
     
     
-      <category term="VirtualBox" scheme="http://www.playhi.net/tags/tags-virtualbox/"/>
+    <category term="VirtualBox" scheme="http://www.playhi.net/tags/tags-virtualbox/"/>
     
   </entry>
   
@@ -457,43 +442,18 @@
     
     <content type="html"><![CDATA[<p>这两天终于抽空把Blog整了下，今天把文章评论也打开了，慢点把自己CSDN上那些再在这也同步一下就完事了。之前把魔改的主题搞丢了，然后自己这个Blog就停滞到现在 <span class="github-emoji"><span>😃</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f603.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> 这次趁此机会，正好再整理整理 <span class="github-emoji"><span>😉</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> </p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;这两天终于抽空把Blog整了下，今天把文章评论也打开了，慢点把自己CSDN上那些再在这也同步一下就完事了。之前把魔改的主题搞丢了，然后自己这个Blog就停滞到现在 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😃&lt;/span&gt;&lt;img src=&quot;htt
+    <summary type="html">&lt;p&gt;这两天终于抽空把Blog整了下，今天把文章评论也打开了，慢点把自己CSDN上那些再在这也同步一下就完事了。之前把魔改的主题搞丢了，然后自己这个Blog就停滞到现在 &lt;span class=&quot;github-emoji&quot;&gt;&lt;span&gt;😃&lt;/span&gt;&lt;img src=&quot;htt</summary>
       
     
-    </summary>
     
     
-      <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
+    <category term="未分类" scheme="http://www.playhi.net/categories/category-uncategorized/"/>
     
     
-      <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决 Flutter showModalBottomSheet 被键盘遮挡</title>
-    <link href="http://www.playhi.net/2020/04/20/%E8%A7%A3%E5%86%B3-Flutter-showModalBottomSheet-%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/"/>
-    <id>http://www.playhi.net/2020/04/20/%E8%A7%A3%E5%86%B3-Flutter-showModalBottomSheet-%E8%A2%AB%E9%94%AE%E7%9B%98%E9%81%AE%E6%8C%A1/</id>
-    <published>2020-04-20T13:19:36.000Z</published>
-    <updated>2020-04-20T13:19:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>在使用 showModalBottomSheet 底部弹出内容时，如果唤起了键盘、输入法，showModalBottomSheet 中的内容往往会被挡住，<span id="more"></span>给 showModalBottomSheet 设置 isScrollControlled，再套一个 SingleChildScrollView 以及 设定一个 padding 一般就能解决问题了。  </p><p>示例：</p><figure class="highlight dart"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">showModalBottomSheet(</span><br><span class="line">  isScrollControlled: <span class="keyword">true</span>,</span><br><span class="line">  builder: (BuildContext context) {</span><br><span class="line">    <span class="keyword">return</span> SingleChildScrollView(</span><br><span class="line">      child: Container(</span><br><span class="line">        padding: EdgeInsets.only(</span><br><span class="line">            bottom: MediaQuery.of(context).viewInsets.bottom),</span><br><span class="line">        child: Column(</span><br><span class="line">          mainAxisAlignment: MainAxisAlignment.center,</span><br><span class="line">          mainAxisSize: MainAxisSize.min,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            TextField(</span><br><span class="line">              keyboardType: TextInputType.text,</span><br><span class="line">              autofocus: <span class="keyword">true</span>,</span><br><span class="line">            ),</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  },</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在使用 showModalBottomSheet 底部弹出内容时，如果唤起了键盘、输入法，showModalBottomSheet 中的内容往往会被挡住，&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="开发" scheme="http://www.playhi.net/categories/category-development/"/>
-    
-    
-      <category term="Flutter" scheme="http://www.playhi.net/tags/tags-flutter/"/>
+    <category term="无标签" scheme="http://www.playhi.net/tags/tags-untagged/"/>
     
   </entry>
   
