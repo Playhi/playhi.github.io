@@ -12,7 +12,7 @@
     "version": "6.3.0"
   },
   "dependencies": {
-    "@next-theme/plugins": "^8.14.2",
+    "@next-theme/plugins": "^8.19.0",
     "hexo": "^6.3.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-github-emojis": "^3.0.5",
@@ -27,6 +27,6 @@
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-next": "^8.14.2"
+    "hexo-theme-next": "^8.19.0"
   }
 }
